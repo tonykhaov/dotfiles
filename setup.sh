@@ -12,7 +12,7 @@ fi
 # Homebrew formulae
 brew install ffmpeg
 brew install git
-brew install imagemagick
+# brew install imagemagick
 brew install mas # Mac App Store CLI
 brew install nvm
 brew install python
@@ -62,3 +62,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Accept Xcode license
 sudo xcodebuild -license accept
+
+# Install Node.js
+nvm install node
+nvm use default
