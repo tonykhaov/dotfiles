@@ -1,0 +1,129 @@
+{
+  "console.log": {
+    "prefix": "clg",
+    "body": "console.log(${1:'here'})$0"
+  },
+  "console.log('var', var)": {
+    "prefix": "vlg",
+    "body": "console.log('$1', $1)$0"
+  },
+  "console.log({var})": {
+    "prefix": "olg",
+    "body": "console.log({$1})$0"
+  },
+  "import x from '": {
+    "prefix": "imp",
+    "body": "import ${2:*} from '$1'$3"
+  },
+  "eslint rule": {
+    "prefix": "esl",
+    "body": ["/*", "eslint", "  $1: \"off\",", "*/"]
+  },
+  "eslint disable next line": {
+    "prefix": "eslnl",
+    "body": "// eslint-disable-next-line $1"
+  },
+  "eslint disable line": {
+    "prefix": "esll",
+    "body": "// eslint-disable-line $1"
+  },
+  "constructor": {
+    "prefix": "ctor",
+    "body": ["constructor(...args) {", "  super(...args)", "  $0", "}"]
+  },
+  "try/catch": {
+    "prefix": "try",
+    "body": ["try {", "  $1", "} catch (error) {", "  $0", "}"]
+  },
+  "async function": {
+    "prefix": "afun",
+    "body": ["async function $1($2) {", "  $0", "}"]
+  },
+  "throw log": {
+    "prefix": "tl",
+    "body": "throw new Error(JSON.stringify({$0}, null, 2))"
+  },
+  "spaced console.log": {
+    "prefix": "scl",
+    "body": [
+      "console.log('**************************************************************************\\\\n\\\\n\\\\n')",
+      "console.log($0)",
+      "console.log('\\\\n\\\\n\\\\n**************************************************************************')"
+    ]
+  },
+  "Switch Statement": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:key}) {",
+      "  case ${2:value}: {",
+      "    $0",
+      "    break",
+      "  }",
+      "  default: {",
+      "    break",
+      "  }",
+      "}"
+    ]
+  },
+  "Reducer": {
+    "prefix": "reducer",
+    "body": [
+      "function ${1:someReducer}(state, action) {",
+      "  switch (action.type) {",
+      "    case ${2:'value'}: {",
+      "      return $0",
+      "    }",
+      "    default: {",
+      "      throw new Error(`Unhandled action type: ${action.type}`)",
+      "    }",
+      "  }",
+      "}"
+    ]
+  },
+  "Switch case": {
+    "prefix": "case",
+    "body": ["case ${2:'value'}: {", "  return $0", "}"]
+  },
+  "import React": {
+    "prefix": "ir",
+    "body": ["import * as React from 'react'\n"]
+  },
+  "React Component": {
+    "prefix": "rc",
+    "body": ["const Component = () => {", " return (", "   <>", "     $0", "   </>", " )", "}"]
+  },
+  "React.useState": {
+    "prefix": "us",
+    "body": [
+      "const [${1}, set${1/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}] = React.useState(${2:initial${1/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}})$0"
+    ]
+  },
+  "React.useEffect": {
+    "prefix": "uf",
+    "body": ["React.useEffect(() => {", "  $0", "}, [])"]
+  },
+  "React.useReducer": {
+    "prefix": "ur",
+    "body": ["const [state, dispatch] = React.useReducer(${1:someReducer}, {", "  $0", "})"]
+  },
+  "React.useRef": {
+    "prefix": "urf",
+    "body": ["const ${1:someRef} = React.useRef($2)$0"]
+  },
+  "Jest test": {
+    "prefix": "test",
+    "body": ["test('$1', () => {", "  $0", "})"]
+  },
+  "Jest async test": {
+    "prefix": "atest",
+    "body": ["test('$1', async () => {", "  $0", "})"]
+  },
+  "Mocha it block": {
+    "prefix": "it",
+    "body": ["it('$1', () => {", "  $2", "})"]
+  },
+  "Mocha describe block": {
+    "prefix": "desc",
+    "body": ["describe('$1', () => {", "  $2", "})"]
+  }
+}

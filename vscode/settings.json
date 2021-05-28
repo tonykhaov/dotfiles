@@ -1,0 +1,136 @@
+{
+  "prettier.printWidth": 120,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": true,
+  "editor.lightbulb.enabled": false,
+  "editor.fontLigatures": false,
+  "editor.rulers": [100],
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.localityBonus": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.showKeywords": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.showKeywords": false
+  },
+  "editor.tabSize": 2,
+  "editor.hover.enabled": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.glyphMargin": false,
+  "editor.folding": true,
+  "files.exclude": {
+    "USE_GITIGNORE": true
+  },
+  "files.associations": {
+    "*.md": "mdx"
+  },
+  "files.defaultLanguage": "{activeEditorLanguage}",
+  "javascript.suggest.autoImports": true,
+  "javascript.validate.enable": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.options": {
+    "env": {
+      "browser": true,
+      "jest/globals": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2019,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "no-debugger": "off"
+    }
+  },
+  "terminal.integrated.scrollback": 10000,
+  "explorer.openEditors.visible": 0,
+  "editor.lineNumbers": "on",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.visible": true,
+  "workbench.panel.defaultLocation": "right",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": false,
+  "workbench.editor.limit.value": 10,
+  "debug.javascript.codelens.npmScripts": "never",
+  "breadcrumbs.enabled": true,
+  "grunt.autoDetect": "off",
+  "npm.runSilent": true,
+  "explorer.confirmDragAndDrop": false,
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": false,
+  "editor.minimap.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
+  "php.suggest.basic": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.packageManager": "yarn",
+  "npm.packageManager": "yarn",
+  "prettier.proseWrap": "always",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.useEditorConfig": false,
+  "workbench.colorCustomizations": {
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiRed": "#F35556",
+    "terminal.ansiGreen": "#52FA7B",
+    "terminal.ansiYellow": "#F1FA8C",
+    "terminal.ansiBlue": "#BD93F9",
+    "terminal.ansiMagenta": "#F679C6",
+    "terminal.ansiCyan": "#8BE9FD",
+    "terminal.ansiWhite": "#BBBBBB",
+    "terminal.ansiBrightBlack": "#555555",
+    "terminal.ansiBrightRed": "#F35556",
+    "terminal.ansiBrightGreen": "#52FA7B",
+    "terminal.ansiBrightYellow": "#F1FA8C",
+    "terminal.ansiBrightBlue": "#BD93F9",
+    "terminal.ansiBrightMagenta": "#F679C6",
+    "terminal.ansiBrightCyan": "#8BE9FD",
+    "terminal.ansiBrightWhite": "#FFFFFF",
+    "terminal.background": "#1E1F29",
+    "terminal.foreground": "#F8F8F2",
+    "terminalCursor.background": "#44485A",
+    "terminalCursor.foreground": "#BBBBBB"
+  },
+  "editor.fontSize": 15,
+  "editor.cursorBlinking": "solid",
+  "editor.parameterHints.enabled": false,
+  "editor.suggestOnTriggerCharacters": false,
+  "explorer.decorations.colors": false,
+  "explorer.decorations.badges": false,
+  "workbench.editor.wrapTabs": true,
+  "editor.fontFamily": "\"JetBrains Mono\"",
+  "workbench.colorTheme": "GitHub Dark",
+  "scm.inputFontSize": 14,
+  "window.zoomLevel": 1,
+  "terminal.integrated.fontSize": 13
+}
