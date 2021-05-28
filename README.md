@@ -7,6 +7,7 @@ TODO:
 - [x] import vscode.sh to automatically download extensions, set snippets and settings
 - [x] import Terminal.app theme
 - [x] import list of chromium extensions
+- [x] import Alfred custom searches and workflows
 
 # Guide
 
