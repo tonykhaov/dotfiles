@@ -8,6 +8,13 @@ TODO:
 - [x] import Terminal.app theme
 - [x] import list of chromium extensions
 - [x] import Alfred custom searches and workflows
+- [x] append nvm things to .bash_profile
+- [ ] append nvm things to .zshrc
+
+```
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+```
 
 # Guide
 

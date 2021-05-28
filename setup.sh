@@ -10,14 +10,20 @@ if ! command -v brew > /dev/null; then
 fi
 
 # Homebrew formulae
-brew install ffmpeg
 brew install git
+# brew install ffmpeg
 # brew install imagemagick
 brew install mas # Mac App Store CLI
 brew install nvm
 brew install python
-brew install yarn
 brew install zsh
+
+# Install Node.js
+mkdir ~/.nvm
+printf "export NVM_DIR="$HOME/.nvm" \n [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  \n [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"" >> $HOME/.bash_profile
+source $HOME/.bash_profile
+nvm install node
+nvm use node
 
 # Fonts
 brew tap homebrew/cask-fonts 
@@ -35,7 +41,3 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Accept Xcode license
 sudo xcodebuild -license accept
-
-# Install Node.js
-nvm install node
-nvm use default
