@@ -1,0 +1,10 @@
+- 1Password
+- OneTab
+- uBlock Origin
+- Vimium
+- Tampermonkey
+- Dark Reader
+- Wikiwand
+- React Developer Tools
+- Wappalyzer
+- SponsorBlock pour YouTube
