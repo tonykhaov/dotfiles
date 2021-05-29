@@ -16,7 +16,7 @@ brew install git
 brew install mas # Mac App Store CLI
 brew install nvm
 brew install python
-brew install zsh
+brew install zsh z
 
 # Install Node.js
 mkdir ~/.nvm
@@ -37,8 +37,8 @@ if ! command -v mas > /dev/null; then
 fi
 
 # Install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-cp ./.zshrc $HOME/.zshrc
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cp ./.zshrc ~/.zshrc
 
 # Accept Xcode license
 sudo xcodebuild -license accept
