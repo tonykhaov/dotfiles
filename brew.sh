@@ -2,6 +2,7 @@
 brew install ffmpeg
 brew install gs
 brew install imagemagick
+brew install youtube-dl 
 
 # Install Homebrew casks
 brew install --cask 1password
