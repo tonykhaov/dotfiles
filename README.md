@@ -6,7 +6,7 @@ TODO:
 - [ ] find a way to disable completely spotlight from the terminal
 - [ ] use if to have clean scripts
 
-# Guidelines
+# Installation
 
 1. Open your terminal and run these command lines:
 

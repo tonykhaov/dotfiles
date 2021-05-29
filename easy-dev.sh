@@ -1,4 +1,5 @@
 #! /usr/bin/env bash
 
-cp -r ./Stock ~/Desktop/Stock
-cp -r ./Lab ~/Desktop/Lab
+cp ./Stock ~/Documents/Stock
+mkdir ~/Documents/Coding
+cp ./Lab ~/Documents/Coding/Lab

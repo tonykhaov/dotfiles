@@ -18,6 +18,5 @@ chmod u+x ./vscode.sh
 
 # TODO: prompt the user if he wants these dir
 # stock and lab
-cp -r ./Stock ~/Documents/Stock
-mkdir ~/Documents/Coding
-cp -r ./Lab ~/Documents/Coding/Lab
+chmod u+x ./easy-dev.sh
+./easy-dev.sh
