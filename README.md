@@ -2,15 +2,8 @@ Tony Khaov's dotfiles.
 
 TODO:
 
-- [x] import setup.sh to automatically install brew, nvm, zsh, etc.
-- [x] import mas.sh to automatically download mac app store apps
-- [x] import vscode.sh to automatically download extensions, set snippets and settings
-- [x] import Terminal.app theme
-- [x] import list of chromium extensions
-- [x] import Alfred custom searches and workflows
-- [x] append nvm things to .bash_profile
-- [x] set up zsh and append nvm things to .zshrc
 - [ ] add shell confirmation/indication messages
+- [x] import my .gitconfig
 
 # Guide
 

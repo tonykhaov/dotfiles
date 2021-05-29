@@ -1,0 +1,15 @@
+# [includeIf "gitdir:~/Documents/Coding/Projects/SpecialProject“]
+#        [user]
+#              email = tkhaov@company.com
+
+[user]
+        name = Tony Khaov
+        email = tony.khaov@gmail.com
+
+[core]
+        editor = vim
+        ignorecase = true
+        pager = delta
+
+[rebase]
+        autosquash = true

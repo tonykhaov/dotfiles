@@ -40,5 +40,8 @@ fi
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp ./.zshrc ~/.zshrc
 
+# Load my git configs
+cp ./.gitconfig ~/.gitconfig
+
 # Accept Xcode license
 sudo xcodebuild -license accept
