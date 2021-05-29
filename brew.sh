@@ -10,6 +10,7 @@ brew install --cask alfred
 brew install --cask anki
 # brew install --cask bettertouchtool
 brew install --cask brave-browser
+brew install --cask calibre
 brew install --cask discord
 brew install --cask docker
 brew install --cask figma
@@ -21,6 +22,7 @@ brew install --cask qbittorrent
 brew install --cask nordvpn
 brew install --cask notion
 # brew install --cask numi
+brew install --cask postman
 brew install --cask rectangle
 brew install --cask spotify
 brew install --cask the-unarchiver
