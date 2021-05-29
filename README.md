@@ -9,7 +9,7 @@ TODO:
 - [x] import list of chromium extensions
 - [x] import Alfred custom searches and workflows
 - [x] append nvm things to .bash_profile
-- [ ] set up zsh and append nvm things to .zshrc
+- [x] set up zsh and append nvm things to .zshrc
 
 # Guide
 

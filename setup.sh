@@ -36,8 +36,9 @@ if ! command -v mas > /dev/null; then
   exit 1
 fi
 
-# zsh
+# Install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cp ./.zshrc $HOME/.zshrc
 
 # Accept Xcode license
 sudo xcodebuild -license accept
