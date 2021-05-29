@@ -8,11 +8,13 @@ TODO:
 
 # Guidelines
 
-1. Run these command lines:
+1. Open your terminal and run these command lines:
 
-- `chmod u+x ~/Downloads/dotfiles-main/install.sh`
-- `~/Downloads/dotfiles-main/install.sh`
-- Wait for setup to be done
+```
+cd ~/Downloads/dotfiles-main
+chmod u+x ./install.sh
+./install.sh
+```
 
 2. Set my awesome terminal theme:
 
