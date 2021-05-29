@@ -1,5 +1,9 @@
-# Install Homebrew casks
+# Install brew additional formulae
+brew install ffmpeg
+brew install gs
+brew install imagemagick
 
+# Install Homebrew casks
 brew install --cask 1password
 brew install --cask alfred
 brew install --cask anki

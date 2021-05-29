@@ -11,8 +11,6 @@ fi
 
 # Homebrew formulae
 brew install git
-# brew install ffmpeg
-# brew install imagemagick
 brew install mas # Mac App Store CLI
 brew install nvm
 brew install python
