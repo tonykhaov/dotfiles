@@ -23,9 +23,9 @@ code --install-extension ritwickdey.LiveServer
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscodevim.vim
 
-# import snippets, keybindings and settings to vscode
+# Import snippets, keybindings and settings to vscode
 chmod u+w+r vscode
 cp -r ./vscode/* ~/Library/Application\ Support/Code/User/ 2> /dev/null
 
-# Disable extensions so that you can enable only those you want to use
-code --disable-extensions
+# Enable long press key for vscodevim
+# defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
