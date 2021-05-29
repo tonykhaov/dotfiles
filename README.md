@@ -10,6 +10,7 @@ TODO:
 - [x] import Alfred custom searches and workflows
 - [x] append nvm things to .bash_profile
 - [x] set up zsh and append nvm things to .zshrc
+- [ ] add shell confirmation/indication messages
 
 # Guide
 
