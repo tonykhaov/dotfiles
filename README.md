@@ -9,21 +9,16 @@ TODO:
 - [x] import list of chromium extensions
 - [x] import Alfred custom searches and workflows
 - [x] append nvm things to .bash_profile
-- [ ] append nvm things to .zshrc
-
-```
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-```
+- [ ] set up zsh and append nvm things to .zshrc
 
 # Guide
 
-Run this command line:
+1. Open your terminal `cd` to /dotfiles-main
 
-```
-chmod u+x setup.sh
-./setup.sh
-```
+2. Run these command lines:
+
+- `chmod u+x setup.sh`
+- `./setup.sh`
 
 2. Get terminal theme:
 
