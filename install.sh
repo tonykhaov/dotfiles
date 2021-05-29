@@ -16,6 +16,10 @@ chmod u+x ./brew.sh
 chmod u+x ./vscode.sh
 ./vscode.sh
 
+# ssh.sh
+chmod u+x ./ssh.sh
+./ssh.sh
+
 # TODO: prompt the user if he wants these dir
 # stock and lab
 chmod u+x ./easy-dev.sh
