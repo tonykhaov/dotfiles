@@ -16,3 +16,8 @@ chmod u+x ~/Downloads/dotfiles-main/brew.sh
 chmod u+x ~/Downloads/dotfiles-main/vscode.sh
 ~/Downloads/dotfiles-main/vscode.sh
 
+# TODO: prompt the user if he wants these dir
+# stock and lab
+cp -r ./Stock ~/Documents/Stock
+mkdir ~/Documents/Coding
+cp -r ./Lab ~/Documents/Coding/Lab
