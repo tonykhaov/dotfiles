@@ -1,7 +1,7 @@
 # Install brew additional formulae
 brew install ffmpeg
-brew install gs
-brew install imagemagick
+# brew install gs
+# brew install imagemagick
 brew install youtube-dl 
 
 # Install Homebrew casks
@@ -10,7 +10,7 @@ brew install --cask alfred
 brew install --cask anki
 # brew install --cask bettertouchtool
 brew install --cask brave-browser
-brew install --cask calibre
+# brew install --cask calibre
 brew install --cask discord
 brew install --cask docker
 brew install --cask figma
