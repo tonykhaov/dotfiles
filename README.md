@@ -5,6 +5,7 @@ TODO:
 - [ ] add shell confirmation/indication messages
 - [ ] find a way to disable completely spotlight from the terminal
 - [ ] use if to have clean scripts
+- [ ] clean up vscode settings.json
 
 # Installation
 
@@ -29,7 +30,7 @@ chmod u+x ./install.sh
 - Fn touch > Show emoji and symbols
 - Disable Spotlight shortcut > Shortcuts > Spotlight
 
-4. Trackpad settings
+4. Trackpad
 
 - Tap to click --> Checked
 - Tracking speed --> Fast
