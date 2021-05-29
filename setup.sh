@@ -43,3 +43,6 @@ cp ./.gitconfig ~/.gitconfig
 
 # Accept Xcode license
 sudo xcodebuild -license accept
+
+# Show hidden files in the Finder
+defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder
