@@ -3,23 +3,23 @@ Tony Khaov's dotfiles.
 TODO:
 
 - [ ] add shell confirmation/indication messages
-- [x] import my .gitconfig
+- [ ] find a way to disable completely spotlight from the terminal
+- [ ] use if to have clean scripts
 
-# Guide
+# Guidelines
 
-1. Open your terminal `cd` to /dotfiles-main
+1. Run these command lines:
 
-2. Run these command lines:
+- `chmod u+x ~/Downloads/dotfiles-main/install.sh`
+- `~/Downloads/dotfiles-main/install.sh`
+- Wait for setup to be done
 
-- `chmod u+x setup.sh`
-- `./setup.sh`
-
-2. Get terminal theme:
+2. Set my awesome terminal theme:
 
 - Open Terminal.app > Preferences > Import > Dracula.terminal
 - Click on Dracula theme > Set as default > Change font to JetBrains Mono
 
-3. Keyboards System Preferences > Keyboard
+3. Keyboard
 
 - Key Repeat > Fast
 - Delay Until Repeat > Short
