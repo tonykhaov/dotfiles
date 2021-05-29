@@ -12,7 +12,7 @@ TODO:
 1. Open your terminal and run these command lines:
 
 ```
-cd ~/Downloads/dotfiles-main
+cd ~/Downloads/dotfiles
 chmod u+x ./install.sh
 ./install.sh
 ```
