@@ -7,4 +7,5 @@
 - Wikiwand
 - React Developer Tools
 - Wappalyzer
-- SponsorBlock pour YouTube
+- SponsorBlock
+- Save to Pocket
