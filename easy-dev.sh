@@ -1,5 +1,6 @@
 #! /usr/bin/env bash
 
-cp ./Stock ~/Documents/Stock
+cp -r ./Stock ~/Documents/Stock
+# add if file already exists
 mkdir ~/Documents/Coding
-cp ./Lab ~/Documents/Coding/Lab
+cp -r ./Lab ~/Documents/Coding/Lab
