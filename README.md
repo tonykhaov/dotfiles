@@ -3,7 +3,6 @@ Tony Khaov's dotfiles.
 TODO:
 
 - [ ] add shell confirmation/indication messages
-- [ ] find a way to disable completely spotlight from the terminal
 - [ ] use if to have clean scripts
 - [ ] clean up vscode settings.json
 
