@@ -1,7 +1,9 @@
 # Install brew additional formulae
+brew install eslint
 brew install ffmpeg
 brew install gs
 brew install imagemagick
+brew install prettier
 brew install pnpm
 brew install trash
 brew install yarn
