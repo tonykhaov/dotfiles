@@ -1,5 +1,9 @@
 {
-  "prettier.printWidth": 80,
+  "editor.fontFamily": "\"JetBrains Mono\"",
+  "editor.fontSize": 15,
+  "editor.cursorBlinking": "solid",
+  "editor.parameterHints.enabled": false,
+  "editor.suggestOnTriggerCharacters": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.detectIndentation": true,
@@ -15,69 +19,45 @@
   "editor.renderWhitespace": "boundary",
   "editor.glyphMargin": false,
   "editor.folding": true,
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.wrapTabs": true,
+  "workbench.activityBar.visible": true,
+  "workbench.sideBar.location": "right",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": false,
+  "workbench.editor.limit.value": 10,
+  "scm.inputFontSize": 14,
+  "window.zoomLevel": 1,
   "files.defaultLanguage": "{activeEditorLanguage}",
   "javascript.suggest.autoImports": true,
   "javascript.validate.enable": false,
   "terminal.integrated.scrollback": 10000,
-  "explorer.openEditors.visible": 0,
-  "editor.lineNumbers": "on",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "left",
-  "workbench.activityBar.visible": true,
-  "workbench.panel.defaultLocation": "right",
-  "workbench.editor.limit.enabled": true,
-  "workbench.editor.limit.perEditorGroup": false,
-  "workbench.editor.limit.value": 10,
   "debug.javascript.codelens.npmScripts": "never",
   "breadcrumbs.enabled": true,
-  "grunt.autoDetect": "off",
-  "npm.runSilent": true,
+  "explorer.openEditors.visible": 0,
   "explorer.confirmDragAndDrop": false,
-  "atomKeymap.promptV3Features": true,
+  "editor.lineNumbers": "on",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.formatOnPaste": false,
   "editor.minimap.enabled": true,
-  "typescript.updateImportsOnFileMove.enabled": "never",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.smoothScrolling": true,
-  "php.suggest.basic": false,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "eslint.packageManager": "yarn",
-  "npm.packageManager": "yarn",
+  "npm.runSilent": true,
+  "npm.packageManager": "npm",
+  "atomKeymap.promptV3Features": true,
+  "prettier.printWidth": 80,
   "prettier.proseWrap": "always",
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
   "prettier.useEditorConfig": false,
-  "editor.fontSize": 15,
-  "editor.cursorBlinking": "solid",
-  "editor.parameterHints.enabled": false,
-  "editor.suggestOnTriggerCharacters": false,
   "explorer.decorations.colors": true,
   "explorer.decorations.badges": false,
-  "workbench.editor.wrapTabs": true,
-  "editor.fontFamily": "\"JetBrains Mono\"",
-  "workbench.colorTheme": "GitHub Dark",
-  "scm.inputFontSize": 14,
-  "window.zoomLevel": 1,
-  "terminal.integrated.fontSize": 13,
-  "files.exclude": {
-    "USE_GITIGNORE": true
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": false
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.suggestSelection": "recentlyUsed",
-    "editor.suggest.showKeywords": false
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.suggestSelection": "recentlyUsed",
-    "editor.suggest.showKeywords": false
-  },
+  "eslint.packageManager": "npm",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -101,18 +81,24 @@
       "no-debugger": "off"
     }
   },
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/coverage": true,
-    "**/dist": true,
-    "**/build": true,
-    "**/.build": true,
-    "**/.gh-pages": true
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.showKeywords": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.showKeywords": false
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontSize": 12,
   "workbench.colorCustomizations": {
     "terminal.ansiBlack": "#000000",
     "terminal.ansiRed": "#F35556",
@@ -142,18 +128,18 @@
     },
     "zsh": {
       "path": "zsh"
-    },
-    "fish": {
-      "path": "fish"
-    },
-    "tmux": {
-      "path": "tmux",
-      "icon": "terminal-tmux"
-    },
-    "pwsh": {
-      "path": "pwsh",
-      "icon": "terminal-powershell"
     }
   },
-  "terminal.integrated.defaultProfile.osx": "zsh"
+  "files.exclude": {
+    "USE_GITIGNORE": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true
+  }
 }
