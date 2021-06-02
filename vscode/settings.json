@@ -1,6 +1,6 @@
 {
   "editor.fontFamily": "\"JetBrains Mono\"",
-  "editor.fontSize": 15,
+  "editor.fontSize": 13,
   "editor.cursorBlinking": "solid",
   "editor.parameterHints.enabled": false,
   "editor.suggestOnTriggerCharacters": false,
@@ -9,7 +9,7 @@
   "editor.detectIndentation": true,
   "editor.lightbulb.enabled": false,
   "editor.fontLigatures": false,
-  "editor.rulers": [100],
+  "editor.rulers": [120],
   "editor.snippetSuggestions": "top",
   "editor.suggest.localityBonus": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
@@ -27,9 +27,8 @@
   "workbench.panel.defaultLocation": "bottom",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": false,
-  "workbench.editor.limit.value": 10,
+  "workbench.editor.limit.value": 6,
   "scm.inputFontSize": 14,
-  "window.zoomLevel": 1,
   "files.defaultLanguage": "{activeEditorLanguage}",
   "javascript.suggest.autoImports": true,
   "javascript.validate.enable": false,
@@ -98,7 +97,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontSize": 11,
   "workbench.colorCustomizations": {
     "terminal.ansiBlack": "#000000",
     "terminal.ansiRed": "#F35556",
@@ -141,5 +140,6 @@
     "**/build": true,
     "**/.build": true,
     "**/.gh-pages": true
-  }
+  },
+  "window.zoomLevel": 1
 }

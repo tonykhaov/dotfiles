@@ -4,16 +4,13 @@ TODO:
 
 - [ ] add shell confirmation/indication messages
 - [ ] use if to have clean scripts
-- [ ] clean up vscode settings.json
 
 # Installation
 
 1. Open your terminal and run these command lines:
 
 ```
-cd ~/Downloads/dotfiles
-chmod u+x ./install.sh
-./install.sh
+cd ~/Downloads/dotfiles-main && chmod u+x ./install.sh && ./install.sh
 ```
 
 2. Set my awesome terminal theme:
@@ -34,4 +31,5 @@ chmod u+x ./install.sh
 - Tap to click --> Checked
 - Tracking speed --> Fast
 - Scroll direction: Natural --> Unchecked
-- Accessibility > Mouse & Trackpad > Trackpad Options > Enable dragging: with three finger drag --> Checked
+- Accessibility > Mouse & Trackpad > Trackpad Options > Enable dragging: with
+  three finger drag --> Checked

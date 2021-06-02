@@ -28,4 +28,4 @@ chmod u+w+r vscode
 cp -r ./vscode/* ~/Library/Application\ Support/Code/User/ 2> /dev/null
 
 # Enable long press key for vscodevim
-# defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
