@@ -21,3 +21,6 @@ chmod u+x ./easy-dev.sh && ./easy-dev.sh
 
 # alfred.sh
 chmod u+x ./alfred.sh && ./alfred.sh
+
+# chrome-extensions.sh
+chmod u+x ./chrome-extensions.sh && ./chrome-extensions.sh
