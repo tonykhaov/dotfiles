@@ -2,7 +2,9 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/luc/.oh-my-zsh"
+export ZSH="/Users/tonykhaov/.oh-my-zsh"
+
+export LC_CTYPE="en_US.UTF-8"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -57,6 +59,8 @@ plugins=(z git)
 
 source $ZSH/oh-my-zsh.sh
 
+# For ssh keys to persist
+ssh-add -A 2>/dev/null;
 
 # User configuration
 
@@ -69,4 +73,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias mergepdf="gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf"
-export LC_CTYPE="en_US.UTF-8" # Fixes Fontconfig warning: ignoring UTF-8: not a valid region tag with gs
