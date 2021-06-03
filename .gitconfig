@@ -1,7 +1,3 @@
-# [includeIf "gitdir:~/Documents/Coding/Projects/SpecialProject“]
-#        [user]
-#              email = tkhaov@company.com
-
 [user]
         name = Tony Khaov
         email = tony.khaov@gmail.com
