@@ -17,7 +17,7 @@ brew install python
 brew install zsh z
 
 # Install Node.js
-mkdir ~/.nvm
+[ ! -d ~/.nvm ] && mkdir ~/.nvm
 printf "export NVM_DIR="$HOME/.nvm" \n [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  \n [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 nvm install node
@@ -34,15 +34,8 @@ if ! command -v mas > /dev/null; then
   exit 1
 fi
 
-# Install zsh
+# Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cp ./.zshrc ~/.zshrc
-
-# Load my git configs
-cp ./.gitconfig ~/.gitconfig
 
 # Accept Xcode license
 sudo xcodebuild -license accept
-
-# Show hidden files in the Finder
-defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder

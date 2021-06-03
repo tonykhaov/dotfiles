@@ -25,7 +25,7 @@ code --install-extension vscodevim.vim
 
 # Import snippets, keybindings and settings to vscode
 chmod u+w+r vscode
-cp -r ./vscode/* ~/Library/Application\ Support/Code/User/ 2> /dev/null
+cp -r ./vscode/* ~/Library/Application\ Support/Code/User/
 
 # Enable long press key for vscodevim
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
