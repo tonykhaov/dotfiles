@@ -24,3 +24,6 @@ chmod u+x ./alfred.sh && ./alfred.sh
 
 # chrome-extensions.sh
 chmod u+x ./chrome-extensions.sh && ./chrome-extensions.sh
+
+# vim config
+cp .vimrc ~/.vimrc
