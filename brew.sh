@@ -28,6 +28,7 @@ brew install --cask molotov
 brew install --cask nordvpn
 brew install --cask notion
 # brew install --cask numi
+brew install --cask pomotroid
 brew install --cask postman
 brew install --cask rectangle
 brew install --cask spotify
