@@ -27,12 +27,14 @@ cd ~/Downloads/dotfiles-main && chmod u+x ./install.sh && ./install.sh
   - Delay Until Repeat: Short
   - Modifier Keys > Caps Lock: Escape
   - Fn touch > Show emoji and symbols
+  - Text > Correct spelling automatically: False
   - Disable Spotlight shortcut > Shortcuts > Spotlight
   - Shortcuts > Screenshots > Copy picture of X to the clipboard: Cmd + Shift +
     3
 
 - Trackpad
 
+  - Silent clicking: Checked
   - Tap to click: Checked
   - Tracking speed: Fast
   - Scroll direction: Natural: Unchecked
@@ -42,10 +44,12 @@ cd ~/Downloads/dotfiles-main && chmod u+x ./install.sh && ./install.sh
 - Finder
 
   - Show view options > Text size: 14
-  - Show view options > Icon size: 2/2
+  - Show view options > Icon size: 1/2
   - Show view options > Sort By: Name
   - View > Show Path Bar
   - View > Show Status Bar
+  - Preferences > New Finder window show: "/tonykhaov"
+  - Preferences > Advanced > Show all filename extensions: Checked
 
 - Notes
 
