@@ -2,6 +2,9 @@
 
 # SHELL SCRIPT TO SETUP A FRESH MAC OS INSTALL
 
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Install Homebrew
 if ! command -v brew > /dev/null; then
   ruby -e "$(curl --location --fail --silent --show-error https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -34,8 +37,5 @@ if ! command -v mas > /dev/null; then
   exit 1
 fi
 
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Accept Xcode license
-sudo xcodebuild -license accept
+# Accept Xcode license (for React-Native)
+# sudo xcodebuild -license accept
