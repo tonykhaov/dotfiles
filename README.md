@@ -8,11 +8,19 @@ TODO:
 
 # Installation
 
+1. Signin with App store GUI first!
+
 1. Open your terminal and run these command lines:
 
 ```
 cd ~/Downloads/dotfiles-main && chmod u+x ./install.sh && ./install.sh
 ```
+
+---
+
+I highly recommend you to not run ./install.sh as installation is synchronous.
+If you want to save time you can run shell scripts inside install.sh
+individually.
 
 2. Terminal:
 

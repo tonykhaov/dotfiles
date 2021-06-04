@@ -1,10 +1,7 @@
-# Install brew additional formulae
-brew install eslint
-# brew install ffmpeg gs imagemagick
-brew install prettier
+# Install additional brew formulaes
+brew install eslint prettier yarn
+# brew install ffmpeg gs imagemagick youtube-dl 
 brew install trash
-brew install yarn
-brew install youtube-dl 
 
 # Install Homebrew casks
 brew install --cask 1password

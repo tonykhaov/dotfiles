@@ -1,7 +1,10 @@
 #! /usr/bin/env bash
 
-# setup.sh
+# Install necessary packages and config files
 chmod u+x ./setup.sh && ./setup.sh
+
+# Change macOS settings
+chmod u+x ./macos.sh && ./macos.sh
 
 # mas.sh
 chmod u+x ./mas.sh && ./mas.sh
@@ -9,33 +12,11 @@ chmod u+x ./mas.sh && ./mas.sh
 # brew.sh
 chmod u+x ./brew.sh && ./brew.sh
 
-# vscode.sh
+# Import vscode settings, snippets and keybindings
 chmod u+x ./vscode.sh && ./vscode.sh
 
-# alfred.sh
+# Import alfred custom searches and workflows
 chmod u+x ./alfred.sh && ./alfred.sh
 
-# chrome-extensions.sh
+# Install chrome extensions
 chmod u+x ./chrome-extensions.sh && ./chrome-extensions.sh
-
-# Import zsh config
-cp ./.zshrc ~/.zshrc
-source ~/.zshrc
-
-# Import vim config
-cp .vimrc ~/.vimrc
-
-# Import ssh config
-[ ! -d ~/.ssh ] && mkdir ~/.ssh
-cp config ~/.ssh/config
-
-# Import git config
-cp ./.gitconfig ~/.gitconfig
-
-# Copy /Stock and /Lab dir
-[ ! -d ~/Documents/Coding ] && mkdir ~/Documents/Coding
-cp -r ./Lab ~/Documents/Coding
-cp -r ./Stock ~/Documents/Stock
-
-# macos.sh
-chmod u+x ./macos.sh && ./macos.sh
