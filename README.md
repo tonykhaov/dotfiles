@@ -20,7 +20,8 @@ cd ~/Downloads/dotfiles-main && chmod u+x ./install.sh && ./install.sh
 
 I highly recommend you to not run ./install.sh as installation is synchronous.
 If you want to save time you can run shell scripts inside install.sh
-individually.
+individually. Make sure you complete running ./setup.sh first. For alfred and
+chrome extensions, make sure
 
 2. Terminal:
 

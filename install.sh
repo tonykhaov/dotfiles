@@ -12,6 +12,9 @@ chmod u+x ./mas.sh && ./mas.sh
 # brew.sh
 chmod u+x ./brew.sh && ./brew.sh
 
+################################
+# If you install them manually, make sure to have run mas.sh and brew.sh first
+
 # Import vscode settings, snippets and keybindings
 chmod u+x ./vscode.sh && ./vscode.sh
 
