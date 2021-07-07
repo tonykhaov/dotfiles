@@ -23,6 +23,5 @@ brew install --cask pomotroid
 brew install --cask postman
 brew install --cask rectangle
 brew install --cask spotify
-# brew install --cask turbo-boost-switcher-pro # Only for Intel chipsets
 brew install --cask visual-studio-code
 brew install --cask vlc

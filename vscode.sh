@@ -22,6 +22,8 @@ code --install-extension PKief.material-icon-theme
 code --install-extension ritwickdey.LiveServer
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscodevim.vim
+code --install-extension patbenatar.advanced-new-file
+code --install-extension sleistner.vscode-fileutils
 
 # Import snippets, keybindings and settings to vscode
 chmod u+w+r vscode
