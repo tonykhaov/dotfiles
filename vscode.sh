@@ -28,6 +28,7 @@ code --install-extension sleistner.vscode-fileutils
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscodevim.vim
 code --install-extension inu1255.easy-snippet
+code --install-extension usernamehw.errorlens
 
 # Import snippets, keybindings and settings to vscode
 chmod u+w+r vscode
