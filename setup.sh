@@ -1,5 +1,15 @@
 #! /usr/bin/env bash
 
+# Hostname
+
+read -p "Enter name: [tonykhaov]" name
+name=${name:-tonykhaov}
+sudo scutil --set HostName $name
+sudo scutil --set LocalHostName $name
+sudo scutil --set ComputerName $name
+dscacheutil -flushcache
+echo "Hostname changed to $name"
+
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
