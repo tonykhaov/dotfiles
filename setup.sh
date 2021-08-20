@@ -1,15 +1,5 @@
 #! /usr/bin/env bash
 
-# Hostname
-
-read -p "Enter name: [tonykhaov]" name
-name=${name:-tonykhaov}
-sudo scutil --set HostName $name
-sudo scutil --set LocalHostName $name
-sudo scutil --set ComputerName $name
-dscacheutil -flushcache
-echo "Hostname changed to $name"
-
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -44,17 +34,19 @@ source ~/.zshrc
 # Import vim config
 cp .vimrc ~/.vimrc
 
-# Import ssh config
-[ ! -d ~/.ssh ] && mkdir ~/.ssh
-cp config ~/.ssh/config
-
 # Import git config
 cp ./.gitconfig ~/.gitconfig
+
+# Generate new SSH key
+echo "Generating a new SSH key for GitHub"
+ssh-keygen -t ed25519 -C "tony.khaov@gmail.com" -f ~/.ssh/id_ed25519
+eval "$(ssh-agent -s)"
+touch ~/.ssh/config
+echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_ed25519" | tee ~/.ssh/config
+ssh-add -K ~/.ssh/id_ed25519
+echo "run 'pbcopy < ~/.ssh/id_ed25519.pub' and paste that into GitHub"
 
 # Copy /Stock and /Lab dir
 [ ! -d ~/Documents/Coding ] && mkdir ~/Documents/Coding
 cp -r ./Lab ~/Documents/Coding
 cp -r ./Stock ~/Documents/Stock
-
-# Accept Xcode license (for React-Native)
-# sudo xcodebuild -license accept

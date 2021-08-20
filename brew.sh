@@ -1,6 +1,6 @@
 # Install additional brew formulaes
 brew install eslint prettier yarn
-# brew install ffmpeg gs imagemagick youtube-dl 
+brew install ffmpeg gs imagemagick youtube-dl 
 brew install trash
 
 # Install Homebrew casks
@@ -9,6 +9,7 @@ brew install --cask 1password
 brew install --cask alfred
 brew install --cask anki
 brew install --cask appcleaner
+brew install --cask bartender
 brew install --cask brave-browser
 brew install --cask calibre
 brew install --cask cheatsheet
