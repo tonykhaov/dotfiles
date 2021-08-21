@@ -1,15 +1,10 @@
 Tony Khaov's dotfiles.
 
-TODO:
-
-- [ ] add shell confirmation/indication messages
-- [ ] use if to have clean scripts
-
 # Installation
 
 1. Signin with App store GUI first!
 
-1. Open your terminal and run these command lines:
+2. Open your terminal and run this command line:
 
 ```
 cd ~/Downloads/dotfiles-main && chmod u+x ./install.sh && ./install.sh
@@ -22,12 +17,12 @@ If you want to save time you can run shell scripts inside install.sh
 individually. Make sure you complete running ./setup.sh first. For alfred and
 chrome extensions, make sure
 
-2. Terminal:
+3. Terminal:
 
 - Open Terminal.app > Preferences > Import > Dracula.terminal
 - Select Dracula theme > Set as default > Change font to JetBrains Mono
 
-3. Settings
+4. Settings
 
 - Keyboards
 

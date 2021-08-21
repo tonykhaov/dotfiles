@@ -1,9 +1,11 @@
-# Install additional brew formulaes
+#! /usr/bin/env bash
+
+echo "Install additional Homebrew formulaes"
 brew install eslint prettier yarn
 brew install ffmpeg gs imagemagick youtube-dl 
 brew install trash
 
-# Install Homebrew casks
+echo "Install Homebrew casks"
 brew install --cask 1password
 # brew install --cask adobe-creative-cloud
 brew install --cask alfred

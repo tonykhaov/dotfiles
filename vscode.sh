@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-# Install VScode extensions
+echo "Install VScode extensions"
 code --install-extension bradlc.vscode-tailwindcss
 code --install-extension christian-kohler.npm-intellisense
 code --install-extension christian-kohler.path-intellisense
@@ -30,9 +30,9 @@ code --install-extension vscodevim.vim
 code --install-extension inu1255.easy-snippet
 code --install-extension usernamehw.errorlens
 
-# Import snippets, keybindings and settings to vscode
+echo "Import snippets, keybindings and settings to vscode"
 chmod u+w+r vscode
 cp -r ./vscode/* ~/Library/Application\ Support/Code/User/
 
-# Enable long press key for vscodevim
+echo "Enable long press key for vscodevim extension"
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false

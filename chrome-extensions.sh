@@ -1,3 +1,6 @@
+#! /usr/bin/env bash
+
+echo "Chrome > open extensions page"
 open https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
 open https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall
 open https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm

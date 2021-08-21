@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-# Install Mac App Store apps
+echo "Install Mac App Store apps"
 mas install 1091189122 # Bear
 mas install 1287239339 # ColorSlurp
 mas install 1493996622 # Front and Center
