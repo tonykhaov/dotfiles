@@ -3,6 +3,7 @@
 echo "Install Mac App Store apps"
 mas install 1091189122 # Bear
 mas install 1287239339 # ColorSlurp
+mas install 975937182 # Fantastical - Calendar & Tasks
 mas install 1493996622 # Front and Center
 mas install 1444383602 # GoodNotes 5
 mas install 430798174 # HazeOver • Distraction Dimmer™
