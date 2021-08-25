@@ -68,7 +68,7 @@ You need to export these things:
 - Run this script to export files inside ~/Documents
 
 ```
-echo "In which hard drive do you want to export your files?"
+echo "Where do you want to export your files?"
 ls /Volumes
 read hardDrive
 echo "Copying files from ~/Documents to /Volumes/$hardDrive"
