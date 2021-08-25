@@ -2,20 +2,16 @@ Tony Khaov's dotfiles.
 
 # Installation
 
-1. Signin with App store GUI first!
+1. Sign in with App store GUI first!
 
-2. Open your terminal and run this script:
+2. Open your terminal and run this script: (to clone the repo and start the
+   setup)
 
 ```
-cd ~/Downloads/dotfiles-main && chmod u+x ./install.sh && ./install.sh
+git clone git@github.com:tonykhaov/dotfiles.git ~/Downloads/dotfiles && cd ~/Downloads/dotfiles && chmod +x ./install.sh && ./install.sh
 ```
 
 ---
-
-I highly recommend you to not run ./install.sh as installation is synchronous.
-If you want to save time you can run shell scripts inside install.sh
-individually. Make sure you complete running ./setup.sh first. For alfred and
-chrome extensions, make sure
 
 3. Terminal:
 
@@ -60,12 +56,12 @@ You need to export these things:
 
 1. Browser bookmarks
 
-= brave://bookmarks/ > Export bookmarks
+- brave://bookmarks/ > Export bookmarks
 
 2. OneTab
 
-= chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/import-export.html > copy
-export urls > save them in Apple Notes
+- chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/import-export.html > copy
+  export urls > save them in Apple Notes
 
 3. Files inside ~/Documents
 

@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -15,15 +15,6 @@ echo "making system modifications:"
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
-
-# Set computer name
-read -p "Enter name: [tonykhaov]" name
-name=${name:-tonykhaov}
-sudo scutil --set HostName $name
-sudo scutil --set LocalHostName $name
-sudo scutil --set ComputerName $name
-dscacheutil -flushcache
-echo "Computer name changed to $name"
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "

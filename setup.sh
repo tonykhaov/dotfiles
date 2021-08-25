@@ -1,14 +1,19 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
+
+# Set computer name
+read -p "Enter name: [tonykhaov]" name
+name=${name:-tonykhaov}
+sudo scutil --set HostName $name
+sudo scutil --set LocalHostName $name
+sudo scutil --set ComputerName $name
+dscacheutil -flushcache
+echo "Computer name changed to $name"
 
 echo "Install oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "Install Homebrew"
-if ! command -v brew > /dev/null; then
-  ruby -e "$(curl --location --fail --silent --show-error https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  export PATH="/usr/local/bin:$PATH"
-  printf "export PATH=\"/usr/local/bin:$PATH\"\n" >> $HOME/.bash_profile
-fi
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "Install git, nvm, python, zsh & z"
 brew install git
@@ -18,8 +23,6 @@ brew install zsh z
 
 echo "Install node"
 [ ! -d ~/.nvm ] && mkdir ~/.nvm
-printf "export NVM_DIR="$HOME/.nvm" \n [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  \n [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"" >> $HOME/.bash_profile
-source $HOME/.bash_profile
 nvm install node
 nvm use node
 
@@ -29,6 +32,7 @@ brew install --cask font-jetbrains-mono
 
 echo "Import zsh config, vim config & gitconfig"
 cp ./.zshrc ~/.zshrc
+echo `export ZSH="/Users/$name/.oh-my-zsh"` >> ~/.zshrc
 source ~/.zshrc
 cp .vimrc ~/.vimrc
 cp ./.gitconfig ~/.gitconfig

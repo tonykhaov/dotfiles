@@ -1,9 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/tonykhaov/.oh-my-zsh"
-
 export LC_CTYPE="en_US.UTF-8"
 
 # NVM
@@ -70,6 +67,4 @@ ssh-add -A 2>/dev/null;
 # export LANG=en_US.UTF-8
 
 # ALIAS
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias mergepdf="gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf"
