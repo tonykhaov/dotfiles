@@ -48,6 +48,9 @@ echo "Import youtube-dl config"
 [ ! -d ~/.config/youtube-dl ] && mkdir ~/.config/youtube-dl
 cp ./youtube-dl/config ~/.config/youtube-dl
 
+echo "Install npm-check-updates"
+yarn global add npm-check-updates
+
 echo "Generating a new SSH key for GitHub"
 ssh-keygen -t ed25519 -C "tony.khaov@gmail.com" -f ~/.ssh/id_ed25519
 eval "$(ssh-agent -s)"
