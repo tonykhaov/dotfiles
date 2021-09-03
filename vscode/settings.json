@@ -19,6 +19,8 @@
   "editor.renderWhitespace": "boundary",
   "editor.glyphMargin": false,
   "editor.folding": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.suggest.preview": true,
   "workbench.colorTheme": "GitHub Dark",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.wrapTabs": true,
@@ -142,5 +144,6 @@
     "**/.build": true,
     "**/.gh-pages": true
   },
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "githubPullRequests.fileListLayout": "tree"
 }
