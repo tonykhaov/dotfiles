@@ -1,7 +1,7 @@
 {
   "console.log": {
     "prefix": "clg",
-    "body": "console.log(${1:'here'})$0"
+    "body": "console.log(${1:'blah'})$0"
   },
   "console.log('var', var)": {
     "prefix": "vlg",
@@ -90,24 +90,58 @@
   },
   "React Component": {
     "prefix": "rc",
-    "body": ["const Component = () => {", " return (", "   <>", "     $0", "   </>", " )", "}"]
+    "body": [
+      "const Component = () => {",
+      " return (",
+      "   <>",
+      "     $0",
+      "   </>",
+      " )",
+      "}"
+    ]
+  },
+  "useState": {
+    "prefix": "us",
+    "body": [
+      "const [${1}, set${1/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}] = useState(${2:initial${1/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}})$0"
+    ]
   },
   "React.useState": {
-    "prefix": "us",
+    "prefix": "rus",
     "body": [
       "const [${1}, set${1/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}] = React.useState(${2:initial${1/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}})$0"
     ]
   },
-  "React.useEffect": {
+  "useEffect": {
     "prefix": "uf",
+    "body": ["useEffect(() => {", "  $0", "}, [])"]
+  },
+  "React.useEffect": {
+    "prefix": "ruf",
     "body": ["React.useEffect(() => {", "  $0", "}, [])"]
   },
-  "React.useReducer": {
+  "useReducer": {
     "prefix": "ur",
-    "body": ["const [state, dispatch] = React.useReducer(${1:someReducer}, {", "  $0", "})"]
+    "body": [
+      "const [state, dispatch] = useReducer(${1:someReducer}, {",
+      "  $0",
+      "})"
+    ]
+  },
+  "React.useReducer": {
+    "prefix": "rur",
+    "body": [
+      "const [state, dispatch] = React.useReducer(${1:someReducer}, {",
+      "  $0",
+      "})"
+    ]
+  },
+  "useRef": {
+    "prefix": "urf",
+    "body": ["const ${1:someRef} = useRef($2)$0"]
   },
   "React.useRef": {
-    "prefix": "urf",
+    "prefix": "rurf",
     "body": ["const ${1:someRef} = React.useRef($2)$0"]
   },
   "Jest test": {
