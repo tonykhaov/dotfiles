@@ -35,7 +35,7 @@
   "javascript.suggest.autoImports": true,
   "javascript.validate.enable": false,
   "terminal.integrated.scrollback": 10000,
-  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.tabs.enabled": true,
   "debug.javascript.codelens.npmScripts": "never",
   "breadcrumbs.enabled": true,
   "explorer.openEditors.visible": 0,
