@@ -51,6 +51,7 @@
   "npm.runSilent": true,
   "npm.packageManager": "npm",
   "atomKeymap.promptV3Features": true,
+  "security.workspace.trust.banner": "never",
   "prettier.printWidth": 80,
   "prettier.proseWrap": "always",
   "prettier.semi": false,
