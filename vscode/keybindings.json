@@ -88,5 +88,6 @@
     "key": "enter",
     "command": "-renameFile",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-  }
+  },
+  { "key": "ctrl+g", "command": "workbench.action.gotoLine" }
 ]
