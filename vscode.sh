@@ -32,7 +32,7 @@ code --install-extension ms-vsliveshare.vsliveshare
 
 echo "Import snippets, keybindings and settings to vscode"
 chmod u+w+r vscode
-cp -r ./vscode/* ~/Library/Application\ Support/Code/User/
+cp -r -f ./vscode/* ~/Library/Application\ Support/Code/User/
 
 echo "Enable long press key for vscodevim extension"
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
