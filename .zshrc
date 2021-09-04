@@ -3,11 +3,6 @@
 
 export LC_CTYPE="en_US.UTF-8"
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
 ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -19,7 +14,7 @@ ZSH_THEME="agnoster"
 
 DISABLE_AUTO_UPDATE="false"
 DISABLE_UPDATE_PROMPT="true" # AUTO UPDATE
-export UPDATE_ZSH_DAYS=7
+export UPDATE_ZSH_DAYS=3
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS=true
@@ -54,10 +49,10 @@ ZSH_DISABLE_COMPFIX="true"
 # PLUGINS
 plugins=(z git)
 
-source $ZSH/oh-my-zsh.sh
-
-# For ssh keys to persist
-ssh-add -A 2>/dev/null;
+# NVM
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # User configuration
 
@@ -66,5 +61,14 @@ ssh-add -A 2>/dev/null;
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# ALIAS
+# ALIASES
+alias nrs="npm run start"
+alias nrd="npm run dev"
+alias nrt="npm run test"
+alias nrtw="npm run test:watch"
+
 alias mergepdf="gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf"
+
+# Path to your oh-my-zsh installation.
+export ZSH="${HOME}/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
