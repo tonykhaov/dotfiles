@@ -17,7 +17,7 @@ install_ohmyzsh_and_homebrew() {
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 }
 
-install_essential_brew_dependencies() {
+install_main_brew_dependencies() {
   echo "Install git, nvm, python, zsh & z"
   brew install git
   brew install nvm
@@ -47,6 +47,10 @@ import_zsh_vim_git_configs() {
   cp -f .gitconfig ~/.gitconfig
 }
 
+install_zsh_autosuggestions() {
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  source ~/.zshrc
+}
 
 import_stock_and_lab_folders() {
   mkdir -p ~/Documents/Coding
@@ -81,10 +85,11 @@ generate_ssh_key() {
 
 main() {
   set_computer_name
-  install_essential_brew_dependencies
+  install_main_brew_dependencies
   install_node_nvm
   install_jetbrains_font
   import_zsh_vim_git_configs
+  install_zsh_autosuggestions
   import_stock_and_lab_folders
   import_youtubedl_config
   install_npm_check_updates
