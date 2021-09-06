@@ -29,6 +29,7 @@ code --install-extension vscodevim.vim
 code --install-extension inu1255.easy-snippet
 code --install-extension usernamehw.errorlens
 code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension denoland.vscode-deno
 
 echo "Import snippets, keybindings and settings to vscode"
 chmod u+w+r vscode
