@@ -134,8 +134,8 @@ defaults write com.apple.finder DisableAllAnimations -bool true
 
 # Set Desktop as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
-defaults write com.apple.finder NewWindowTarget -string "PfDe"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+defaults write com.apple.finder NewWindowTarget -string "PfLo"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Downloads/"
 
 # Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
@@ -427,13 +427,13 @@ defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 # defaults write com.apple.mail DisableSendAnimations -bool true
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+# defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 # Add the keyboard shortcut ⌘ + Enter to send an email in Mail.app
 # defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\U21a9"
 
 # Display emails in threaded mode, sorted by date (oldest at the top)
-defaults write com.apple.mail DraftsViewerAttributes -dict-add "DisplayInThreadedMode" -string "yes"
+# defaults write com.apple.mail DraftsViewerAttributes -dict-add "DisplayInThreadedMode" -string "yes"
 # defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortedDescending" -string "yes"
 # defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -string "received-date"
 
@@ -561,7 +561,7 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 # defaults write com.apple.DiskUtility advanced-image-options -bool true
 
 # Auto-play videos when opened with QuickTime Player
-defaults write com.apple.QuickTimePlayerX MGPlayMovieOnOpen -bool true
+# defaults write com.apple.QuickTimePlayerX MGPlayMovieOnOpen -bool true
 
 ###############################################################################
 # Mac App Store                                                               #
