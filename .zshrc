@@ -47,7 +47,7 @@ ZSH_DISABLE_COMPFIX="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # PLUGINS
-plugins=(z git)
+plugins=(z git zsh-autosuggestions)
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -62,6 +62,8 @@ export NVM_DIR="$HOME/.nvm"
 # export LANG=en_US.UTF-8
 
 # ALIASES
+alias npi="npm init"
+alias ni="npm install"
 alias nrs="npm run start"
 alias nrd="npm run dev"
 alias nrt="npm run test"
