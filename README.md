@@ -8,7 +8,7 @@ Tony Khaov's dotfiles.
    setup)
 
 ```
-git clone git@github.com:tonykhaov/dotfiles.git ~/Downloads/dotfiles && cd ~/Downloads/dotfiles && chmod +x ./install.sh && ./install.sh
+mkdir -p ~/Documents/Coding && git clone git@github.com:tonykhaov/dotfiles.git ~/Documents/Coding/dotfiles && cd ~/Documents/Coding/dotfiles && chmod +x ./install.sh && ./install.sh
 ```
 
 ---

@@ -34,7 +34,15 @@ code --install-extension wayou.vscode-todo-highlight
 
 echo "Import snippets, keybindings and settings to vscode"
 chmod u+w+r vscode
-cp -r -f ./vscode/* ~/Library/Application\ Support/Code/User/
+
+rm -rf ~/Library/Application\ Support/Code/User/keybindings.json
+ln -sf ~/Documents/Coding/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+
+rm -rf ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/Documents/Coding/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+
+rm -rf ~/Library/Application\ Support/Code/User/snippet
+ln -sf ~/Documents/Coding/dotfiles/vscode/snippet ~/Library/Application\ Support/Code/User/snippet
 
 echo "Enable long press key for vscodevim extension"
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false

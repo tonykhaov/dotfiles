@@ -39,12 +39,16 @@ install_jetbrains_font() {
 }
 
 import_zsh_vim_git_configs() {
-  echo "Import zsh config, vim config & gitconfig"
-  cp -f .zshrc ~/.zshrc
-  echo `export ZSH="/Users/$name/.oh-my-zsh"` >> ~/.zshrc
+  echo "Import zsh config"
+  rm -rf ~/.zshrc
+  ln -s ~/Documents/Coding/dotfiles/.zshrc ~/.zshrc
+  echo "Import vim config"
+  rm -rf ~/.vimrc
+  ln -s ~/Documents/Coding/dotfiles/.vimrc ~/.vimrc
+  echo "Import git config"
+  rm -rf ~/.gitconfig
+  ln -s ~/Documents/Coding/dotfiles/.gitconfig ~/.gitconfig
   source ~/.zshrc
-  cp -f .vimrc ~/.vimrc
-  cp -f .gitconfig ~/.gitconfig
 }
 
 install_zsh_autosuggestions() {
@@ -53,17 +57,17 @@ install_zsh_autosuggestions() {
 }
 
 import_stock_and_lab_folders() {
-  mkdir -p ~/Documents/Coding
-  echo "Import Stock dir inside ~/Documents/Coding"
-  cp -r ./Lab ~/Documents/Coding
   echo "Import Lab dir inside ~/Documents"
-  cp -r ./Stock ~/Documents
+  ln -s ~/Documents/Coding/dotfiles/Lab ~/Documents/Coding/Lab
+  echo "Import Stock dir inside ~/Documents/Coding"
+  ln -s ~/Documents/Coding/dotfiles/Stock ~/Documents/Stock
 }
 
 
 import_youtubedl_config() {
   echo "Import youtube-dl config"
-  mkdir -p ~/.config && cp -r ./youtube-dl ~/.config
+  mkdir -p ~/.config 
+  ln -s ~/Documents/Coding/dotfiles/youtube-dl ~/.config/youtube-dl
 }
 
 install_npm_check_updates() {
