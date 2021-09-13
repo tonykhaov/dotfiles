@@ -62,15 +62,3 @@ You need to export these things:
 
 - chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/import-export.html > copy
   export urls > save them in Apple Notes
-
-3. Files inside ~/Documents
-
-- Run this script to export files inside ~/Documents
-
-```
-echo "Where do you want to export your files?"
-ls /Volumes
-read hardDrive
-echo "Copying files from ~/Documents to /Volumes/$hardDrive"
-cp -a ~/Documents/. /Volumes/$hardDrive/Documents
-```

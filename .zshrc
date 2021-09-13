@@ -70,6 +70,12 @@ alias nrt="npm run test"
 alias nrtw="npm run test:watch"
 
 alias mergepdf="gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf"
+alias backup="rsync --exclude='node_modules' --exclude='.next' -avzP"
+
+backup_hdd() {
+  backup ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/. /Volumes/Tony
+  backup ~/Documents/Coding /Volumes/Tony
+}
 
 # Path to your oh-my-zsh installation.
 export ZSH="${HOME}/.oh-my-zsh"
