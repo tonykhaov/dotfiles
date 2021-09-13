@@ -52,7 +52,7 @@ import_zsh_vim_git_configs() {
 }
 
 install_zsh_autosuggestions() {
-  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
   source ~/.zshrc
 }
 
@@ -79,7 +79,7 @@ install_npm_check_updates() {
 generate_ssh_key() {
   echo "Generating a new SSH key for GitHub"
   read -p "Enter git email: [tony.khaov@gmail.com]" git_email
-  git_email=${git_email:-tonykhaov}
+  git_email=${git_email:-tony.khaov@gmail.com}
   ssh-keygen -t ed25519 -C "${git_email}" -f ~/.ssh/id_ed25519
   eval "$(ssh-agent -s)"
   echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_ed25519" | tee ~/.ssh/config
