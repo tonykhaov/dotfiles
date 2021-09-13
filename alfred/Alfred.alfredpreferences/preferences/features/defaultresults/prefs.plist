@@ -9,5 +9,7 @@
 		<string>features.websearch.youtube.fallback</string>
 		<string>features.websearch.amazon.fallback</string>
 	</array>
+	<key>fallbacksMode</key>
+	<integer>1</integer>
 </dict>
 </plist>

@@ -6,9 +6,17 @@
 	<true/>
 	<key>emptytrashKeywordEnabled</key>
 	<false/>
+	<key>hideKeywordEnabled</key>
+	<false/>
+	<key>quitKeywordEnabled</key>
+	<false/>
 	<key>restartConfirm</key>
 	<true/>
 	<key>shutdownConfirm</key>
 	<true/>
+	<key>volumedownKeywordEnabled</key>
+	<false/>
+	<key>volumeupKeywordEnabled</key>
+	<false/>
 </dict>
 </plist>
