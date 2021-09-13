@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 echo "Install additional Homebrew formulaes"
-brew install eslint prettier yarn
+brew install yarn
 brew install ffmpeg gs imagemagick youtube-dl 
 brew install trash
 
@@ -14,7 +14,6 @@ brew install --cask appcleaner
 brew install --cask bartender
 brew install --cask brave-browser
 brew install --cask calibre
-brew install --cask cheatsheet
 brew install --cask discord
 brew install --cask docker
 brew install --cask dropzone
