@@ -62,13 +62,19 @@ export NVM_DIR="$HOME/.nvm"
 # export LANG=en_US.UTF-8
 
 # ALIASES
-alias npi="npm init"
 alias ni="npm install"
 alias nrs="npm run start"
 alias nrd="npm run dev"
 alias nrt="npm run test"
 alias nrtw="npm run test:watch"
 
+alias yi="yarn install"
+alias yd="yarn dev"
+alias ys="yarn start"
+alias yt="yarn test"
+alias ytw="yarn test:watch"
+
+alias ytmp4="youtube-dl -f mp4"
 alias mergepdf="gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf"
 alias backup="rsync --exclude='node_modules' --exclude='.next' -avzP"
 
