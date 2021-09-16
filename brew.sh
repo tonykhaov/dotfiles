@@ -8,6 +8,7 @@ brew install trash
 echo "Install Homebrew casks"
 brew install --cask 1password
 # brew install --cask adobe-creative-cloud
+brew install --cask aldente
 brew install --cask alfred
 brew install --cask anki
 brew install --cask appcleaner
