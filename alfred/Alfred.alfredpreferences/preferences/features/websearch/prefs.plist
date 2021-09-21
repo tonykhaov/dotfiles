@@ -37,9 +37,9 @@
 			<key>keyword</key>
 			<string>fr</string>
 			<key>text</key>
-			<string>TV5 : {query}</string>
+			<string>Larousse : {query}</string>
 			<key>url</key>
-			<string>https://langue-francaise.tv5monde.com/decouvrir/dictionnaire/e/{query}</string>
+			<string>https://www.larousse.fr/dictionnaires/francais/{query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>
