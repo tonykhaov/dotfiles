@@ -5,9 +5,12 @@ brew install yarn
 brew install ffmpeg gs imagemagick youtube-dl 
 brew install trash
 
+echo "Load third party cask drivers"
+brew tap homebrew/cask-drivers
+
 echo "Install Homebrew casks"
 brew install --cask 1password
-# brew install --cask adobe-creative-cloud
+brew install --cask adobe-creative-cloud
 brew install --cask aldente
 brew install --cask alfred
 brew install --cask anki
@@ -21,6 +24,7 @@ brew install --cask dropzone
 brew install --cask figma
 brew install --cask iina
 brew install --cask imageoptim
+brew install --cask logitech-options
 brew install --cask qbittorrent
 # brew install --cask microsoft-teams
 brew install --cask molotov
