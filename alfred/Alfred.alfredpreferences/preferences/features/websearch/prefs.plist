@@ -4,6 +4,19 @@
 <dict>
 	<key>customSites</key>
 	<dict>
+		<key>0E44B546-E22E-415E-B76C-E3315E544AF6</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>music</string>
+			<key>text</key>
+			<string>YouTube Music</string>
+			<key>url</key>
+			<string>https://music.youtube.com/</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>11C90205-E641-45D7-B41B-093F23B6958A</key>
 		<dict>
 			<key>enabled</key>

@@ -1,0 +1,1218 @@
+{
+  "data": {
+    "offers": [
+      {
+        "id": "/offers/0565e34d-d98f-4345-9689-86d2a735db63",
+        "categories": [
+          {
+            "id": "/categories/0f9e666f-21cb-4470-bb22-ee64c7faf9b2",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/6e34a8ca-258e-497f-950b-546d48826636",
+                "slug": "enchere",
+                "name": "Enchère",
+                "locale": "fr_FR",
+                "description": "Catégorie enchères"
+              },
+              {
+                "id": "/category_translations/3153cdb1-ea26-4daf-b795-4bedf3c706c8",
+                "slug": "bid",
+                "name": "Bid",
+                "locale": "en_GB",
+                "description": "Bid category"
+              }
+            ]
+          },
+          {
+            "id": "/categories/5bc8d991-6274-4379-b947-366e948ddf09",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/d88b6274-031a-4071-8076-e1d3cecb805a",
+                "slug": "prix-fixe",
+                "name": "Prix fixe",
+                "locale": "fr_FR",
+                "description": "Catégorie Prix fixes"
+              },
+              {
+                "id": "/category_translations/7ddcc081-c5c4-4a51-aaaf-02267128cf53",
+                "slug": "fixed-price",
+                "name": "Fixed price",
+                "locale": "en_GB",
+                "description": "Fixed price category"
+              }
+            ]
+          }
+        ],
+        "product": {
+          "id": "/products/a1e35f55-b573-42a0-8395-05db414dbdd9",
+          "type": "vehicle",
+          "attributeValues": [
+            {
+              "id": "/attribute_values/c7ca63c6-0cc9-4de9-a6e5-e5cf3fb730d1",
+              "file": "/file/0dc0bea4-0cff-4ab8-80a4-65673c412f57",
+              "attribute": {
+                "id": "/attributes/f8da6bdf-d967-4223-9f5f-91b8c8423ebb",
+                "name": "color",
+                "private": false,
+                "adminOnly": false,
+                "translations": [
+                  {
+                    "id": "/attribute_translations/cd28a118-9a95-487f-8e4e-93d7b78d6301",
+                    "locale": "fr_FR",
+                    "value": "Couleur",
+                    "requiredFor": ["vehicle"]
+                  },
+                  {
+                    "id": "/attribute_translations/1865a1ca-e9e5-49f0-b244-5a93062a93a5",
+                    "locale": "en_GB",
+                    "value": "Color",
+                    "requiredFor": ["vehicle"]
+                  }
+                ]
+              },
+              "translations": [
+                {
+                  "id": "/attribute_value_translations/55cbc034-92c9-46f9-8e06-0e06a396e655",
+                  "locale": "fr_FR",
+                  "value": "rouge"
+                },
+                {
+                  "id": "/attribute_value_translations/e70f4bd5-6560-4e76-9ac1-dcef8235bafa",
+                  "locale": "en_GB",
+                  "value": "red"
+                },
+                {
+                  "id": "/attribute_value_translation/11ef252e-fd80-4163-bc5b-ccb61d2d0c24",
+                  "locale": "fr_FR",
+                  "value": "bleu"
+                },
+                {
+                  "id": "/attribute_value_translations/4b07114b-6d7f-4f47-86e8-6563ec572417",
+                  "locale": "en_GB",
+                  "value": "blue"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "/offers/559aebf2-10e3-43c8-b40e-35433877e7d4",
+        "categories": [
+          {
+            "id": "/categories/baeb5158-249f-4c2d-8ea3-b1e16fca172b",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/14635071-2280-42b6-a933-a22e7fe8adfa",
+                "slug": "enchere",
+                "name": "Enchère",
+                "locale": "fr_FR",
+                "description": "Catégorie enchères"
+              },
+              {
+                "id": "/category_translations/82d0b3b7-e554-40d4-afcc-b04e78805212",
+                "slug": "bid",
+                "name": "Bid",
+                "locale": "en_GB",
+                "description": "Bid category"
+              }
+            ]
+          },
+          {
+            "id": "/categories/848e775d-4a57-48eb-a957-a649314c1527",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/659a4a60-cd6c-489b-805c-0df63949412f",
+                "slug": "prix-fixe",
+                "name": "Prix fixe",
+                "locale": "fr_FR",
+                "description": "Catégorie Prix fixes"
+              },
+              {
+                "id": "/category_translations/21ce6264-95e7-483c-9148-adad16afda49",
+                "slug": "fixed-price",
+                "name": "Fixed price",
+                "locale": "en_GB",
+                "description": "Fixed price category"
+              }
+            ]
+          }
+        ],
+        "product": {
+          "id": "/products/703766dc-7f9c-4253-8428-4d10afbbc710",
+          "type": "vehicle",
+          "attributeValues": [
+            {
+              "id": "/attribute_values/261e5696-2941-455f-9322-ca02706a6dfd",
+              "file": "/file/bbd1c2dd-6991-4c3f-a68e-8532c56ea656",
+              "attribute": {
+                "id": "/attributes/88cd71b3-1088-4ba5-bb2c-bde0bfec618d",
+                "name": "color",
+                "private": false,
+                "adminOnly": false,
+                "translations": [
+                  {
+                    "id": "/attribute_translations/813505b3-2fd7-4597-a884-e88cd58eb212",
+                    "locale": "fr_FR",
+                    "value": "Couleur",
+                    "requiredFor": ["vehicle"]
+                  },
+                  {
+                    "id": "/attribute_translations/c375df80-86ea-4c74-8e30-d191c6e3280a",
+                    "locale": "en_GB",
+                    "value": "Color",
+                    "requiredFor": ["vehicle"]
+                  }
+                ]
+              },
+              "translations": [
+                {
+                  "id": "/attribute_value_translations/f7e886cc-905e-4566-b39d-4426baff235c",
+                  "locale": "fr_FR",
+                  "value": "rouge"
+                },
+                {
+                  "id": "/attribute_value_translations/7de03909-4121-419a-a707-ae84750bb597",
+                  "locale": "en_GB",
+                  "value": "red"
+                },
+                {
+                  "id": "/attribute_value_translation/45122357-fc82-4eee-87d0-2fe1b5a7b3b6",
+                  "locale": "fr_FR",
+                  "value": "bleu"
+                },
+                {
+                  "id": "/attribute_value_translations/9161aa63-4c4d-4e8f-b120-08dfaf027cf3",
+                  "locale": "en_GB",
+                  "value": "blue"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "/offers/e26da715-ca37-4728-9191-d7b9e221b9a0",
+        "categories": [
+          {
+            "id": "/categories/d2acffcf-79cc-45e9-9838-c3c66602e92b",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/f0c906f9-75eb-4853-89e3-b5b160e2d2bd",
+                "slug": "enchere",
+                "name": "Enchère",
+                "locale": "fr_FR",
+                "description": "Catégorie enchères"
+              },
+              {
+                "id": "/category_translations/bbee7ae0-62e3-43de-b9d5-38d1457808f8",
+                "slug": "bid",
+                "name": "Bid",
+                "locale": "en_GB",
+                "description": "Bid category"
+              }
+            ]
+          },
+          {
+            "id": "/categories/3f0aa8e8-8aa5-4b5b-8cef-6a5c37886ab8",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/115039e5-2e1b-490f-a4c7-7f75366b6bc9",
+                "slug": "prix-fixe",
+                "name": "Prix fixe",
+                "locale": "fr_FR",
+                "description": "Catégorie Prix fixes"
+              },
+              {
+                "id": "/category_translations/d4699b04-07de-4a15-a0fa-276f31797db0",
+                "slug": "fixed-price",
+                "name": "Fixed price",
+                "locale": "en_GB",
+                "description": "Fixed price category"
+              }
+            ]
+          }
+        ],
+        "product": {
+          "id": "/products/2cd50280-3db0-40bc-9115-c10674f46a2a",
+          "type": "vehicle",
+          "attributeValues": [
+            {
+              "id": "/attribute_values/f35a9c91-1f6a-4ca9-9cd4-234d9184bd37",
+              "file": "/file/80b65a3a-0fa2-4167-b625-de8c1936e689",
+              "attribute": {
+                "id": "/attributes/802bd0a1-4c1f-4039-80b6-5b48ed316bd1",
+                "name": "color",
+                "private": false,
+                "adminOnly": false,
+                "translations": [
+                  {
+                    "id": "/attribute_translations/6f7d7744-f94e-4909-b76b-0e38ad4ca3c3",
+                    "locale": "fr_FR",
+                    "value": "Couleur",
+                    "requiredFor": ["vehicle"]
+                  },
+                  {
+                    "id": "/attribute_translations/e34b2eb3-8da0-4d76-a1dc-4f1ef3ba1cd2",
+                    "locale": "en_GB",
+                    "value": "Color",
+                    "requiredFor": ["vehicle"]
+                  }
+                ]
+              },
+              "translations": [
+                {
+                  "id": "/attribute_value_translations/253b55ed-5236-417c-93ad-570084d8b94b",
+                  "locale": "fr_FR",
+                  "value": "rouge"
+                },
+                {
+                  "id": "/attribute_value_translations/3415c1e4-61fd-44d7-9a8e-43418be60ea9",
+                  "locale": "en_GB",
+                  "value": "red"
+                },
+                {
+                  "id": "/attribute_value_translation/bf441a7e-d39c-47e8-93f6-583a08121c12",
+                  "locale": "fr_FR",
+                  "value": "bleu"
+                },
+                {
+                  "id": "/attribute_value_translations/821eb9dd-3393-427d-ae7b-aef57525f940",
+                  "locale": "en_GB",
+                  "value": "blue"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "/offers/45b2a06b-4616-4ee6-9956-f454e02764dc",
+        "categories": [
+          {
+            "id": "/categories/527d8ce1-2341-498e-8429-cb3852109663",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/e375c9f8-45c2-46bd-92e9-add4d49866d3",
+                "slug": "enchere",
+                "name": "Enchère",
+                "locale": "fr_FR",
+                "description": "Catégorie enchères"
+              },
+              {
+                "id": "/category_translations/767a4f7d-6e5c-4750-b249-4fb033407f16",
+                "slug": "bid",
+                "name": "Bid",
+                "locale": "en_GB",
+                "description": "Bid category"
+              }
+            ]
+          },
+          {
+            "id": "/categories/4d2f1ef4-b26c-41c2-9d58-2ac7e0879316",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/31e9cbd0-a602-4480-9dd4-e19faed2efc3",
+                "slug": "prix-fixe",
+                "name": "Prix fixe",
+                "locale": "fr_FR",
+                "description": "Catégorie Prix fixes"
+              },
+              {
+                "id": "/category_translations/e467e53a-a41b-4daf-8b1a-aa108ceb154b",
+                "slug": "fixed-price",
+                "name": "Fixed price",
+                "locale": "en_GB",
+                "description": "Fixed price category"
+              }
+            ]
+          }
+        ],
+        "product": {
+          "id": "/products/96ed82db-cc06-4dd3-a98d-2797380c21e6",
+          "type": "vehicle",
+          "attributeValues": [
+            {
+              "id": "/attribute_values/764373e6-0d76-4fee-b867-cc4ea63c05da",
+              "file": "/file/3d201c2c-98fe-4370-b799-0405d78a0d70",
+              "attribute": {
+                "id": "/attributes/10cff137-00a6-464c-8f13-bf5bae8ceb94",
+                "name": "color",
+                "private": false,
+                "adminOnly": false,
+                "translations": [
+                  {
+                    "id": "/attribute_translations/e92d64f4-4f51-445f-ae0c-50633bd55df7",
+                    "locale": "fr_FR",
+                    "value": "Couleur",
+                    "requiredFor": ["vehicle"]
+                  },
+                  {
+                    "id": "/attribute_translations/a70e498b-8d72-4635-9114-9e1fbc4392bb",
+                    "locale": "en_GB",
+                    "value": "Color",
+                    "requiredFor": ["vehicle"]
+                  }
+                ]
+              },
+              "translations": [
+                {
+                  "id": "/attribute_value_translations/e95ac151-27d7-4876-b1fe-72a0625deaed",
+                  "locale": "fr_FR",
+                  "value": "rouge"
+                },
+                {
+                  "id": "/attribute_value_translations/5a51bc44-1046-4df0-a019-352570d5a4a7",
+                  "locale": "en_GB",
+                  "value": "red"
+                },
+                {
+                  "id": "/attribute_value_translation/6bc227dd-3b70-4471-9906-c5f3daf4aa62",
+                  "locale": "fr_FR",
+                  "value": "bleu"
+                },
+                {
+                  "id": "/attribute_value_translations/38f66a38-6c3c-4a33-953f-1e42597943c4",
+                  "locale": "en_GB",
+                  "value": "blue"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "/offers/4e0c7e2e-8792-4977-b8a4-6e45cd0f1adc",
+        "categories": [
+          {
+            "id": "/categories/d6dceff6-8d1d-4527-a9a4-978c2f7358a4",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/cc6af851-7423-4d63-af76-78e23e915898",
+                "slug": "enchere",
+                "name": "Enchère",
+                "locale": "fr_FR",
+                "description": "Catégorie enchères"
+              },
+              {
+                "id": "/category_translations/c76b9ada-8aa7-43e2-a928-8a51218da185",
+                "slug": "bid",
+                "name": "Bid",
+                "locale": "en_GB",
+                "description": "Bid category"
+              }
+            ]
+          },
+          {
+            "id": "/categories/2a6ff1f3-a849-43a0-abd5-61c5482d60a6",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/949dfa9e-e3ad-4d4f-a23d-db160aa678fc",
+                "slug": "prix-fixe",
+                "name": "Prix fixe",
+                "locale": "fr_FR",
+                "description": "Catégorie Prix fixes"
+              },
+              {
+                "id": "/category_translations/73020d33-98df-4ab0-8d99-28d644b0d137",
+                "slug": "fixed-price",
+                "name": "Fixed price",
+                "locale": "en_GB",
+                "description": "Fixed price category"
+              }
+            ]
+          }
+        ],
+        "product": {
+          "id": "/products/df86b75a-c9b9-4630-b96d-df16226e7154",
+          "type": "vehicle",
+          "attributeValues": [
+            {
+              "id": "/attribute_values/1cb0d6d3-5fa0-4ec8-bd05-61bb9c5513a3",
+              "file": "/file/9edd2fe6-c182-4a5e-b69f-8cc0e0153de3",
+              "attribute": {
+                "id": "/attributes/972b8201-f7cb-4bc8-b39a-82b2361dcbed",
+                "name": "color",
+                "private": false,
+                "adminOnly": false,
+                "translations": [
+                  {
+                    "id": "/attribute_translations/5994f71a-4a15-48dc-b1a5-dd145c68a17e",
+                    "locale": "fr_FR",
+                    "value": "Couleur",
+                    "requiredFor": ["vehicle"]
+                  },
+                  {
+                    "id": "/attribute_translations/1b654a95-899c-4636-ae18-826bf75347eb",
+                    "locale": "en_GB",
+                    "value": "Color",
+                    "requiredFor": ["vehicle"]
+                  }
+                ]
+              },
+              "translations": [
+                {
+                  "id": "/attribute_value_translations/0e544c91-fa3d-4ac7-b69c-b3a23ccc0dd9",
+                  "locale": "fr_FR",
+                  "value": "rouge"
+                },
+                {
+                  "id": "/attribute_value_translations/14272431-52c4-4fee-97bd-b39fc4a8d6fd",
+                  "locale": "en_GB",
+                  "value": "red"
+                },
+                {
+                  "id": "/attribute_value_translation/c132cc91-d193-4628-9f7f-86f1b2af4bc2",
+                  "locale": "fr_FR",
+                  "value": "bleu"
+                },
+                {
+                  "id": "/attribute_value_translations/b45a7f2f-8684-4baa-b7cf-e3ebfc40eefe",
+                  "locale": "en_GB",
+                  "value": "blue"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "/offers/67364f82-3024-454f-b7bc-1b79063c8245",
+        "categories": [
+          {
+            "id": "/categories/5f4dcb4e-f2c9-4613-b905-aa5e3203d813",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/080afde3-5766-46f0-b63f-114fd31b4d9d",
+                "slug": "enchere",
+                "name": "Enchère",
+                "locale": "fr_FR",
+                "description": "Catégorie enchères"
+              },
+              {
+                "id": "/category_translations/ec4dd150-c075-4551-a81c-7bbb149ae090",
+                "slug": "bid",
+                "name": "Bid",
+                "locale": "en_GB",
+                "description": "Bid category"
+              }
+            ]
+          },
+          {
+            "id": "/categories/fafecc18-989b-4892-b829-6bae1228e6a4",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/9fe44213-4aeb-449c-8371-2b33ea0157d4",
+                "slug": "prix-fixe",
+                "name": "Prix fixe",
+                "locale": "fr_FR",
+                "description": "Catégorie Prix fixes"
+              },
+              {
+                "id": "/category_translations/31e32fdb-ded7-44eb-a695-5fbcd11d4621",
+                "slug": "fixed-price",
+                "name": "Fixed price",
+                "locale": "en_GB",
+                "description": "Fixed price category"
+              }
+            ]
+          }
+        ],
+        "product": {
+          "id": "/products/1d6a0019-d514-4759-8d2b-39f03bdace76",
+          "type": "vehicle",
+          "attributeValues": [
+            {
+              "id": "/attribute_values/85854690-4d41-4a2b-bb85-c00582449785",
+              "file": "/file/c05825dc-a8a7-4e2f-b604-ee2adceaa7e2",
+              "attribute": {
+                "id": "/attributes/a0921342-7ec9-4bc2-9288-079658d5b79a",
+                "name": "color",
+                "private": false,
+                "adminOnly": false,
+                "translations": [
+                  {
+                    "id": "/attribute_translations/c90123d8-2a64-43e8-834c-832553cb2509",
+                    "locale": "fr_FR",
+                    "value": "Couleur",
+                    "requiredFor": ["vehicle"]
+                  },
+                  {
+                    "id": "/attribute_translations/e3cb0964-9835-461f-81e2-fd89ce1e3343",
+                    "locale": "en_GB",
+                    "value": "Color",
+                    "requiredFor": ["vehicle"]
+                  }
+                ]
+              },
+              "translations": [
+                {
+                  "id": "/attribute_value_translations/b4eefa75-3111-4cf2-b1c6-9eb1baafe5b6",
+                  "locale": "fr_FR",
+                  "value": "rouge"
+                },
+                {
+                  "id": "/attribute_value_translations/592b61bc-6ccf-4146-810b-533f29516947",
+                  "locale": "en_GB",
+                  "value": "red"
+                },
+                {
+                  "id": "/attribute_value_translation/c9f4b1d8-92c6-475b-908d-5a012f7f9d99",
+                  "locale": "fr_FR",
+                  "value": "bleu"
+                },
+                {
+                  "id": "/attribute_value_translations/bd469a5f-52d9-4e83-808a-82b835458968",
+                  "locale": "en_GB",
+                  "value": "blue"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "/offers/259d772d-61a3-4f02-a437-f6b574fb9dff",
+        "categories": [
+          {
+            "id": "/categories/abfadb89-ba1c-4c48-8b85-454a56a7ac46",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/15619679-4dd6-478e-a5a4-02ce88fba9ee",
+                "slug": "enchere",
+                "name": "Enchère",
+                "locale": "fr_FR",
+                "description": "Catégorie enchères"
+              },
+              {
+                "id": "/category_translations/ba194cd4-6140-4ec1-8998-397c9b6d6618",
+                "slug": "bid",
+                "name": "Bid",
+                "locale": "en_GB",
+                "description": "Bid category"
+              }
+            ]
+          },
+          {
+            "id": "/categories/fa3c8334-5920-441c-8241-36831417fa21",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/fa3feea0-6e8e-4c41-a2aa-e3d114a9b101",
+                "slug": "prix-fixe",
+                "name": "Prix fixe",
+                "locale": "fr_FR",
+                "description": "Catégorie Prix fixes"
+              },
+              {
+                "id": "/category_translations/a7b3e2fd-5cf2-482b-866d-ad999f75928f",
+                "slug": "fixed-price",
+                "name": "Fixed price",
+                "locale": "en_GB",
+                "description": "Fixed price category"
+              }
+            ]
+          }
+        ],
+        "product": {
+          "id": "/products/ccdd5ab1-9937-4c9c-9b10-d4b6fedcee0f",
+          "type": "vehicle",
+          "attributeValues": [
+            {
+              "id": "/attribute_values/3a48684d-0f49-4300-af70-23aa5ba7aad8",
+              "file": "/file/7ea4ea4e-9cf1-46f6-8fa6-0b612f03ff2d",
+              "attribute": {
+                "id": "/attributes/c7daf20b-04eb-4d8e-a604-c318a68e7437",
+                "name": "color",
+                "private": false,
+                "adminOnly": false,
+                "translations": [
+                  {
+                    "id": "/attribute_translations/18494f9e-bae8-4551-9107-a38d87f1cbf7",
+                    "locale": "fr_FR",
+                    "value": "Couleur",
+                    "requiredFor": ["vehicle"]
+                  },
+                  {
+                    "id": "/attribute_translations/5f6dbaf6-b5ad-4e03-b9d5-72253d79b726",
+                    "locale": "en_GB",
+                    "value": "Color",
+                    "requiredFor": ["vehicle"]
+                  }
+                ]
+              },
+              "translations": [
+                {
+                  "id": "/attribute_value_translations/5021119b-a853-41b0-94a6-6eb304e0e6ae",
+                  "locale": "fr_FR",
+                  "value": "rouge"
+                },
+                {
+                  "id": "/attribute_value_translations/1bb374c7-a9df-4ede-b22c-bf7f6f3a6807",
+                  "locale": "en_GB",
+                  "value": "red"
+                },
+                {
+                  "id": "/attribute_value_translation/1cb75869-a707-4b42-b881-83f313ed3126",
+                  "locale": "fr_FR",
+                  "value": "bleu"
+                },
+                {
+                  "id": "/attribute_value_translations/ff3b94c3-94bd-4cb8-ac58-53f35389b8fd",
+                  "locale": "en_GB",
+                  "value": "blue"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "/offers/8eab3c14-35e8-4566-9995-ceec3bdf3752",
+        "categories": [
+          {
+            "id": "/categories/19523606-a9a7-4126-921d-b4bdfb5e5222",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/db74ffad-262e-4e16-b8b8-1e94542f95b1",
+                "slug": "enchere",
+                "name": "Enchère",
+                "locale": "fr_FR",
+                "description": "Catégorie enchères"
+              },
+              {
+                "id": "/category_translations/e5e26546-4514-47bb-93a8-586234340d33",
+                "slug": "bid",
+                "name": "Bid",
+                "locale": "en_GB",
+                "description": "Bid category"
+              }
+            ]
+          },
+          {
+            "id": "/categories/b528091f-f229-4c11-9ca9-3bb2903aabdb",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/b805feb8-e239-4f37-bca8-700f3776beda",
+                "slug": "prix-fixe",
+                "name": "Prix fixe",
+                "locale": "fr_FR",
+                "description": "Catégorie Prix fixes"
+              },
+              {
+                "id": "/category_translations/7daa2803-4009-4f6d-80e8-8aceb3dfa332",
+                "slug": "fixed-price",
+                "name": "Fixed price",
+                "locale": "en_GB",
+                "description": "Fixed price category"
+              }
+            ]
+          }
+        ],
+        "product": {
+          "id": "/products/f629fd07-d617-4d02-a1e2-80ac0aa5adf3",
+          "type": "vehicle",
+          "attributeValues": [
+            {
+              "id": "/attribute_values/a5425194-3989-4f18-8dd3-d0b403ad68b6",
+              "file": "/file/2c4d4ed1-2bdc-41d8-95d1-d8006bd5ddfc",
+              "attribute": {
+                "id": "/attributes/b8e52778-bb79-486f-b1d1-9ca9a8b1bee5",
+                "name": "color",
+                "private": false,
+                "adminOnly": false,
+                "translations": [
+                  {
+                    "id": "/attribute_translations/5b4ae471-fc85-4f07-b3da-7e77e6e137f1",
+                    "locale": "fr_FR",
+                    "value": "Couleur",
+                    "requiredFor": ["vehicle"]
+                  },
+                  {
+                    "id": "/attribute_translations/40096717-92a4-4139-8ac3-14bfbd46884f",
+                    "locale": "en_GB",
+                    "value": "Color",
+                    "requiredFor": ["vehicle"]
+                  }
+                ]
+              },
+              "translations": [
+                {
+                  "id": "/attribute_value_translations/04732135-47de-45c6-a197-a22328c94bcb",
+                  "locale": "fr_FR",
+                  "value": "rouge"
+                },
+                {
+                  "id": "/attribute_value_translations/ffeb6972-9147-4882-b5c6-d28041cdead3",
+                  "locale": "en_GB",
+                  "value": "red"
+                },
+                {
+                  "id": "/attribute_value_translation/89839b78-f447-4ca8-b72a-1911302201f0",
+                  "locale": "fr_FR",
+                  "value": "bleu"
+                },
+                {
+                  "id": "/attribute_value_translations/475e1e88-b5f9-48ff-8385-8fbf6d5eaa8b",
+                  "locale": "en_GB",
+                  "value": "blue"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "/offers/786f454c-3897-47cc-9a9a-ff422702edd4",
+        "categories": [
+          {
+            "id": "/categories/eb099ea3-c99e-4825-b347-1decbc84b81d",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/f9172508-2530-415a-9fa2-daff2847c1e8",
+                "slug": "enchere",
+                "name": "Enchère",
+                "locale": "fr_FR",
+                "description": "Catégorie enchères"
+              },
+              {
+                "id": "/category_translations/6975ef3a-0a21-48e0-8ddb-db86eebcdb17",
+                "slug": "bid",
+                "name": "Bid",
+                "locale": "en_GB",
+                "description": "Bid category"
+              }
+            ]
+          },
+          {
+            "id": "/categories/7b978410-18b9-4089-b2e4-9b58bab9bccc",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/c39355e4-6066-4923-b13c-ebe334b3593e",
+                "slug": "prix-fixe",
+                "name": "Prix fixe",
+                "locale": "fr_FR",
+                "description": "Catégorie Prix fixes"
+              },
+              {
+                "id": "/category_translations/29f80872-6ade-4c04-bb53-6848e0eeeff5",
+                "slug": "fixed-price",
+                "name": "Fixed price",
+                "locale": "en_GB",
+                "description": "Fixed price category"
+              }
+            ]
+          }
+        ],
+        "product": {
+          "id": "/products/84013e39-c0db-4a06-9cf1-50052f39271e",
+          "type": "vehicle",
+          "attributeValues": [
+            {
+              "id": "/attribute_values/1a24ae56-7535-4cb4-adb8-af4efcb36f4e",
+              "file": "/file/57d7e0a5-2b01-47f3-b361-d6985c126aeb",
+              "attribute": {
+                "id": "/attributes/9bc91324-8b06-4acc-84de-72322ee028de",
+                "name": "color",
+                "private": false,
+                "adminOnly": false,
+                "translations": [
+                  {
+                    "id": "/attribute_translations/1b42f604-ae12-42b7-9de2-75f8b6499176",
+                    "locale": "fr_FR",
+                    "value": "Couleur",
+                    "requiredFor": ["vehicle"]
+                  },
+                  {
+                    "id": "/attribute_translations/f355c3e8-c0f0-41c8-b68e-17daf6f6186e",
+                    "locale": "en_GB",
+                    "value": "Color",
+                    "requiredFor": ["vehicle"]
+                  }
+                ]
+              },
+              "translations": [
+                {
+                  "id": "/attribute_value_translations/6458c7da-6b98-43a1-9b63-3b35b6a8357e",
+                  "locale": "fr_FR",
+                  "value": "rouge"
+                },
+                {
+                  "id": "/attribute_value_translations/54499306-6d0d-4ff0-9089-aa1df9e4e2e6",
+                  "locale": "en_GB",
+                  "value": "red"
+                },
+                {
+                  "id": "/attribute_value_translation/6a4cf0b8-72c1-4b14-bdfa-6e08ebeee898",
+                  "locale": "fr_FR",
+                  "value": "bleu"
+                },
+                {
+                  "id": "/attribute_value_translations/3b9814b9-6740-4c61-9ae2-a28b685057b7",
+                  "locale": "en_GB",
+                  "value": "blue"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "/offers/0fc9933e-b557-4a1e-8221-9b9ea72995e6",
+        "categories": [
+          {
+            "id": "/categories/c5ff7d61-7241-4f6c-9067-cf413a0adc16",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/801017ae-06bd-4d96-9ba9-519c6e5182cd",
+                "slug": "enchere",
+                "name": "Enchère",
+                "locale": "fr_FR",
+                "description": "Catégorie enchères"
+              },
+              {
+                "id": "/category_translations/48887ab2-8a93-4eda-8ba6-036c2e254bb6",
+                "slug": "bid",
+                "name": "Bid",
+                "locale": "en_GB",
+                "description": "Bid category"
+              }
+            ]
+          },
+          {
+            "id": "/categories/2a75bedb-0eca-4af2-9a3c-71c38f713dc8",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/b2f3f8a0-11f7-47f1-9172-7183c3798047",
+                "slug": "prix-fixe",
+                "name": "Prix fixe",
+                "locale": "fr_FR",
+                "description": "Catégorie Prix fixes"
+              },
+              {
+                "id": "/category_translations/03c63e3a-f5a0-48ae-b5d2-b302a6dc2356",
+                "slug": "fixed-price",
+                "name": "Fixed price",
+                "locale": "en_GB",
+                "description": "Fixed price category"
+              }
+            ]
+          }
+        ],
+        "product": {
+          "id": "/products/d529014a-3ce5-4bed-b1b2-814f5b471c87",
+          "type": "vehicle",
+          "attributeValues": [
+            {
+              "id": "/attribute_values/c0511501-5016-4037-a09a-030006150664",
+              "file": "/file/4c451e9b-ad2e-4a7a-a400-3315ccbd4292",
+              "attribute": {
+                "id": "/attributes/3a805e4d-4a2c-4a08-aa44-97175b6064c1",
+                "name": "color",
+                "private": false,
+                "adminOnly": false,
+                "translations": [
+                  {
+                    "id": "/attribute_translations/70ad0264-d6ac-4424-9afa-7289618c3d5d",
+                    "locale": "fr_FR",
+                    "value": "Couleur",
+                    "requiredFor": ["vehicle"]
+                  },
+                  {
+                    "id": "/attribute_translations/5a1b6b89-2d8f-4145-b363-4cb5bf67aa43",
+                    "locale": "en_GB",
+                    "value": "Color",
+                    "requiredFor": ["vehicle"]
+                  }
+                ]
+              },
+              "translations": [
+                {
+                  "id": "/attribute_value_translations/18ec991d-2fc8-43fa-8051-bc34a1c72387",
+                  "locale": "fr_FR",
+                  "value": "rouge"
+                },
+                {
+                  "id": "/attribute_value_translations/2275198e-d55d-445c-91e9-6f631da001d8",
+                  "locale": "en_GB",
+                  "value": "red"
+                },
+                {
+                  "id": "/attribute_value_translation/92db247c-3680-4932-b013-de14c31f4384",
+                  "locale": "fr_FR",
+                  "value": "bleu"
+                },
+                {
+                  "id": "/attribute_value_translations/4b978612-5601-4db3-aa67-420aec917f0b",
+                  "locale": "en_GB",
+                  "value": "blue"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "/offers/da94b81e-bb4e-4c68-8e86-48096680073a",
+        "categories": [
+          {
+            "id": "/categories/3f6a26c5-6f70-41da-88f3-73a445c9689d",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/ba724ffb-4fe3-480b-8d29-5f98daefada3",
+                "slug": "enchere",
+                "name": "Enchère",
+                "locale": "fr_FR",
+                "description": "Catégorie enchères"
+              },
+              {
+                "id": "/category_translations/1632d640-c8b7-445e-b90a-3855d50f4285",
+                "slug": "bid",
+                "name": "Bid",
+                "locale": "en_GB",
+                "description": "Bid category"
+              }
+            ]
+          },
+          {
+            "id": "/categories/24c0af19-d0f8-46c6-8086-b69a6d634b0a",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/fc08645b-393f-4cdf-9529-619503f146bd",
+                "slug": "prix-fixe",
+                "name": "Prix fixe",
+                "locale": "fr_FR",
+                "description": "Catégorie Prix fixes"
+              },
+              {
+                "id": "/category_translations/e3e54c7a-042e-4725-ac51-fad07ad4ebcb",
+                "slug": "fixed-price",
+                "name": "Fixed price",
+                "locale": "en_GB",
+                "description": "Fixed price category"
+              }
+            ]
+          }
+        ],
+        "product": {
+          "id": "/products/ec1f2f98-4129-4b00-a070-c33f6d4e1ef6",
+          "type": "vehicle",
+          "attributeValues": [
+            {
+              "id": "/attribute_values/ef137c12-9e52-4dd4-85a3-5d0d9ebcee21",
+              "file": "/file/6b41acc2-d49d-41a0-8ce5-6c5d340b2979",
+              "attribute": {
+                "id": "/attributes/8b353062-8eeb-4ff6-b553-314d3970a91a",
+                "name": "color",
+                "private": false,
+                "adminOnly": false,
+                "translations": [
+                  {
+                    "id": "/attribute_translations/b695cd9a-cb90-4b65-a2e5-75ea0c5b8063",
+                    "locale": "fr_FR",
+                    "value": "Couleur",
+                    "requiredFor": ["vehicle"]
+                  },
+                  {
+                    "id": "/attribute_translations/a2d92f5f-87a6-490b-9c7a-b3623ab74449",
+                    "locale": "en_GB",
+                    "value": "Color",
+                    "requiredFor": ["vehicle"]
+                  }
+                ]
+              },
+              "translations": [
+                {
+                  "id": "/attribute_value_translations/435ea85b-eb9b-4168-9198-adcbb3d0430d",
+                  "locale": "fr_FR",
+                  "value": "rouge"
+                },
+                {
+                  "id": "/attribute_value_translations/6cee4fa9-22ae-4146-9961-58716683d689",
+                  "locale": "en_GB",
+                  "value": "red"
+                },
+                {
+                  "id": "/attribute_value_translation/80d6ed0e-fe07-4ef6-8fc0-c384627b6f33",
+                  "locale": "fr_FR",
+                  "value": "bleu"
+                },
+                {
+                  "id": "/attribute_value_translations/1b2b596a-3571-41f9-a250-19ed10d77479",
+                  "locale": "en_GB",
+                  "value": "blue"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "/offers/763b1c51-d9fb-4fc8-b6f3-678f32e1feb8",
+        "categories": [
+          {
+            "id": "/categories/a9f5cfb6-4131-40c9-a2c6-62ad094dc95c",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/ae0848b8-82f9-42f9-81fe-50609792cc33",
+                "slug": "enchere",
+                "name": "Enchère",
+                "locale": "fr_FR",
+                "description": "Catégorie enchères"
+              },
+              {
+                "id": "/category_translations/6eea096c-20f1-48f3-955c-1ffb08aef11f",
+                "slug": "bid",
+                "name": "Bid",
+                "locale": "en_GB",
+                "description": "Bid category"
+              }
+            ]
+          },
+          {
+            "id": "/categories/656d0462-7831-425e-b538-e71b4530f31c",
+            "parent": null,
+            "position": 1,
+            "isActive": true,
+            "translations": [
+              {
+                "id": "/category_translations/949e5b83-67c9-4e12-aeb9-b2cee8a240ec",
+                "slug": "prix-fixe",
+                "name": "Prix fixe",
+                "locale": "fr_FR",
+                "description": "Catégorie Prix fixes"
+              },
+              {
+                "id": "/category_translations/c730a285-481d-468f-b03e-5f8a5a7f1dd7",
+                "slug": "fixed-price",
+                "name": "Fixed price",
+                "locale": "en_GB",
+                "description": "Fixed price category"
+              }
+            ]
+          }
+        ],
+        "product": {
+          "id": "/products/b83052a8-5a5a-449c-b3ee-8a5240ae0ed9",
+          "type": "vehicle",
+          "attributeValues": [
+            {
+              "id": "/attribute_values/cf290474-d007-4fc9-92ff-9b391078b340",
+              "file": "/file/189bb081-bcb0-4e3e-a798-7a708187f710",
+              "attribute": {
+                "id": "/attributes/35380b54-2fac-4fe8-b681-da9df46a1f99",
+                "name": "color",
+                "private": false,
+                "adminOnly": false,
+                "translations": [
+                  {
+                    "id": "/attribute_translations/1a9e9429-ddc9-432f-89a0-d61aa08e59cc",
+                    "locale": "fr_FR",
+                    "value": "Couleur",
+                    "requiredFor": ["vehicle"]
+                  },
+                  {
+                    "id": "/attribute_translations/8818f19b-f9ba-4f52-b496-ee6d4b861ba2",
+                    "locale": "en_GB",
+                    "value": "Color",
+                    "requiredFor": ["vehicle"]
+                  }
+                ]
+              },
+              "translations": [
+                {
+                  "id": "/attribute_value_translations/967afb61-bcda-468d-9e72-a197cd418a9f",
+                  "locale": "fr_FR",
+                  "value": "rouge"
+                },
+                {
+                  "id": "/attribute_value_translations/9aea72eb-4928-4f85-ae7f-9c1bcfa4540d",
+                  "locale": "en_GB",
+                  "value": "red"
+                },
+                {
+                  "id": "/attribute_value_translation/ec2b8690-33f8-4568-af24-ee2a8a167785",
+                  "locale": "fr_FR",
+                  "value": "bleu"
+                },
+                {
+                  "id": "/attribute_value_translations/d4642b3c-5390-4103-ac5b-198e38050073",
+                  "locale": "en_GB",
+                  "value": "blue"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
