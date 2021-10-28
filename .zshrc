@@ -81,7 +81,7 @@ alias backup="rsync --exclude='node_modules' --exclude='.next' --exclude='.DS_St
 
 backup_hdd() {
   backup ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/. /Volumes/Tony
-  backup ~/Documents/Coding /Volumes/Tony
+  backup ~/Documents/Coding ~/Documents/Editing /Volumes/Tony
 }
 
 update() {
