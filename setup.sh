@@ -35,9 +35,9 @@ install_node_nvm() {
   brew uninstall --force node
   echo "Install node"
   mkdir -p ~/.nvm
+  source $(brew --prefix nvm)/nvm.sh
   nvm install node
   nvm use node
-  source $(brew --prefix nvm)/nvm.sh
 }
 
 install_jetbrains_font() {
