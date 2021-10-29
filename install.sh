@@ -23,6 +23,3 @@ chmod +x ./alfred.sh && ./alfred.sh
 
 echo "Install chrome extensions"
 chmod +x ./chrome-extensions.sh && ./chrome-extensions.sh
-
-echo "Install anki add-ons"
-chmod +x ./anki-addons.sh && ./anki-addons.sh

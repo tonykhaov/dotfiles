@@ -50,6 +50,13 @@ mkdir -p ~/Documents/Coding && git clone git@github.com:tonykhaov/dotfiles.git ~
 
 - brave://bookmarks/ > Import bookmarks
 
+6. Install Anki add-ons
+
+- Advanced Browser
+- Fastbarwith nightmode support
+- Large and Colorful Buttons
+- Review Heatmap
+
 # Before reseting your Macbook
 
 You need to export these things:
