@@ -6,6 +6,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 echo "Import zsh config"
 rm -rf ~/.zshrc
 ln -s ~/Documents/Coding/dotfiles/.zshrc ~/.zshrc
+rm -rf ~/.zprofile
+ln -s ~/Documents/Coding/dotfiles/.profile ~/.zprofile
 
 echo "Install z"
 brew install z
