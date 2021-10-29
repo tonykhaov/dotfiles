@@ -10,6 +10,10 @@ set_computer_name() {
   echo "Computer name changed to ${name}"
 }
 
+install_rosetta() {
+  echo "Install rosetta"
+  softwareupdate --install-rosetta
+}
 install_ohmyzsh() {
   echo "Install oh-my-zsh"
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
