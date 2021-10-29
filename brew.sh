@@ -25,7 +25,7 @@ brew install --cask iina
 brew install --cask imageoptim
 brew install --cask logitech-options
 brew install --cask qbittorrent
-# brew install --cask microsoft-teams
+brew install --cask microsoft-teams
 brew install --cask molotov
 brew install --cask nordvpn
 brew install --cask notion
