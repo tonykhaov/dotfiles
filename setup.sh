@@ -24,7 +24,7 @@ install_homebrew() {
 }
 
 install_main_brew_dependencies() {
-  echo "Install git, nvm, python and yarn"
+  echo "Install git, python"
   brew install git
   brew install python
 }
@@ -70,6 +70,8 @@ import_youtubedl_config() {
 }
 
 install_npm_check_updates() {
+  echo "Install yarn"
+  brew install yarn
   echo "Install npm-check-updates"
   yarn global add npm-check-updates
 }
