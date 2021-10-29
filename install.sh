@@ -18,8 +18,5 @@ chmod +x ./brew.sh && ./brew.sh
 echo "Import vscode settings, snippets and keybindings"
 chmod +x ./vscode.sh && ./vscode.sh
 
-echo "Import alfred custom searches and workflows"
-chmod +x ./alfred.sh && ./alfred.sh
-
 echo "Install chrome extensions"
 chmod +x ./chrome-extensions.sh && ./chrome-extensions.sh

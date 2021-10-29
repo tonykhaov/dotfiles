@@ -57,6 +57,10 @@ mkdir -p ~/Documents/Coding && git clone git@github.com:tonykhaov/dotfiles.git ~
 - Large and Colorful Buttons
 - Review Heatmap
 
+7. Set up alfred with preferences
+
+- Alfred Preferences > Advanced > Set preferences folder > dotfiles/alfred
+
 # Before reseting your Macbook
 
 You need to export these things:
