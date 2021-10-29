@@ -10,11 +10,17 @@ set_computer_name() {
   echo "Computer name changed to ${name}"
 }
 
-install_ohmyzsh_and_homebrew() {
+install_ohmyzsh() {
   echo "Install oh-my-zsh"
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+}
+
+install_homebrew() {
   echo "Install Homebrew"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo "Set brew PATH"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/tonykhaov/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 }
 
 install_main_brew_dependencies() {
@@ -89,7 +95,8 @@ generate_ssh_key() {
 
 main() {
   set_computer_name
-  install_ohmyzsh_and_homebrew
+  install_ohmyzsh
+  install_homebrew
   install_main_brew_dependencies
   install_node_nvm
   install_jetbrains_font
