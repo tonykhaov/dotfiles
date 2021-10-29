@@ -89,6 +89,7 @@ generate_ssh_key() {
 
 main() {
   set_computer_name
+  install_ohmyzsh_and_homebrew
   install_main_brew_dependencies
   install_node_nvm
   install_jetbrains_font
