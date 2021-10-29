@@ -3,9 +3,6 @@
 echo "Install necessary packages and config files"
 chmod +x ./setup.sh && ./setup.sh
 
-echo "Change macOS settings"
-chmod +x ./macos.sh && ./macos.sh
-
 echo "Install mac appsfrom the App Store with MAS"
 chmod +x ./mas.sh && ./mas.sh
 
@@ -23,5 +20,9 @@ chmod +x ./chrome-extensions.sh && ./chrome-extensions.sh
 
 ################################
 # This must be run last
+
+echo "Change macOS settings"
+chmod +x ./macos.sh && ./macos.sh
+
 echo "Install oh-my-zsh and its pluginsw"
 chmod +x ./oh-my-zsh.sh && ./oh-my-zsh.sh
