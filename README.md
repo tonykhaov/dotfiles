@@ -13,12 +13,17 @@ mkdir -p ~/Documents/Coding && git clone https://github.com/tonykhaov/dotfiles.g
 
 ---
 
-3. Terminal:
+3. Set up alfred with preferences
+
+- Alfred Preferences > Advanced > Set preferences folder > dotfiles/alfred
+
+4. Terminal:
 
 - Open Terminal.app > Preferences > Import > Dracula.terminal
-- Select Dracula theme > Set as default > Change font to JetBrains Mono
+- Select Dracula theme > Set as default > Change font to JetBrains Mono and 18
+  for font size
 
-4. Settings
+5. General Settings
 
 - Keyboards
 
@@ -46,20 +51,20 @@ mkdir -p ~/Documents/Coding && git clone https://github.com/tonykhaov/dotfiles.g
 - Security
   - Firewall: Turn on
 
-5. Import browser bookmarks
+6. Import browser bookmarks
 
 - brave://bookmarks/ > Import bookmarks
 
-6. Install Anki add-ons
+7. Imports OneTab urls
 
-- Advanced Browser
-- Fastbarwith nightmode support
-- Large and Colorful Buttons
+- chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/import-export.html
+
+8. Install Anki add-ons
+
+- Advanced Browser: **874215009**
+- Fastbarwith nightmode support **46611790**
+- Large and Colorful Buttons **1829090218**
 - Review Heatmap
-
-7. Set up alfred with preferences
-
-- Alfred Preferences > Advanced > Set preferences folder > dotfiles/alfred
 
 # Before reseting your Macbook
 
