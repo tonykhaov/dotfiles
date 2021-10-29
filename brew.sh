@@ -1,7 +1,6 @@
 #! /usr/bin/env bash
 
 echo "Install additional Homebrew formulaes"
-brew install yarn
 brew install ffmpeg gs imagemagick youtube-dl 
 brew install trash
 

@@ -26,7 +26,7 @@ install_homebrew() {
 install_main_brew_dependencies() {
   echo "Install git, nvm, python, zsh & z"
   brew install git
-  brew install nvm
+  brew install nvm yarn
   brew install python
   brew install zsh z
 }
