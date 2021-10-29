@@ -14,10 +14,6 @@ install_rosetta() {
   echo "Install rosetta"
   softwareupdate --install-rosetta
 }
-install_ohmyzsh() {
-  echo "Install oh-my-zsh"
-  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-}
 
 install_homebrew() {
   echo "Install Homebrew"
@@ -32,7 +28,6 @@ install_main_brew_dependencies() {
   brew install git
   brew install nvm yarn
   brew install python
-  brew install zsh z
 }
 
 install_node_nvm() {
@@ -48,22 +43,13 @@ install_jetbrains_font() {
   brew install --cask font-jetbrains-mono
 }
 
-import_zsh_vim_git_configs() {
-  echo "Import zsh config"
-  rm -rf ~/.zshrc
-  ln -s ~/Documents/Coding/dotfiles/.zshrc ~/.zshrc
+import_vim_git_configs() {
   echo "Import vim config"
   rm -rf ~/.vimrc
   ln -s ~/Documents/Coding/dotfiles/.vimrc ~/.vimrc
   echo "Import git config"
   rm -rf ~/.gitconfig
   ln -s ~/Documents/Coding/dotfiles/.gitconfig ~/.gitconfig
-  source ~/.zshrc
-}
-
-install_zsh_autosuggestions() {
-  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-  source ~/.zshrc
 }
 
 import_stock_and_lab_folders() {
@@ -99,13 +85,11 @@ generate_ssh_key() {
 
 main() {
   set_computer_name
-  install_ohmyzsh
   install_homebrew
   install_main_brew_dependencies
   install_node_nvm
   install_jetbrains_font
-  import_zsh_vim_git_configs
-  install_zsh_autosuggestions
+  import_vim_git_configs
   import_stock_and_lab_folders
   import_youtubedl_config
   install_npm_check_updates

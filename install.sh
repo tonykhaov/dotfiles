@@ -20,3 +20,8 @@ chmod +x ./vscode.sh && ./vscode.sh
 
 echo "Install chrome extensions"
 chmod +x ./chrome-extensions.sh && ./chrome-extensions.sh
+
+################################
+# This must be run last
+echo "Install oh-my-zsh and its pluginsw"
+chmod +x ./oh-my-zsh.sh && ./oh-my-zsh.sh
