@@ -24,17 +24,20 @@ install_homebrew() {
 }
 
 install_main_brew_dependencies() {
-  echo "Install git, nvm, python, zsh & z"
+  echo "Install git, nvm, python and yarn"
   brew install git
-  brew install nvm yarn
   brew install python
 }
 
 install_node_nvm() {
+  echo "Uninstall node"
+  brew uninstall --ignore-dependencies node
+  brew uninstall --force node
   echo "Install node"
   mkdir -p ~/.nvm
   nvm install node
   nvm use node
+  source $(brew --prefix nvm)/nvm.sh
 }
 
 install_jetbrains_font() {
