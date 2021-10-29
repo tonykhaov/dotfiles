@@ -1,5 +1,8 @@
 #! /usr/bin/env bash
 
+echo "Install mas cli"
+brew install mas
+
 echo "Install Mac App Store apps"
 mas install 1091189122 # Bear
 mas install 1287239339 # ColorSlurp
