@@ -14,10 +14,10 @@
 	<true/>
 	<key>shutdownConfirm</key>
 	<true/>
-	<key>sleepKeywordEnabled</key>
-	<false/>
 	<key>sleepdisplaysKeyword</key>
 	<string>sleep</string>
+	<key>sleepdisplaysKeywordEnabled</key>
+	<false/>
 	<key>volumedownKeywordEnabled</key>
 	<false/>
 	<key>volumeupKeywordEnabled</key>
