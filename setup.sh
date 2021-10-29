@@ -79,7 +79,7 @@ generate_ssh_key() {
   ssh-keygen -t ed25519 -C "${git_email}" -f ~/.ssh/id_ed25519
   eval "$(ssh-agent -s)"
   echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_ed25519" | tee ~/.ssh/config
-  ssh-add -K ~/.ssh/id_ed25519
+  ssh-add --apple-use-keychain ~/.ssh/id_ed25519
   echo "run 'pbcopy < ~/.ssh/id_ed25519.pub' and paste that into GitHub"
 }
 
