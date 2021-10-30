@@ -41,8 +41,8 @@ ln -sf ~/Documents/Coding/dotfiles/vscode/keybindings.json ~/Library/Application
 rm -rf ~/Library/Application\ Support/Code/User/settings.json
 ln -sf ~/Documents/Coding/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
-rm -rf ~/Library/Application\ Support/Code/User/snippet
-ln -sf ~/Documents/Coding/dotfiles/vscode/snippet ~/Library/Application\ Support/Code/User/snippet
+rm -rf ~/Library/Application\ Support/Code/User/snippets
+ln -s ~/Documents/Coding/dotfiles/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
 
 echo "Enable long press key for vscodevim extension"
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
