@@ -66,6 +66,14 @@ mkdir -p ~/Documents/Coding && git clone https://github.com/tonykhaov/dotfiles.g
 - Large and Colorful Buttons **1829090218**
 - Review Heatmap
 
+9. Things 3
+
+- Disabled Quick Entry shortcut
+
+10. 1Password
+
+- Keyboard Shortcuts > Remove Fill Login or Show 1Password shortcut
+
 # Before reseting your Macbook
 
 You need to export these things:
