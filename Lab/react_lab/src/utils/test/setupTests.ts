@@ -7,6 +7,7 @@ beforeAll(() => server.listen({ onUnhandledRequest: 'error' }))
 afterEach(async () => {
   server.resetHandlers()
   queryClient.clear()
+  // eslint-disable-next-line jest/no-standalone-expect
   await waitFor(() => expect(queryClient.isFetching()).toBe(0))
 })
 afterAll(() => server.close())

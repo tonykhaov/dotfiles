@@ -15,5 +15,5 @@ ReactDOM.render(
       <App />
     </AppProviders>
   </React.StrictMode>,
-  document.getElementById('root'),
+  document.getElementById('root')
 )

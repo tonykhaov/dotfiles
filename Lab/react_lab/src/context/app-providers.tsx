@@ -3,7 +3,7 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 
 const queryClient = new QueryClient()
 
-const AppProviders: React.FC = ({ children }) => {
+function AppProviders({ children }: React.PropsWithChildren<React.ReactNode>) {
   return (
     <QueryClientProvider client={queryClient}>
       {children}
