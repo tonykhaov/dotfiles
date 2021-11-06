@@ -146,5 +146,6 @@
     "**/.gh-pages": true
   },
   "window.zoomLevel": 1,
-  "githubPullRequests.fileListLayout": "tree"
+  "githubPullRequests.fileListLayout": "tree",
+  "editor.inlineSuggest.enabled": true
 }
