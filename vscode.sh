@@ -31,6 +31,7 @@ code --install-extension usernamehw.errorlens
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension denoland.vscode-deno
 code --install-extension wayou.vscode-todo-highlight
+code --install-extension silvenon.mdx
 
 echo "Import snippets, keybindings and settings to vscode"
 chmod u+w+r vscode
