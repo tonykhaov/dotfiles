@@ -72,8 +72,9 @@ alias ytw="yarn test:watch"
 alias ytmp4="youtube-dl -f mp4"
 alias mergepdf="gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf"
 alias splitpdf="convert -density 150" # input.pdf output.jpg // increase density if this is too blur
-alias backup="rsync --exclude='node_modules' --exclude='.next' --exclude='.DS_Store' -avzP"
+# to convert an image to pdf, use `convert input1.jpgg input2.jpg output.pdf`
 
+alias backup="rsync --exclude='node_modules' --exclude='.next' --exclude='.DS_Store' -avzP"
 backup_hdd() {
   backup ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/. /Volumes/Tony
   backup ~/Documents/Coding ~/Documents/Editing /Volumes/Tony
