@@ -26,11 +26,12 @@ brew install --cask iina
 brew install --cask imageoptim
 brew install --cask logitech-options
 brew install --cask qbittorrent
-brew install --cask microsoft-teams
 brew install --cask molotov
+brew install --cask monitorcontrol
 brew install --cask nordvpn
 brew install --cask notion
 brew install --cask postman
 brew install --cask rectangle
+brew install --cask soundsource
 brew install --cask spotify
 brew install --cask visual-studio-code
