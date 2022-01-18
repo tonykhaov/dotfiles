@@ -3,6 +3,7 @@
 echo "Install additional Homebrew formulaes"
 brew install ffmpeg gs imagemagick youtube-dl 
 brew install trash
+brew install git-delta
 brew install deno
 
 echo "Load third party cask drivers"
