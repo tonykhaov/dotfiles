@@ -14,6 +14,7 @@ brew install --cask 1password
 brew install --cask adobe-creative-cloud
 brew install --cask aldente
 brew install --cask alfred
+brew install --cask alt-tab
 brew install --cask anki
 brew install --cask appcleaner
 brew install --cask bartender
