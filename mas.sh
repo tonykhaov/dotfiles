@@ -14,6 +14,7 @@ mas install 409203825 # Numbers
 mas install 360593530  # Notability
 mas install 409201541 # Pages
 mas install 568494494 # Pocket
+mas install 1233965871 # ScreenBrush
 mas install 1176895641 # Spark - Email App By Readdle
 mas install 1528890965 # TextSniper - OCR simplified
 mas install 904280696 # Things 3
