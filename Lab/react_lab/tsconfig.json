@@ -16,14 +16,17 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "importsNotUsedAsValues": "error",
     "baseUrl": ".",
     "paths": {
       "@src/*": ["./src/*"],
       "@utils/*": ["./src/utils/*"],
       "@pages/*": ["./src/pages/*"],
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["./src/components/*"],
+      "@mocks/*": ["./src/utils/mocks/*"]
     }
   },
-  "include": ["./src", "./public/mockServiceWorker.js"],
+  "exclude": ["./cypress"],
+  "include": [".", "./public/mockServiceWorker.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
