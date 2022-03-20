@@ -80,7 +80,7 @@ You need to export these things:
 
 1. Browser bookmarks
 
-- brave://bookmarks/ > Export bookmarks
+- chrome://bookmarks/ > Export bookmarks
 
 2. OneTab
 

@@ -18,12 +18,12 @@ brew install --cask alt-tab
 brew install --cask anki
 brew install --cask appcleaner
 brew install --cask bartender
-brew install --cask brave-browser
 brew install --cask calibre
 brew install --cask discord
 brew install --cask docker
 brew install --cask dropzone
 brew install --cask figma
+brew install --cask google-chrome
 brew install --cask iina
 brew install --cask imageoptim
 brew install --cask logitech-options
