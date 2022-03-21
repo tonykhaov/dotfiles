@@ -43,6 +43,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>369FA80F-EE16-47CF-8789-3C76D073E73F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>netflix</string>
+			<key>text</key>
+			<string>Netflix: {query}</string>
+			<key>url</key>
+			<string>https://www.netflix.com/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>3A4A3ACC-03F6-4420-815A-B908D59FD879</key>
 		<dict>
 			<key>enabled</key>
