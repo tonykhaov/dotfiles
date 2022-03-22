@@ -1,19 +1,27 @@
-Tony Khaov's dotfiles.
+Hey this is my MacOS dotfiles!
 
-# Installation
+## Table of contents
 
-1. Sign in with App store GUI first!
+- [Installation](#installation)
+- [Before reseting the macbook](#before-reseting-the-macbook)
 
-2. Open your terminal and run this script: (to clone the repo and start the
-   setup)
+---
+
+## Installation
+
+1. Sign in with Mac App Store GUI first!
+
+2. Open your terminal and run this script: (this will clone the repo and
+   automatically start the setup)
 
 ```
 mkdir -p ~/Documents/Coding && git clone https://github.com/tonykhaov/dotfiles.git ~/Documents/Coding/dotfiles && cd ~/Documents/Coding/dotfiles && chmod +x ./install.sh && ./install.sh
 ```
 
----
+**_You must wait for install.sh script to be completed to carry on with the
+manual installation_**
 
-3. Set up alfred with preferences
+3. Set up alfred with my preferences
 
 - Alfred Preferences > Advanced > Set preferences folder > dotfiles/alfred
 
@@ -51,30 +59,34 @@ mkdir -p ~/Documents/Coding && git clone https://github.com/tonykhaov/dotfiles.g
 - Security
   - Firewall: Turn on
 
-6. Import browser bookmarks
+6. 1Password
 
-- brave://bookmarks/ > Import bookmarks
+- Keyboard Shortcuts > Remove Fill Login or Show 1Password shortcut
 
-7. Imports OneTab urls
+7. Import browser bookmarks
 
-- chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/import-export.html
+- chrome://bookmarks/ > Import bookmarks
 
-8. Install Anki add-ons
+8. Imports OneTab urls
+
+- chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/import-export.html > copy
+  the urls from Apple Notes
+
+9. Install Anki add-ons
 
 - Advanced Browser: **874215009**
 - Fastbarwith nightmode support **46611790**
 - Large and Colorful Buttons **1829090218**
-- Review Heatmap
+- Review Heatmap:
+  [download link](https://github.com/glutanimate/review-heatmap/releases)
 
-9. Things 3
+10. Things 3
 
 - Disabled Quick Entry shortcut
 
-10. 1Password
+---
 
-- Keyboard Shortcuts > Remove Fill Login or Show 1Password shortcut
-
-# Before reseting your Macbook
+## Before reseting the Macbook
 
 You need to export these things:
 
