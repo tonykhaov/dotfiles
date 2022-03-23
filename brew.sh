@@ -1,39 +1,53 @@
 #! /usr/bin/env bash
 
-echo "Install additional Homebrew formulaes"
-brew install ffmpeg gs imagemagick youtube-dl 
-brew install trash
-brew install git-delta
-brew install deno
+install_additional_homebrew_formulaes() {
+  echo "Install additional Homebrew formulaes"
+  brew install ffmpeg 
+  brew install gs 
+  brew install imagemagick 
+  brew install youtube-dl 
+  brew install trash
+  brew install git-delta
+  brew install deno
+}
 
-echo "Load third party cask drivers"
-brew tap homebrew/cask-drivers
+load_third_party_cask_drivers() {
+  echo "Load third party cask drivers"
+  brew tap homebrew/cask-drivers
+}
+install_homebrew_cask_formulaes() {
+  echo "Install Homebrew cask formulaes"
+  brew install 1password
+  brew install adobe-creative-cloud
+  brew install aldente
+  brew install alfred
+  brew install alt-tab
+  brew install anki
+  brew install appcleaner
+  brew install bartender
+  brew install calibre
+  brew install discord
+  brew install docker
+  brew install dropzone
+  brew install figma
+  brew install google-chrome
+  brew install iina
+  brew install imageoptim
+  brew install logitech-options
+  brew install qbittorrent
+  brew install monitorcontrol
+  brew install nordvpn
+  brew install notion
+  brew install rectangle
+  brew install soundsource
+  brew install spotify
+  brew install visual-studio-code
+}
 
-echo "Install Homebrew casks"
-brew install --cask 1password
-brew install --cask adobe-creative-cloud
-brew install --cask aldente
-brew install --cask alfred
-brew install --cask alt-tab
-brew install --cask anki
-brew install --cask appcleaner
-brew install --cask bartender
-brew install --cask calibre
-brew install --cask discord
-brew install --cask docker
-brew install --cask dropzone
-brew install --cask figma
-brew install --cask google-chrome
-brew install --cask iina
-brew install --cask imageoptim
-brew install --cask logitech-options
-brew install --cask qbittorrent
-brew install --cask molotov
-brew install --cask monitorcontrol
-brew install --cask nordvpn
-brew install --cask notion
-brew install --cask postman
-brew install --cask rectangle
-brew install --cask soundsource
-brew install --cask spotify
-brew install --cask visual-studio-code
+main() {
+  install_additional_homebrew_formulaes
+  load_third_party_cask_drivers
+  install_homebrew_cask_formulaes
+}
+
+main

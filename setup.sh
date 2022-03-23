@@ -43,7 +43,7 @@ install_node_nvm() {
 install_jetbrains_font() {
   echo "Install Jetbrains Mono Font"
   brew tap homebrew/cask-fonts 
-  brew install --cask font-jetbrains-mono
+  brew install font-jetbrains-mono
 }
 
 import_vim_git_configs() {
