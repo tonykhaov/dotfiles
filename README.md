@@ -4,6 +4,7 @@ Hey this is my MacOS dotfiles!
 
 - [Installation](#installation)
 - [Before reseting the macbook](#before-reseting-the-macbook)
+- [My folder structure](#my-folder-structure)
 
 ---
 
@@ -65,7 +66,7 @@ manual installation_**
 
 7. Import browser bookmarks
 
-- chrome://bookmarks/ > Import bookmarks
+- chrome://bookmarks/ > Import bookmarks .html file from the hard drive
 
 8. Imports OneTab urls
 
@@ -84,6 +85,10 @@ manual installation_**
 
 - Disabled Quick Entry shortcut
 
+11. Important files
+
+- Transfer them from your hard drive to `~/Documents`
+
 ---
 
 ## Before reseting the Macbook
@@ -92,9 +97,21 @@ You need to export these things:
 
 1. Browser bookmarks
 
-- chrome://bookmarks/ > Export bookmarks
+- chrome://bookmarks/ > Export bookmarks and store it in a hard drive
 
 2. OneTab
 
 - chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/import-export.html > copy
   export urls > save them in Apple Notes
+
+3. Important files
+
+- Transfer `~/Documents` to a hard drive
+
+---
+
+## My folder structure
+
+- `~/Downloads`: temporary folder where files are downloaded. If they are
+  important I move them otherwise they'll just end up being deleted.
+- `~/Documents`: personal folder where important files are stored.
