@@ -7,6 +7,7 @@
 		<string>features.websearch.google.fallback</string>
 		<string>features.websearch.youtube.fallback</string>
 		<string>features.websearch.maps.fallback</string>
+		<string>features.websearch.images.fallback</string>
 		<string>features.websearch.amazon.fallback</string>
 	</array>
 	<key>fallbacksMode</key>
