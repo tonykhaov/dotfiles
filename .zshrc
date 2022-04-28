@@ -16,6 +16,9 @@ DISABLE_AUTO_UPDATE="false"
 DISABLE_UPDATE_PROMPT="true" # AUTO UPDATE
 export UPDATE_ZSH_DAYS=3
 
+# Disable Brew auto update when installing
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS=true
 
