@@ -65,6 +65,7 @@ alias nrs="npm run start"
 alias nrd="npm run dev"
 alias nrt="npm run test"
 alias nrtw="npm run test:watch"
+alias ncu="npx npm-check-updates"
 
 alias yi="yarn install"
 alias yd="yarn dev"

@@ -71,9 +71,9 @@ import_youtubedl_config() {
 
 install_npm_check_updates() {
   echo "Install yarn"
-  brew install yarn
-  echo "Install npm-check-updates"
-  yarn global add npm-check-updates
+  npm install -g yarn
+  echo "Install pnpm"
+  npm install -g pnpm
 }
 
 
