@@ -1,7 +1,6 @@
 #! /usr/bin/env bash
 
 install_vscode_extensions() {
-
   echo "Install VScode extensions"
   code --install-extension bradlc.vscode-tailwindcss
   code --install-extension christian-kohler.npm-intellisense
@@ -35,6 +34,7 @@ install_vscode_extensions() {
   code --install-extension wayou.vscode-todo-highlight
   code --install-extension silvenon.mdx
   code --install-extension antfu.unocss
+  code --install-extension mattpocock.ts-error-translator
 }
 
 import_snippets_keybindings_settings_to_vscode() {
