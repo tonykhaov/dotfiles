@@ -91,6 +91,7 @@ backup_hdd() {
 }
 
 update() {
+  brew update
   brew upgrade
   mas upgrade
 }
