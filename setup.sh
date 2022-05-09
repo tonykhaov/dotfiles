@@ -74,11 +74,11 @@ import_youtubedl_config() {
   ln -s ~/Documents/Coding/dotfiles/youtube-dl ~/.config/youtube-dl
 }
 
-install_npm_check_updates() {
+install_yarn_and_pnpm() {
   echo "Install yarn"
-  npm install -g yarn
+  brew install yarn
   echo "Install pnpm"
-  npm install -g pnpm
+  brew install pnpm
 }
 
 
@@ -103,7 +103,7 @@ main() {
   import_vim_git_configs
   import_stock_and_lab_folders
   import_youtubedl_config
-  install_npm_check_updates
+  install_yarn_and_pnpm
   generate_ssh_key
 }
 
