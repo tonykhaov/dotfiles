@@ -12,12 +12,15 @@ ZSH_THEME="agnoster"
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
+UPDATE_ZSH_DAYS=3
 DISABLE_AUTO_UPDATE="false"
-DISABLE_UPDATE_PROMPT="true" # AUTO UPDATE
-export UPDATE_ZSH_DAYS=3
+DISABLE_UPDATE_PROMPT="true" # AUTO UPDATE OH-MY-ZSH
 
-# Disable Brew auto update when installing
-export HOMEBREW_NO_AUTO_UPDATE=1
+# run nvm use on every project
+NVM_AUTO_USE=true
+
+# Disable brew auto update when installing
+HOMEBREW_NO_AUTO_UPDATE=1
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS=true
@@ -50,7 +53,7 @@ ZSH_DISABLE_COMPFIX="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # PLUGINS
-plugins=(z git zsh-autosuggestions zsh-syntax-highlighting you-should-use)
+plugins=(z zsh-nvm git zsh-autosuggestions zsh-syntax-highlighting you-should-use)
 
 # User configuration
 
