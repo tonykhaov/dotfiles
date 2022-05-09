@@ -40,6 +40,11 @@ install_node_nvm() {
   nvm use node
 }
 
+install_deno() {
+  echo "Install deno"
+  brew install deno
+}
+
 install_jetbrains_font() {
   echo "Install Jetbrains Mono Font"
   brew tap homebrew/cask-fonts 
@@ -93,6 +98,7 @@ main() {
   install_homebrew
   install_main_brew_dependencies
   install_node_nvm
+  install_deno
   install_jetbrains_font
   import_vim_git_configs
   import_stock_and_lab_folders

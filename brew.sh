@@ -8,7 +8,6 @@ install_additional_homebrew_formulaes() {
   brew install youtube-dl 
   brew install trash
   brew install git-delta
-  brew install deno
 }
 
 load_third_party_cask_drivers() {
