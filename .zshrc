@@ -50,7 +50,7 @@ ZSH_DISABLE_COMPFIX="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # PLUGINS
-plugins=(z git zsh-autosuggestions)
+plugins=(z git zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
