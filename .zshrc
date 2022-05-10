@@ -53,7 +53,7 @@ ZSH_DISABLE_COMPFIX="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # PLUGINS
-plugins=(z zsh-nvm git zsh-autosuggestions zsh-syntax-highlighting you-should-use)
+plugins=(z ssh-agent git zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-nvm)
 
 # User configuration
 
