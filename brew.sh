@@ -21,6 +21,7 @@ install_homebrew_cask_formulaes() {
   brew install aldente
   brew install alfred
   brew install alt-tab
+  brew install amethyst
   brew install anki
   brew install appcleaner
   brew install bartender
