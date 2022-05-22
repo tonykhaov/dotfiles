@@ -4,8 +4,8 @@
 <dict>
 	<key>ejectKeywordEnabled</key>
 	<true/>
-	<key>emptytrashKeywordEnabled</key>
-	<false/>
+	<key>emptytrashConfirm</key>
+	<true/>
 	<key>hideKeywordEnabled</key>
 	<false/>
 	<key>quitKeywordEnabled</key>
@@ -19,6 +19,8 @@
 	<key>sleepdisplaysKeywordEnabled</key>
 	<false/>
 	<key>volumedownKeywordEnabled</key>
+	<false/>
+	<key>volumemuteKeywordEnabled</key>
 	<false/>
 	<key>volumeupKeywordEnabled</key>
 	<false/>

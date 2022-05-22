@@ -2,7 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>enabled</key>
-	<false/>
+	<key>hidehat</key>
+	<true/>
+	<key>hidemenu</key>
+	<true/>
+	<key>nativedarkmode</key>
+	<true/>
+	<key>showOnScreen</key>
+	<integer>2</integer>
 </dict>
 </plist>
