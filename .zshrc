@@ -84,7 +84,7 @@ alias splitpdf="convert -density 150" # input.pdf output.jpg // increase density
 alias backup="rsync --exclude='node_modules' --exclude='.next' --exclude='.DS_Store' -avzP"
 backup_hdd() {
   # Delete old backup
-  rm -rf /Volumes/Old_Backup
+  rm -rf /Volumes/Tony/Old_Backup
   # Save last backup
   mv /Volumes/Tony/Backup /Volumes/Tony/Old_Backup
   # Create new backup
