@@ -89,6 +89,10 @@ manual installation_**
 
 - Transfer them from your hard drive to `~/Documents`
 
+12. Chrome
+
+- Set downloads location to `/private/tmp`
+
 ---
 
 ## Before reseting the Macbook
@@ -112,6 +116,7 @@ You need to export these things:
 
 ## My folder structure
 
-- `~/Downloads`: temporary folder where files are downloaded. If they are
-  important I move them otherwise they'll just end up being deleted.
+- `/private/tmp`: temporary folder where files are first downloaded. If they are
+  important I process them, rename them and move them to my iCloud `Documents`
+  folder. Otherwise, they will be automatically deleted.
 - `~/Documents`: personal folder where important files are stored.
