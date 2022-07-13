@@ -55,7 +55,7 @@
   "npm.packageManager": "npm",
   "atomKeymap.promptV3Features": true,
   "security.workspace.trust.banner": "never",
-  "prettier.printWidth": 80,
+  "prettier.printWidth": 120,
   "prettier.proseWrap": "always",
   "prettier.semi": false,
   "prettier.singleQuote": true,
@@ -64,12 +64,7 @@
   "explorer.decorations.colors": true,
   "explorer.decorations.badges": false,
   "eslint.packageManager": "npm",
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "eslint.options": {
     "overrideConfig": {
       "env": {
@@ -149,7 +144,8 @@
     "**/.build": true,
     "**/.gh-pages": true
   },
-  "window.zoomLevel": 1,
   "githubPullRequests.fileListLayout": "tree",
-  "editor.inlineSuggest.enabled": true
+  "editor.inlineSuggest.enabled": true,
+  "git.autofetch": true,
+  "window.zoomLevel": 2
 }

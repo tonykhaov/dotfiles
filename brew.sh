@@ -28,6 +28,7 @@ install_homebrew_cask_formulaes() {
   brew install calibre
   brew install discord
   brew install docker
+  brew install --cask dolphin
   brew install dropzone
   brew install figma
   brew install google-chrome
@@ -35,6 +36,7 @@ install_homebrew_cask_formulaes() {
   brew install imageoptim
   brew install logitech-options
   brew install qbittorrent
+  brew install --cask mgba
   brew install monitorcontrol
   brew install nordvpn
   brew install notion

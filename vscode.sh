@@ -12,7 +12,6 @@ install_vscode_extensions() {
   code --install-extension formulahendry.auto-rename-tag
   code --install-extension GitHub.github-vscode-theme
   code --install-extension GitHub.vscode-pull-request-github
-  code --install-extension heybourn.headwind
   code --install-extension jasonnutter.search-node-modules
   code --install-extension KnisterPeter.vscode-commitizen
   code --install-extension leizongmin.node-module-intellisense
