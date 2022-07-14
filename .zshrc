@@ -63,18 +63,23 @@ plugins=(z ssh-agent git zsh-autosuggestions zsh-syntax-highlighting you-should-
 # export LANG=en_US.UTF-8
 
 # ALIASES
-alias ni="npm install"
-alias nrs="npm run start"
-alias nrd="npm run dev"
-alias nrt="npm run test"
-alias nrtw="npm run test:watch"
-alias ncu="npx npm-check-updates"
-
 alias yi="yarn install"
+alias ya="yarn add"
+alias yad="yarn add -D"
 alias yd="yarn dev"
 alias ys="yarn start"
 alias yt="yarn test"
 alias ytw="yarn test:watch"
+alias yte="yarn test:e2e"
+
+alias pi="pnpm install"
+alias pa="pnpm add"
+alias pad="pnpm add -D"
+alias pd="pnpm dev"
+alias ps="pnpm start"
+alias pt="pnpm test"
+alias ptw="pnpm test:watch"
+alias pte="pnpm test:e2e"
 
 alias ytmp4="youtube-dl -f mp4"
 alias mergepdf="gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf"
