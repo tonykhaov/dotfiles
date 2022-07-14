@@ -40,6 +40,12 @@ install_node_nvm() {
   nvm use node
 }
 
+install_ni() {
+  # https://github.com/antfu/ni
+  echo "Installing ni"
+  npm i -g @antfu/ni
+}
+
 install_deno() {
   echo "Install deno"
   brew install deno
@@ -98,6 +104,7 @@ main() {
   install_homebrew
   install_main_brew_dependencies
   install_node_nvm
+  install_ni
   install_deno
   install_jetbrains_font
   import_vim_git_configs
