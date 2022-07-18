@@ -32,8 +32,8 @@ install_vscode_extensions() {
   code --install-extension denoland.vscode-deno
   code --install-extension wayou.vscode-todo-highlight
   code --install-extension silvenon.mdx
-  code --install-extension antfu.unocss
   code --install-extension mattpocock.ts-error-translator
+  code --install-extension Gruntfuggly.todo-tree
 }
 
 import_snippets_keybindings_settings_to_vscode() {
