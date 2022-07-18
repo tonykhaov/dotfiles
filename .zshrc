@@ -81,6 +81,8 @@ alias pt="pnpm test"
 alias ptw="pnpm test:watch"
 alias pte="pnpm test:e2e"
 
+alias ncu="npx npm-check-updates"
+
 alias ytmp4="youtube-dl -f mp4"
 alias mergepdf="gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf"
 alias splitpdf="convert -density 150" # input.pdf output.jpg // increase density if this is too blur
