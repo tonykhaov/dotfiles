@@ -90,14 +90,16 @@
   },
   "React Component": {
     "prefix": "rc",
+    "description": "",
     "body": [
-      "const Component = () => {",
-      " return (",
-      "   <>",
-      "     $0",
-      "   </>",
-      " )",
-      "}"
+      "type ComponentProps = {",
+      "  children: React.ReactNode",
+      "}",
+      "",
+      "const Component: React.FC<ComponentProps> = () => {",
+      "  return <>$0</>",
+      "}",
+      ""
     ]
   },
   "useState": {
@@ -122,19 +124,11 @@
   },
   "useReducer": {
     "prefix": "ur",
-    "body": [
-      "const [state, dispatch] = useReducer(${1:someReducer}, {",
-      "  $0",
-      "})"
-    ]
+    "body": ["const [state, dispatch] = useReducer(${1:someReducer}, {", "  $0", "})"]
   },
   "React.useReducer": {
     "prefix": "rur",
-    "body": [
-      "const [state, dispatch] = React.useReducer(${1:someReducer}, {",
-      "  $0",
-      "})"
-    ]
+    "body": ["const [state, dispatch] = React.useReducer(${1:someReducer}, {", "  $0", "})"]
   },
   "useRef": {
     "prefix": "urf",
@@ -159,5 +153,19 @@
   "Mocha describe block": {
     "prefix": "desc",
     "body": ["describe('$1', () => {", "  $2", "})"]
+  },
+  "React Functional Component": {
+    "prefix": "rfc",
+    "description": "",
+    "body": [
+      "type ComponentProps = {",
+      "  children: React.ReactNode",
+      "}",
+      "",
+      "function Component(props: ComponentProps) {",
+      "  return <>$0</>",
+      "}",
+      ""
+    ]
   }
 }
