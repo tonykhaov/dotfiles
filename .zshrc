@@ -97,7 +97,7 @@ backup_hdd() {
   # Create new backup
   mkdir -p /Volumes/Tony/Backup
   backup ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/. /Volumes/Tony/Backup
-  backup ~/Documents/Coding ~/Documents/Editing /Volumes/Tony/Backup
+  backup ~/Documents/Coding/dotfiles 
 }
 
 update() {
