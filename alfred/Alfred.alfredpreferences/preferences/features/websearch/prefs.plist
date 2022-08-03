@@ -17,6 +17,17 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>0F15342E-B732-48C0-BD70-9417FC3D7E07</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ch</string>
+			<key>text</key>
+			<string>Chinese: {query}</string>
+			<key>url</key>
+			<string>https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define={query}</string>
+		</dict>
 		<key>11C90205-E641-45D7-B41B-093F23B6958A</key>
 		<dict>
 			<key>enabled</key>
