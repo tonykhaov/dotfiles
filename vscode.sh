@@ -34,6 +34,7 @@ install_vscode_extensions() {
   code --install-extension silvenon.mdx
   code --install-extension mattpocock.ts-error-translator
   code --install-extension Gruntfuggly.todo-tree
+  code --install-extension ms-playwright.playwright
 }
 
 import_snippets_keybindings_settings_to_vscode() {
