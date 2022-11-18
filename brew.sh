@@ -26,6 +26,7 @@ install_homebrew_cask_formulaes() {
   brew install appcleaner
   brew install bartender
   brew install calibre
+  brew install --cask dbeaver-community
   brew install discord
   brew install docker
   brew install --cask dolphin
@@ -40,7 +41,6 @@ install_homebrew_cask_formulaes() {
   brew install monitorcontrol
   brew install nordvpn
   brew install notion
-  brew install --cask razorsql
   brew install rectangle
   brew install soundsource
   brew install spotify
