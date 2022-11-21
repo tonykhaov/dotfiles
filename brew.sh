@@ -26,7 +26,6 @@ install_homebrew_cask_formulaes() {
   brew install appcleaner
   brew install bartender
   brew install calibre
-  brew install --cask dbeaver-community
   brew install discord
   brew install docker
   brew install --cask dolphin
