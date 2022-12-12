@@ -53,7 +53,10 @@ import_snippets_keybindings_settings_to_vscode() {
 
 enable_long_press_key_for_vscodevim_extension() {
   echo "Enable long press key for vscodevim extension"
-  defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+  defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false              # For VS Code
+  defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false      # For VS Code Insider
+  defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false         # For VS Codium
+  defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false   # For VS Codium Exploration users
 }
 
 main() {
