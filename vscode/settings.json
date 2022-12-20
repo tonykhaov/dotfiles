@@ -148,5 +148,7 @@
   "editor.inlineSuggest.enabled": true,
   "git.autofetch": true,
   "window.zoomLevel": 2,
-  "git.mergeEditor": false
+  "git.mergeEditor": false,
+  "totalTypeScript.hideAllTips": true,
+  "totalTypeScript.hideBasicTips": true
 }
