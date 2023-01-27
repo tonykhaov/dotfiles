@@ -8,10 +8,10 @@ mas install 1091189122 # Bear
 mas install 1287239339 # ColorSlurp
 mas install 975937182 # Fantastical - Calendar & Tasks
 mas install 430798174 # HazeOver • Distraction Dimmer™
-mas install 288545208 # Instapaper
 mas install 409183694 # Keynote
 mas install 409203825 # Numbers
 mas install 409201541 # Pages
+mas install 568494494 # Pocket
 mas install 1233965871 # ScreenBrush
 mas install 1176895641 # Spark - Email App By Readdle
 mas install 1528890965 # TextSniper - OCR simplified
