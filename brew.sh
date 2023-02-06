@@ -17,13 +17,12 @@ load_third_party_cask_drivers() {
 install_homebrew_cask_formulaes() {
   echo "Install Homebrew cask formulaes"
   brew install 1password
+  brew install --cask 1password-cli
   brew install adobe-creative-cloud
   brew install aldente
-  brew install alfred
   brew install alt-tab
   brew install amethyst
   brew install anki
-  brew install appcleaner
   brew install bartender
   brew install calibre
   brew install discord
@@ -40,6 +39,7 @@ install_homebrew_cask_formulaes() {
   brew install monitorcontrol
   brew install nordvpn
   brew install notion
+  brew install --cask raycast
   brew install rectangle
   brew install soundsource
   brew install spotify
