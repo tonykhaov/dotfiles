@@ -40,7 +40,6 @@ install_homebrew_cask_formulaes() {
   brew install nordvpn
   brew install notion
   brew install --cask raycast
-  brew install rectangle
   brew install soundsource
   brew install spotify
   brew install visual-studio-code
