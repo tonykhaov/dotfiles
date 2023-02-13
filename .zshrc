@@ -63,23 +63,14 @@ plugins=(z ssh-agent git zsh-autosuggestions zsh-syntax-highlighting you-should-
 # export LANG=en_US.UTF-8
 
 # ALIASES
-alias yi="yarn install"
-alias ya="yarn add"
-alias yad="yarn add -D"
-alias yd="yarn dev"
-alias ys="yarn start"
-alias yt="yarn test"
-alias ytw="yarn test:watch"
-alias yte="yarn test:e2e"
-
-alias pi="pnpm install"
-alias pa="pnpm add"
-alias pad="pnpm add -D"
-alias pd="pnpm dev"
-alias ps="pnpm start"
-alias pt="pnpm test"
-alias ptw="pnpm test:watch"
-alias pte="pnpm test:e2e"
+alias nid="ni -D"
+alias nd="nr dev"
+alias ns="nr start"
+alias nb="nr build"
+alias nt="nr test"
+alias ntw="nr test:watch"
+alias nte="nr test:e2e"
+alias ntew="nr test:e2e:watch"
 
 alias ncu="npx npm-check-updates"
 
