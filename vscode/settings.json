@@ -147,7 +147,7 @@
   "githubPullRequests.fileListLayout": "tree",
   "editor.inlineSuggest.enabled": true,
   "git.autofetch": true,
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "git.mergeEditor": false,
   "totalTypeScript.hideAllTips": true,
   "totalTypeScript.hideBasicTips": true
