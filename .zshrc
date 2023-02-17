@@ -71,6 +71,7 @@ alias nt="nr test"
 alias ntw="nr test:watch"
 alias nte="nr test:e2e"
 alias ntew="nr test:e2e:watch"
+alias nteh="nr test:e2e:headed"
 
 alias ncu="npx npm-check-updates"
 
