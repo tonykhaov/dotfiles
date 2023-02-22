@@ -5,7 +5,6 @@ brew install mas
 
 echo "Install Mac App Store apps"
 mas install 1091189122 # Bear
-mas install 1287239339 # ColorSlurp
 mas install 975937182 # Fantastical - Calendar & Tasks
 mas install 430798174 # HazeOver • Distraction Dimmer™
 mas install 409183694 # Keynote
