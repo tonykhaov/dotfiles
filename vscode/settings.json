@@ -65,24 +65,6 @@
   "explorer.decorations.badges": false,
   "eslint.packageManager": "npm",
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
-  "eslint.options": {
-    "overrideConfig": {
-      "env": {
-        "browser": true,
-        "es6": true
-      },
-      "parserOptions": {
-        "ecmaVersion": 2019,
-        "sourceType": "module",
-        "ecmaFeatures": {
-          "jsx": true
-        }
-      },
-      "rules": {
-        "no-debugger": "off"
-      }
-    }
-  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": false
   },
