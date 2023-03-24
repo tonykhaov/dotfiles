@@ -51,6 +51,12 @@ install_deno() {
   brew install deno
 }
 
+install_bun() {
+  echo "Install bun"
+  brew tap oven-sh/bun
+  brew install bun
+}
+
 install_jetbrains_font() {
   echo "Install Jetbrains Mono Font"
   brew tap homebrew/cask-fonts 
