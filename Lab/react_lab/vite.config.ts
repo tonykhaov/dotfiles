@@ -6,8 +6,6 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import Unocss from 'unocss/vite'
 import presetWind from '@unocss/preset-wind'
 
-import 'dotenv/config'
-
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), Unocss({ presets: [presetWind()] }), tsconfigPaths()],
