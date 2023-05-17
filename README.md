@@ -83,6 +83,10 @@ mkdir -p ~/Documents/Coding && git clone https://github.com/tonykhaov/dotfiles.g
 
 - Set downloads location to `/private/tmp`
 
+13. Raycast
+
+- cmd + space > Import Settings & Data > hit enter > select the .rayconfig file
+
 ---
 
 ## Before reseting the Macbook
