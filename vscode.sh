@@ -10,7 +10,6 @@ install_vscode_extensions() {
   code --install-extension EditorConfig.EditorConfig
   code --install-extension esbenp.prettier-vscode
   code --install-extension formulahendry.auto-rename-tag
-  code --install-extension GitHub.github-vscode-theme
   code --install-extension GitHub.vscode-pull-request-github
   code --install-extension jasonnutter.search-node-modules
   code --install-extension KnisterPeter.vscode-commitizen
@@ -35,6 +34,7 @@ install_vscode_extensions() {
   code --install-extension mattpocock.ts-error-translator
   code --install-extension Gruntfuggly.todo-tree
   code --install-extension ms-playwright.playwright
+  code --install-extension tal7aouy.theme
 }
 
 import_snippets_keybindings_settings_to_vscode() {

@@ -21,7 +21,6 @@
   "editor.folding": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.suggest.preview": true,
-  "workbench.colorTheme": "GitHub Dark",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.wrapTabs": true,
   "workbench.activityBar.visible": true,
@@ -132,5 +131,6 @@
   "window.zoomLevel": 1,
   "git.mergeEditor": false,
   "totalTypeScript.hideAllTips": true,
-  "totalTypeScript.hideBasicTips": true
+  "totalTypeScript.hideBasicTips": true,
+  "workbench.colorTheme": "Theme Mix"
 }
