@@ -19,6 +19,7 @@ install_homebrew_cask_formulaes() {
   brew install 1password
   brew install --cask 1password-cli
   brew install adobe-creative-cloud
+  brew install --cask android-studio
   brew install aldente
   brew install alt-tab
   brew install amethyst
