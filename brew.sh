@@ -27,7 +27,7 @@ install_homebrew_cask_formulaes() {
   brew install bartender
   brew install calibre
   brew install discord
-  brew install docker
+  brew install --cask docker
   brew install --cask dolphin
   brew install dropzone
   brew install figma
