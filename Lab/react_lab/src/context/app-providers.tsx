@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
 
-function AppProviders({ children }: React.PropsWithChildren<React.ReactNode>) {
+function AppProviders({ children }: React.PropsWithChildren) {
   const [queryClient] = React.useState(() => new QueryClient())
 
   return (
