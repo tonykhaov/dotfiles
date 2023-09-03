@@ -24,6 +24,7 @@ install_homebrew_cask_formulaes() {
   brew install alt-tab
   brew install amethyst
   brew install anki
+  brew install awscli
   brew install bartender
   brew install calibre
   brew install discord
@@ -35,6 +36,7 @@ install_homebrew_cask_formulaes() {
   brew install iina
   brew install imageoptim
   brew install logitech-options
+  brew install pulumi
   brew install qbittorrent
   brew install --cask mgba
   brew install monitorcontrol
