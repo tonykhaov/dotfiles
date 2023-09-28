@@ -28,6 +28,7 @@ install_homebrew_cask_formulaes() {
   brew install awscli
   brew install bartender
   brew install calibre
+  brew install colima
   brew install discord
   brew install --cask docker
   brew install --cask dolphin
@@ -52,10 +53,16 @@ install_homebrew_cask_formulaes() {
   brew install visual-studio-code
 }
 
+setup_docker() {
+  echo "Setup Docker"
+  colima start
+}
+
 main() {
   install_additional_homebrew_formulaes
   load_third_party_cask_drivers
   install_homebrew_cask_formulaes
+  setup_docker
 }
 
 main
