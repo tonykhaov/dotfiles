@@ -14,6 +14,7 @@ load_third_party_cask_drivers() {
   echo "Load third party cask drivers"
   brew tap homebrew/cask-drivers
 }
+
 install_homebrew_cask_formulaes() {
   echo "Install Homebrew cask formulaes"
   brew install 1password
@@ -37,6 +38,9 @@ install_homebrew_cask_formulaes() {
   brew install imageoptim
   brew install logitech-options
   brew install pulumi
+  brew install podman
+  brew install podman-compose
+  brew install --cask podman-desktop
   brew install qbittorrent
   brew install --cask mgba
   brew install monitorcontrol
