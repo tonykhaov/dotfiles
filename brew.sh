@@ -2,10 +2,11 @@
 
 install_additional_homebrew_formulaes() {
   echo "Install additional Homebrew formulaes"
-  brew install ffmpeg 
-  brew install gs 
-  brew install imagemagick 
-  brew install youtube-dl 
+  brew install ffmpeg
+  brew install gs
+  brew install jq
+  brew install imagemagick
+  brew install youtube-dl
   brew install trash
   brew install git-delta
 }
