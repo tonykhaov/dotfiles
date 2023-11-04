@@ -29,15 +29,8 @@ install_main_brew_dependencies() {
   brew install python
 }
 
-install_node_nvm() {
-  echo "Uninstall node"
-  brew uninstall --ignore-dependencies node
-  brew uninstall --force node
-  echo "Install node"
-  mkdir -p ~/.nvm
-  source $(brew --prefix nvm)/nvm.sh
-  nvm install node
-  nvm use node
+install_node_volta() {
+  volta install node
 }
 
 install_ni() {
@@ -109,7 +102,7 @@ main() {
   set_computer_name
   install_homebrew
   install_main_brew_dependencies
-  install_node_nvm
+  install_node_volta
   install_ni
   install_deno
   install_jetbrains_font

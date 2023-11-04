@@ -16,9 +16,6 @@ UPDATE_ZSH_DAYS=3
 DISABLE_AUTO_UPDATE="false"
 DISABLE_UPDATE_PROMPT="true" # AUTO UPDATE OH-MY-ZSH
 
-# run nvm use on every project
-NVM_AUTO_USE=true
-
 # Disable brew auto update when installing
 HOMEBREW_NO_AUTO_UPDATE=1
 
@@ -53,7 +50,7 @@ ZSH_DISABLE_COMPFIX="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # PLUGINS
-plugins=(z ssh-agent git zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-nvm)
+plugins=(z ssh-agent git zsh-autosuggestions zsh-syntax-highlighting you-should-use)
 
 # User configuration
 
@@ -113,3 +110,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Add AWS completion
 complete -C aws_completer aws
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
