@@ -81,9 +81,9 @@ import_youtubedl_config() {
 
 install_yarn_and_pnpm() {
   echo "Install yarn"
-  volta install yarn
+  brew install yarn
   echo "Install pnpm"
-  volta install pnpm
+  brew install pnpm
 }
 
 
