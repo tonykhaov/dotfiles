@@ -23,7 +23,6 @@
   "editor.suggest.preview": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.wrapTabs": true,
-  "workbench.activityBar.visible": true,
   "workbench.sideBar.location": "right",
   "workbench.panel.defaultLocation": "bottom",
   "workbench.editor.limit.enabled": true,
@@ -65,7 +64,7 @@
   "eslint.packageManager": "npm",
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": false
+    "source.fixAll.eslint": "never"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -132,5 +131,6 @@
   "git.mergeEditor": false,
   "totalTypeScript.hideAllTips": true,
   "totalTypeScript.hideBasicTips": true,
-  "workbench.colorTheme": "Theme Mix"
+  "workbench.colorTheme": "Theme Mix",
+  "workbench.startupEditor": "none"
 }
