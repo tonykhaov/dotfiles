@@ -35,6 +35,7 @@ install_vscode_extensions() {
   code --install-extension ms-playwright.playwright
   code --install-extension tal7aouy.theme
   code --install-extension chakra-ui.panda-css-vscode
+  code --install-extension YoavBls.pretty-ts-errors
 }
 
 import_snippets_keybindings_settings_to_vscode() {
