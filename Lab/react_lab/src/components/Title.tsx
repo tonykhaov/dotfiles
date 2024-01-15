@@ -1,10 +1,16 @@
-import clsx from 'clsx'
+import { css } from 'styled-system/css'
+import { styled } from 'styled-system/jsx'
 
-function Title(props: React.HTMLAttributes<HTMLHeadingElement>) {
+function Title(props: React.ComponentProps<typeof styled.h1>) {
   return (
-    <h1 {...props} className={clsx('text-6xl', props.className)}>
+    <styled.h1
+      {...props}
+      className={css({
+        fontSize: 'xxx-large',
+      })}
+    >
       {props.children}
-    </h1>
+    </styled.h1>
   )
 }
 

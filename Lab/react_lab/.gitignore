@@ -31,3 +31,6 @@ dist-ssr
 .env
 .env.production
 .envrc
+## Panda
+styled-system
+styled-system-studio

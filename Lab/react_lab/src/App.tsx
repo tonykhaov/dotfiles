@@ -1,14 +1,22 @@
-import clsx from 'clsx'
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import Homepage from '@pages/homepage'
 import About from '@pages/about'
 import Fetch from '@pages/fetch'
+import { css } from 'styled-system/css'
 
 function App() {
   return (
     <>
       <NavBar />
-      <div className="flex min-h-[45vh] flex-col items-center justify-center">
+      <div
+        className={css({
+          display: 'flex',
+          minHeight: '45vh',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        })}
+      >
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
@@ -22,40 +30,58 @@ function App() {
 function NavBar() {
   const { pathname } = useLocation()
   return (
-    <nav className="border-2 py-4">
-      <ul className="flex justify-center gap-8">
+    <nav
+      className={css({
+        borderWidth: '2',
+        py: '4',
+      })}
+    >
+      <ul
+        className={css({
+          display: 'flex',
+          justifyContent: 'center',
+          gap: {
+            base: '2',
+            md: '8',
+          },
+        })}
+      >
         <li>
-          <Link
-            to="/"
-            className={clsx('p-2 hover:text-blue-500', {
-              'border-4 border-blue-400 text-blue-700': pathname === '/',
-            })}
-          >
+          <NavLink to="/" data-active={pathname === '/'}>
             Go to homepage
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
-            to="/about"
-            className={clsx('p-2 hover:text-blue-500', {
-              'border-4 border-blue-400 text-blue-700': pathname === '/about',
-            })}
-          >
+          <NavLink to="/about" data-active={pathname === '/about'}>
             Go to about
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
-            to="/fetch"
-            className={clsx('p-2 hover:text-blue-500', {
-              'border-4 border-blue-400 text-blue-700': pathname === '/fetch',
-            })}
-          >
+          <NavLink to="/fetch" data-active={pathname === '/fetch'}>
             Go to fetch
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
+  )
+}
+
+function NavLink(props: React.ComponentProps<typeof Link>) {
+  return (
+    <Link
+      {...props}
+      className={css({
+        'p': '2',
+        '&:hover': {
+          color: 'blue.500',
+        },
+        '&[data-active=true]': {
+          borderWidth: '4',
+          borderColor: 'blue.400',
+          color: 'blue.700',
+        },
+      })}
+    />
   )
 }
 

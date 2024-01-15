@@ -16,10 +16,10 @@
     "coverage": "vitest run --coverage",
     "typecheck": "tsc -b",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache --ext js,jsx,ts,tsx .",
-    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|gql|graphql|mdx|vue)\""
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|gql|graphql|mdx|vue)\"",
+    "prepare": "panda codegen"
   },
   "dependencies": {
-    "clsx": "^1.1.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-query": "^3.38.0",
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
+    "@pandacss/dev": "^0.27.0",
     "@testing-library/cypress": "^9.0.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^14.0.0",
