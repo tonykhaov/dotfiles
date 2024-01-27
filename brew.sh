@@ -71,11 +71,17 @@ install_fonts() {
   brew install homebrew/cask-fonts/font-noto-sans
 }
 
+install_fzf() {
+  brew install fzf
+  $(brew --prefix)/opt/fzf/install --all --no-bash --no-fish
+}
+
 main() {
   install_additional_homebrew_formulaes
   load_third_party_cask_drivers
   install_homebrew_cask_formulaes
   setup_docker
+  install_fzf
 }
 
 main

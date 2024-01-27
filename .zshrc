@@ -113,3 +113,7 @@ complete -C aws_completer aws
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+export OpenMP_ROOT=$(brew --prefix)/opt/libomp
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
