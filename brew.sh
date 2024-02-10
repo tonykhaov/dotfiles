@@ -39,6 +39,7 @@ install_homebrew_cask_formulaes() {
   brew install google-chrome
   brew install iina
   brew install imageoptim
+  brew install --cask kap
   brew install logitech-options
   brew install pulumi
   brew install podman
