@@ -1,16 +1,13 @@
 import { render, screen, waitFor } from '@utils/test/app-test-utils'
 import Fetch from '@pages/fetch'
-import { server, rest } from '@src/utils/mocks/server'
+import { server, http, HttpResponse } from '@src/utils/mocks/server'
 import { generateUser } from '@src/utils/mocks/generate/user'
-import type { User } from '@src/types/user'
 
 describe('should render Fetch page', () => {
   it('should display loading message and then list of users', async () => {
     const randomUsers = [generateUser()]
     server.use(
-      rest.get<User[]>('https://my-backend.com/api/users', (req, res, ctx) =>
-        res(ctx.json(randomUsers))
-      )
+      http.get('https://my-backend.com/api/users', () => HttpResponse.json(randomUsers))
     )
     render(<Fetch />)
 
