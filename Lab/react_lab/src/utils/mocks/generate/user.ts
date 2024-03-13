@@ -3,8 +3,8 @@ import type { User } from '@src/types/user'
 
 function generateUser(): User {
   return {
-    id: faker.datatype.uuid(),
-    name: faker.name.findName(),
+    id: faker.string.uuid(),
+    name: faker.person.fullName(),
     email: faker.internet.email(),
     password: faker.internet.password(),
   }
