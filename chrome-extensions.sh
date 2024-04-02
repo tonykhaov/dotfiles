@@ -15,7 +15,5 @@ open https://chrome.google.com/webstore/detail/news-feed-eradicator/fjcldmjmjhkk
 open https://chrome.google.com/webstore/detail/df-tube-distraction-free/mjdepdfccjgcndkmemponafgioodelna
 open https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf/related
 open https://chrome.google.com/webstore/detail/disconnect/jeoacafpbcihiomhlakheieifhpjdfeo
-open https://chrome.google.com/webstore/detail/refined-twitter-lite/adhbafkkfbonbogdlaebnoegpoogngcc/related
 open https://chrome.google.com/webstore/detail/remove-w3schools/gohnadkcefpdhblajddfnhapimpdjkje/related
-open https://chrome.google.com/webstore/detail/twitch-adblock/ljhnljhabgjcihjoihakgdiicdjncpkd/related
 open https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk/related
