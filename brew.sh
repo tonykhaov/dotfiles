@@ -9,7 +9,6 @@ install_additional_homebrew_formulaes() {
   brew install youtube-dl
   brew install trash
   brew install git-delta
-  brew install volta
 }
 
 load_third_party_cask_drivers() {
@@ -21,7 +20,6 @@ install_homebrew_cask_formulaes() {
   echo "Install Homebrew cask formulaes"
   brew install 1password
   brew install --cask 1password-cli
-  brew install adobe-creative-cloud
   brew install --cask android-studio
   brew install aldente
   brew install alt-tab
@@ -33,7 +31,6 @@ install_homebrew_cask_formulaes() {
   brew install colima
   brew install discord
   brew install --cask docker
-  brew install --cask dolphin
   brew install dropzone
   brew install figma
   brew install google-chrome
@@ -48,7 +45,6 @@ install_homebrew_cask_formulaes() {
   brew install qbittorrent
   brew install --cask mgba
   brew install monitorcontrol
-  brew install nordvpn
   brew install notion
   brew install --cask raycast
   brew install soundsource

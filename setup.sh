@@ -30,7 +30,9 @@ install_main_brew_dependencies() {
 }
 
 install_node_volta() {
+  curl https://get.volta.sh | bash
   volta install node
+  node -v
 }
 
 install_ni() {
