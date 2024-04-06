@@ -10,6 +10,7 @@ install_vscode_extensions() {
   code --install-extension esbenp.prettier-vscode
   code --install-extension formulahendry.auto-rename-tag
   code --install-extension GitHub.vscode-pull-request-github
+  code --install-extension Supermaven.supermaven
   code --install-extension jasonnutter.search-node-modules
   code --install-extension KnisterPeter.vscode-commitizen
   code --install-extension leizongmin.node-module-intellisense
