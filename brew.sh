@@ -19,13 +19,11 @@ load_third_party_cask_drivers() {
 install_homebrew_cask_formulaes() {
   echo "Install Homebrew cask formulaes"
   brew install 1password
-  brew install --cask 1password-cli
   brew install --cask android-studio
   brew install aldente
   brew install alt-tab
   brew install amethyst
   brew install anki
-  brew install awscli
   brew install bartender
   brew install calibre
   brew install colima
@@ -39,11 +37,7 @@ install_homebrew_cask_formulaes() {
   brew install --cask kap
   brew install logitech-options
   brew install pulumi
-  brew install podman
-  brew install podman-compose
-  brew install --cask podman-desktop
   brew install qbittorrent
-  brew install --cask mgba
   brew install monitorcontrol
   brew install notion
   brew install --cask raycast
