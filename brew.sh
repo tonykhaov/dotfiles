@@ -20,7 +20,6 @@ install_homebrew_cask_formulaes() {
   echo "Install Homebrew cask formulaes"
   brew install 1password
   brew install --cask android-studio
-  brew install aldente
   brew install alt-tab
   brew install amethyst
   brew install anki
