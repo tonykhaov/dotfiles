@@ -67,6 +67,19 @@ import_vim_git_configs() {
   ln -s ~/Documents/Coding/dotfiles/.gitconfig ~/.gitconfig
 }
 
+install_neovim() {
+  echo "Install Neovim"
+  brew install nvim fzf ripgrep
+  ln -s ~/Documents/Coding/dotfiles/nvim ~/.config/nvim
+}
+
+install_kitty() {
+  echo "Install kitty"
+  brew install kitty
+  ln -s ~/Documents/Coding/dotfiles/kitty ~/.config/kitty
+}
+
+
 import_stock_and_lab_folders() {
   echo "Import Lab dir inside ~/Documents"
   ln -s ~/Documents/Coding/dotfiles/Lab ~/Documents/Coding/Lab
