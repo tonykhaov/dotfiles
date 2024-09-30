@@ -69,7 +69,7 @@ import_vim_git_configs() {
 
 install_neovim() {
   echo "Install Neovim"
-  brew install nvim fzf ripgrep
+  brew install nvim fzf ripgrep lazygit
   ln -s ~/Documents/Coding/dotfiles/nvim ~/.config/nvim
 }
 
