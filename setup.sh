@@ -52,6 +52,11 @@ install_bun() {
   brew install bun
 }
 
+install_opencode_sst() {
+  echo "Install opencode.ai"
+  brew install sst/tap/opencode
+}
+
 install_jetbrains_font() {
   echo "Install Jetbrains Mono Font"
   brew tap homebrew/cask-fonts 
@@ -69,8 +74,7 @@ import_vim_git_configs() {
 
 install_neovim() {
   echo "Install Neovim"
-  brew install nvim fzf ripgrep lazygit
-  ln -s ~/Documents/Coding/dotfiles/nvim ~/.config/nvim
+  brew install fzf ripgrep lazygit
 }
 
 install_kitty() {
@@ -84,7 +88,6 @@ import_stock() {
   echo "Import Stock dir inside ~/Documents/Coding"
   ln -s ~/Documents/Coding/dotfiles/Stock ~/Documents/Stock
 }
-
 
 import_youtubedl_config() {
   echo "Import youtube-dl config"
@@ -123,6 +126,7 @@ main() {
   import_stock_and_lab_folders
   import_youtubedl_config
   install_yarn_and_pnpm
+  install_opencode_sst
   generate_ssh_key
 }
 
