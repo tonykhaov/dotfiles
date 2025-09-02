@@ -80,9 +80,7 @@ install_kitty() {
 }
 
 
-import_stock_and_lab_folders() {
-  echo "Import Lab dir inside ~/Documents"
-  ln -s ~/Documents/Coding/dotfiles/Lab ~/Documents/Coding/Lab
+import_stock() {
   echo "Import Stock dir inside ~/Documents/Coding"
   ln -s ~/Documents/Coding/dotfiles/Stock ~/Documents/Stock
 }
