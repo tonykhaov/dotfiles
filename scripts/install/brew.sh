@@ -67,8 +67,6 @@ install_gui_applications() {
 install_fonts() {
     echo -e "${BLUE}Installing fonts...${NC}"
     
-    brew tap homebrew/cask-fonts
-    
     local fonts=(
         "font-ubuntu"
         "font-poppins"
@@ -113,18 +111,10 @@ open_setup_applications() {
     echo -e "${GREEN}✓ Applications opened for setup${NC}"
 }
 
-# Add third-party taps
-add_taps() {
-    echo -e "${BLUE}Adding Homebrew taps...${NC}"
-    brew tap homebrew/cask-drivers
-    echo -e "${GREEN}✓ Taps added${NC}"
-}
-
 main() {
     echo -e "${YELLOW}🍺 Installing Homebrew packages and applications${NC}"
     echo ""
     
-    add_taps
     install_cli_tools
     install_gui_applications
     install_fonts
