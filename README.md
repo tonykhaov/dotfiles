@@ -3,6 +3,7 @@ Hey this is my MacOS dotfiles!
 ## Table of contents
 
 - [Installation](#installation)
+- [Structure](#structure)
 - [Before reseting the macbook](#before-reseting-the-macbook)
 - [My folder structure](#my-folder-structure)
 
@@ -14,11 +15,35 @@ Hey this is my MacOS dotfiles!
 
 2. Open your terminal and run this script: (this will clone the repo and automatically start the setup)
 
-```
-mkdir -p ~/Documents/Coding && git clone https://github.com/tonykhaov/dotfiles.git ~/Documents/Coding/dotfiles && cd ~/Documents/Coding/dotfiles && chmod +x ./install.sh && ./install.sh
+```bash
+mkdir -p ~/Documents/Coding && git clone https://github.com/tonykhaov/dotfiles.git ~/Documents/Coding/dotfiles && cd ~/Documents/Coding/dotfiles && chmod +x ./bootstrap.sh && ./bootstrap.sh
 ```
 
-**_You must wait for install.sh script to be completed to carry on with the manual installation_**
+**_The bootstrap script will handle the entire automated setup process_**
+
+---
+
+## Structure
+
+```
+dotfiles/
+├── config/                    # All configuration files
+│   ├── git/.gitconfig        # Git configuration
+│   ├── shell/                # Shell configurations (.zshrc, .zprofile)
+│   ├── vim/.vimrc           # Vim configuration
+│   ├── kitty/               # Kitty terminal config
+│   ├── vscode/              # VS Code settings, keybindings, snippets
+│   └── youtube-dl/          # YouTube-dl configuration
+├── scripts/                  # Installation & setup scripts
+│   ├── install/             # Initial setup (brew, apps, fonts)
+│   ├── config/              # Configuration scripts (symlinks, vscode, etc.)
+│   └── utils/               # Utility scripts
+├── resources/               # Static resources
+│   └── stock/              # Stock files for new setups
+├── docs/                   # Documentation
+├── bootstrap.sh           # Main entry point for setup
+└── README.md
+```
 
 4. Terminal:
 
