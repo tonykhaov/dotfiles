@@ -206,6 +206,15 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`, `Nlsv`
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
+# Set column view text size to 14pt
+defaults write com.apple.finder FXColumnViewTextSize -int 30
+
+# Set column view icon size to 1/2 (small)
+defaults write com.apple.finder FXColumnViewIconSize -int 1
+
+# Sort by name in column view
+defaults write com.apple.finder FXColumnViewSortKey -string "Name"
+
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 

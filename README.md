@@ -19,7 +19,8 @@ Hey this is my MacOS dotfiles!
 mkdir -p ~/Documents/Coding && git clone https://github.com/tonykhaov/dotfiles.git ~/Documents/Coding/dotfiles && cd ~/Documents/Coding/dotfiles && chmod +x ./bootstrap.sh && ./bootstrap.sh
 ```
 
-**_The bootstrap script will handle the entire automated setup process and will prompt you for your git name and email during setup_**
+**_The bootstrap script will handle the entire automated setup process and will prompt you for your git name and email
+during setup_**
 
 ---
 
@@ -45,19 +46,11 @@ dotfiles/
 └── README.md
 ```
 
-4. Terminal:
-
-- Open Terminal.app > Preferences > Import > Dracula.terminal
-- Select Dracula theme > Set as default > Change font to JetBrains Mono and 18 for font size
-
 5. General Settings
 
 - Keyboards
 
   - Modifier Keys > Caps Lock: Escape
-  - Fn touch > Show emoji and symbols
-  - Disable Spotlight shortcut > Shortcuts > Spotlight
-  - Shortcuts > Screenshots > Copy picture of X to the clipboard: Cmd + Shift + 3
 
 - Trackpad
 
