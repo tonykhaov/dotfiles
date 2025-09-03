@@ -1,6 +1,6 @@
 [user]
-	name = Tony Khaov
-	email = tony.khaov@gmail.com
+	name = __GIT_NAME__
+	email = __GIT_EMAIL__
 
 [pull]
 	rebase = true

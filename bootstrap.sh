@@ -53,16 +53,20 @@ main() {
     run_script "$DOTFILES_DIR/scripts/install/mas.sh" "Mac App Store applications"
     run_script "$DOTFILES_DIR/scripts/install/brew.sh" "Homebrew applications"
     
-    # Step 3: Create symlinks for dotfiles
+    # Step 3: Configure git with user input
+    print_step "Configuring Git"
+    run_script "$DOTFILES_DIR/scripts/config/git-setup.sh" "Setting up git with your name and email"
+    
+    # Step 4: Create symlinks for dotfiles
     print_step "Setting Up Configuration Files"
     run_script "$DOTFILES_DIR/scripts/config/symlinks.sh" "Creating symlinks for dotfiles"
     
-    # Step 4: Configure applications
+    # Step 5: Configure applications
     print_step "Configuring Applications"
     run_script "$DOTFILES_DIR/scripts/config/vscode.sh" "VS Code extensions and settings"
     run_script "$DOTFILES_DIR/scripts/config/chrome-extensions.sh" "Chrome extensions"
     
-    # Step 5: System configuration (run last)
+    # Step 6: System configuration (run last)
     print_step "Configuring macOS System Settings"
     run_script "$DOTFILES_DIR/scripts/config/macos.sh" "macOS system preferences"
     run_script "$DOTFILES_DIR/scripts/config/oh-my-zsh.sh" "Oh My Zsh and shell configuration"

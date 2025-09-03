@@ -19,7 +19,7 @@ Hey this is my MacOS dotfiles!
 mkdir -p ~/Documents/Coding && git clone https://github.com/tonykhaov/dotfiles.git ~/Documents/Coding/dotfiles && cd ~/Documents/Coding/dotfiles && chmod +x ./bootstrap.sh && ./bootstrap.sh
 ```
 
-**_The bootstrap script will handle the entire automated setup process_**
+**_The bootstrap script will handle the entire automated setup process and will prompt you for your git name and email during setup_**
 
 ---
 

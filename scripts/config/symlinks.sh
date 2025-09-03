@@ -39,8 +39,7 @@ echo ""
 link_config "$CONFIG_DIR/shell/.zshrc" "$HOME/.zshrc"
 link_config "$CONFIG_DIR/shell/.zprofile" "$HOME/.zprofile"
 
-# Git config
-link_config "$CONFIG_DIR/git/.gitconfig" "$HOME/.gitconfig"
+# Git config is handled by git-setup.sh script (prompts for user info)
 
 # Vim config
 link_config "$CONFIG_DIR/vim/.vimrc" "$HOME/.vimrc"

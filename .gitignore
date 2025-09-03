@@ -24,3 +24,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Generated git configuration (created from template)
+config/git/.gitconfig
