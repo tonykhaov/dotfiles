@@ -1,82 +1,140 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
 
-install_additional_homebrew_formulaes() {
-  echo "Install additional Homebrew formulaes"
-  brew install ffmpeg
-  brew install gs
-  brew install jq
-  brew install imagemagick
-  brew install youtube-dl
-  brew install trash
-  brew install git-delta
+set -e
+
+# Colors for output
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+# CLI tools and utilities
+install_cli_tools() {
+    echo -e "${BLUE}Installing CLI tools...${NC}"
+    
+    local cli_tools=(
+        "ffmpeg"
+        "gs"
+        "jq"
+        "imagemagick"
+        "youtube-dl"
+        "trash"
+        "git-delta"
+        "fzf"
+    )
+    
+    for tool in "${cli_tools[@]}"; do
+        echo "Installing $tool..."
+        brew install "$tool"
+    done
+    
+    echo -e "${GREEN}✓ CLI tools installed${NC}"
 }
 
-load_third_party_cask_drivers() {
-  echo "Load third party cask drivers"
-  brew tap homebrew/cask-drivers
+# GUI applications (casks)
+install_gui_applications() {
+    echo -e "${BLUE}Installing GUI applications...${NC}"
+    
+    local gui_apps=(
+        "1password"
+        "android-studio"
+        "alt-tab"
+        "anki"
+        "bartender"
+        "calibre"
+        "cap"
+        "discord"
+        "dropzone"
+        "figma"
+        "google-chrome"
+        "logitech-options"
+        "monitorcontrol"
+        "notion"
+        "orbstack"
+        "raycast"
+        "soundsource"
+        "spotify"
+        "visual-studio-code"
+    )
+    
+    for app in "${gui_apps[@]}"; do
+        echo "Installing $app..."
+        brew install --cask "$app"
+    done
+    
+    echo -e "${GREEN}✓ GUI applications installed${NC}"
 }
 
-install_homebrew_cask_formulaes() {
-  echo "Install Homebrew cask formulaes"
-  brew install 1password
-  brew install --cask android-studio
-  brew install alt-tab
-  brew install anki
-  brew install bartender
-  brew install calibre
-  brew install discord
-  brew install dropzone
-  brew install figma
-  brew install google-chrome
-  brew install cap
-  brew install logitech-options
-  brew install monitorcontrol
-  brew install notion
-  brew install raycast
-  brew install soundsource
-  brew install spotify
-  brew install visual-studio-code
-  brew install orbstack
-}
-
+# Fonts
 install_fonts() {
-  brew tap homebrew/cask-fonts
-  brew install homebrew/cask-fonts/font-ubuntu
-  brew install homebrew/cask-fonts/font-poppins
-  brew install homebrew/cask-fonts/font-open-sans
-  brew install homebrew/cask-fonts/font-roboto
-  brew install homebrew/cask-fonts/font-inter
-  brew install homebrew/cask-fonts/font-lato
-  brew install homebrew/cask-fonts/font-noto-sans
+    echo -e "${BLUE}Installing fonts...${NC}"
+    
+    brew tap homebrew/cask-fonts
+    
+    local fonts=(
+        "font-ubuntu"
+        "font-poppins"
+        "font-open-sans"
+        "font-roboto"
+        "font-inter"
+        "font-lato"
+        "font-noto-sans"
+    )
+    
+    for font in "${fonts[@]}"; do
+        echo "Installing $font..."
+        brew install --cask "$font"
+    done
+    
+    echo -e "${GREEN}✓ Fonts installed${NC}"
 }
 
-install_fzf() {
-  brew install fzf
-  $(brew --prefix)/opt/fzf/install --all --no-bash --no-fish
+# Setup FZF shell integration
+setup_fzf() {
+    echo -e "${BLUE}Setting up FZF shell integration...${NC}"
+    "$(brew --prefix)/opt/fzf/install" --all --no-bash --no-fish
+    echo -e "${GREEN}✓ FZF configured${NC}"
 }
 
-open_gui_applications() {
-  echo "Opening GUI applications that need initial setup..."
-  
-  # Open OrbStack if it was installed
-  if brew list --cask orbstack &>/dev/null; then
-    echo "Opening OrbStack..."
-    open -a OrbStack
-  fi
-  
-  # Open other apps that need setup
-  if brew list --cask raycast &>/dev/null; then
-    echo "Opening Raycast..."
-    open -a Raycast
-  fi
+# Open applications that need initial setup
+open_setup_applications() {
+    echo -e "${BLUE}Opening applications that need initial setup...${NC}"
+    
+    local apps_to_open=(
+        "OrbStack"
+        "Raycast"
+    )
+    
+    for app in "${apps_to_open[@]}"; do
+        if brew list --cask "${app,,}" &>/dev/null; then
+            echo "Opening $app..."
+            open -a "$app"
+        fi
+    done
+    
+    echo -e "${GREEN}✓ Applications opened for setup${NC}"
+}
+
+# Add third-party taps
+add_taps() {
+    echo -e "${BLUE}Adding Homebrew taps...${NC}"
+    brew tap homebrew/cask-drivers
+    echo -e "${GREEN}✓ Taps added${NC}"
 }
 
 main() {
-  install_additional_homebrew_formulaes
-  load_third_party_cask_drivers
-  install_homebrew_cask_formulaes
-  install_fzf
-  open_gui_applications
+    echo -e "${YELLOW}🍺 Installing Homebrew packages and applications${NC}"
+    echo ""
+    
+    add_taps
+    install_cli_tools
+    install_gui_applications
+    install_fonts
+    setup_fzf
+    open_setup_applications
+    
+    echo ""
+    echo -e "${GREEN}🎉 All Homebrew packages installed successfully!${NC}"
 }
 
-main
+main "$@"
