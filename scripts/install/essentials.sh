@@ -1,128 +1,215 @@
 #!/usr/bin/env bash
 
+set -e
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Check if command exists
+command_exists() {
+    command -v "$1" >/dev/null 2>&1
+}
+
+# Set computer name with different formats
 set_computer_name() {
-  read -p "Enter name: [tonykhaov]" name
-  name=${name:-tonykhaov}
-  sudo scutil --set HostName $name
-  sudo scutil --set LocalHostName $name
-  sudo scutil --set ComputerName $name
-  dscacheutil -flushcache
-  echo "Computer name changed to ${name}"
+    echo -e "${BLUE}Setting computer name...${NC}"
+    
+    read -p "Enter your full name (First Last) [Tony Khaov]: " full_name
+    full_name=${full_name:-"Tony Khaov"}
+    
+    # Extract first and last name
+    local first_name=$(echo "$full_name" | awk '{print $1}')
+    local last_name=$(echo "$full_name" | awk '{print $2}')
+    
+    # Create abbreviated hostname format: mbp-t-k
+    local first_initial=$(echo "$first_name" | cut -c1 | tr '[:upper:]' '[:lower:]')
+    local last_initial=$(echo "$last_name" | cut -c1 | tr '[:upper:]' '[:lower:]')
+    local abbreviated_name="mbp-${first_initial}-${last_initial}"
+    
+    echo -e "${YELLOW}Computer Name (display): ${full_name}${NC}"
+    echo -e "${YELLOW}Host/LocalHost Name (network): ${abbreviated_name}${NC}"
+    
+    # Set different names for different purposes
+    sudo scutil --set ComputerName "$full_name"
+    sudo scutil --set HostName "$abbreviated_name"
+    sudo scutil --set LocalHostName "$abbreviated_name"
+    dscacheutil -flushcache
+    
+    echo -e "${GREEN}✓ Computer name configured:${NC}"
+    echo -e "  ComputerName: $full_name"
+    echo -e "  HostName/LocalHostName: $abbreviated_name"
 }
 
+# Install Homebrew if not present
 install_homebrew() {
-  echo "Install Homebrew"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  echo "Set brew PATH"
-  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-  eval "$(/opt/homebrew/bin/brew shellenv)"
+    if command_exists brew; then
+        echo -e "${YELLOW}Homebrew already installed, updating...${NC}"
+        brew update
+        return
+    fi
+    
+    echo -e "${BLUE}Installing Homebrew...${NC}"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    
+    echo -e "${BLUE}Setting up Homebrew PATH...${NC}"
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    
+    echo -e "${GREEN}✓ Homebrew installed${NC}"
 }
 
-install_main_brew_dependencies() {
-  echo "Install git, python"
-  brew install git
-  brew install python
+# Install essential development tools
+install_dev_tools() {
+    echo -e "${BLUE}Installing essential development tools...${NC}"
+    
+    local tools=("git" "python")
+    
+    for tool in "${tools[@]}"; do
+        echo "Installing $tool..."
+        brew install "$tool"
+    done
+    
+    echo -e "${GREEN}✓ Development tools installed${NC}"
 }
 
-install_node_volta() {
-  curl https://get.volta.sh | bash
-  volta install node
-  node -v
-}
-
-install_ni() {
-  # https://github.com/antfu/ni
-  echo "Installing ni"
-  npm i -g @antfu/ni
-}
-
-install_deno() {
-  echo "Install deno"
-  brew install deno
-}
-
-install_bun() {
-  echo "Install bun"
-  brew tap oven-sh/bun
-  brew install bun
-}
-
-install_opencode_sst() {
-  echo "Install opencode.ai"
-  brew install sst/tap/opencode
-}
-
+# Install JetBrains Mono font
 install_jetbrains_font() {
-  echo "Install Jetbrains Mono Font"
-  brew tap homebrew/cask-fonts 
-  brew install font-jetbrains-mono
+    echo -e "${BLUE}Installing JetBrains Mono font...${NC}"
+    
+    brew tap homebrew/cask-fonts
+    brew install --cask font-jetbrains-mono
+    
+    echo -e "${GREEN}✓ JetBrains Mono font installed${NC}"
 }
 
-import_vim_git_configs() {
-  echo "Import vim config"
-  rm -rf ~/.vimrc
-  ln -s ~/Documents/Coding/dotfiles/.vimrc ~/.vimrc
-  echo "Import git config"
-  rm -rf ~/.gitconfig
-  ln -s ~/Documents/Coding/dotfiles/.gitconfig ~/.gitconfig
+# Install Node.js via Volta
+install_node_volta() {
+    if command_exists volta; then
+        echo -e "${YELLOW}Volta already installed${NC}"
+    else
+        echo -e "${BLUE}Installing Volta (Node.js manager)...${NC}"
+        curl https://get.volta.sh | bash
+        source "$HOME/.zshrc" 2>/dev/null || true
+    fi
+    
+    echo -e "${BLUE}Installing Node.js...${NC}"
+    volta install node
+    
+    echo -e "${GREEN}✓ Node.js installed via Volta: $(node -v)${NC}"
 }
 
-install_neovim() {
-  echo "Install Neovim"
-  brew install fzf ripgrep lazygit
+# Install JavaScript runtimes and tools
+install_js_tools() {
+    echo -e "${BLUE}Installing JavaScript tools...${NC}"
+    
+    # Install ni (package manager helper)
+    echo "Installing ni..."
+    npm install -g @antfu/ni
+    
+    # Install alternative runtimes
+    echo "Installing Deno..."
+    brew install deno
+    
+    echo "Installing Bun..."
+    brew tap oven-sh/bun
+    brew install bun
+    
+    # Install package managers
+    echo "Installing Yarn and pnpm..."
+    brew install yarn pnpm
+    
+    echo -e "${GREEN}✓ JavaScript tools installed${NC}"
 }
 
-install_kitty() {
-  echo "Install kitty"
-  brew install kitty
-  ln -s ~/Documents/Coding/dotfiles/kitty ~/.config/kitty
+# Install additional development tools
+install_additional_tools() {
+    echo -e "${BLUE}Installing additional development tools...${NC}"
+    
+    # Neovim dependencies
+    echo "Installing Neovim dependencies..."
+    brew install neovim fzf ripgrep lazygit
+    
+    # Terminal
+    echo "Installing Kitty terminal..."
+    brew install --cask kitty
+    
+    # SST OpenCode
+    echo "Installing SST OpenCode..."
+    brew install sst/tap/opencode
+    
+    echo -e "${GREEN}✓ Additional tools installed${NC}"
 }
 
-
-import_stock() {
-  echo "Import Stock dir inside ~/Documents/Coding"
-  ln -s ~/Documents/Coding/dotfiles/Stock ~/Documents/Stock
-}
-
-import_youtubedl_config() {
-  echo "Import youtube-dl config"
-  mkdir -p ~/.config 
-  ln -s ~/Documents/Coding/dotfiles/youtube-dl ~/.config/youtube-dl
-}
-
-install_yarn_and_pnpm() {
-  echo "Install yarn"
-  brew install yarn
-  echo "Install pnpm"
-  brew install pnpm
-}
-
-
+# Generate SSH key for GitHub
 generate_ssh_key() {
-  echo "Generating a new SSH key for GitHub"
-  read -p "Enter git email: [tony.khaov@gmail.com]" git_email
-  git_email=${git_email:-tony.khaov@gmail.com}
-  ssh-keygen -t ed25519 -C "${git_email}" -f ~/.ssh/id_ed25519
-  eval "$(ssh-agent -s)"
-  echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_ed25519" | tee ~/.ssh/config
-  ssh-add --apple-use-keychain ~/.ssh/id_ed25519
-  echo "run 'pbcopy < ~/.ssh/id_ed25519.pub' and paste that into GitHub"
+    if [[ -f "$HOME/.ssh/id_ed25519" ]]; then
+        echo -e "${YELLOW}SSH key already exists at ~/.ssh/id_ed25519${NC}"
+        return
+    fi
+    
+    echo -e "${BLUE}Generating SSH key for GitHub...${NC}"
+    
+    read -p "Enter your email for SSH key [tony.khaov@gmail.com]: " git_email
+    git_email=${git_email:-tony.khaov@gmail.com}
+    
+    # Create .ssh directory if it doesn't exist
+    mkdir -p ~/.ssh
+    
+    # Generate SSH key
+    ssh-keygen -t ed25519 -C "$git_email" -f ~/.ssh/id_ed25519 -N ""
+    
+    # Start ssh-agent and add key
+    eval "$(ssh-agent -s)"
+    
+    # Create SSH config
+    cat > ~/.ssh/config << EOF
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_ed25519
+EOF
+    
+    # Add key to ssh-agent
+    ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+    
+    echo -e "${GREEN}✓ SSH key generated${NC}"
+    echo -e "${YELLOW}📋 Copy your public key to GitHub:${NC}"
+    echo -e "${BLUE}pbcopy < ~/.ssh/id_ed25519.pub${NC}"
+    echo ""
+    echo -e "${YELLOW}Then paste it at: https://github.com/settings/ssh/new${NC}"
 }
 
 main() {
-  set_computer_name
-  install_homebrew
-  install_main_brew_dependencies
-  install_node_volta
-  install_ni
-  install_deno
-  install_jetbrains_font
-  import_vim_git_configs
-  import_stock_and_lab_folders
-  import_youtubedl_config
-  install_yarn_and_pnpm
-  install_opencode_sst
-  generate_ssh_key
+    echo -e "${GREEN}"
+    echo "  ███████ ███████ ███████ ███████ ███    ██ ████████ ██  █████  ██      ███████"
+    echo "  ██      ██      ██      ██      ████   ██    ██    ██ ██   ██ ██      ██     "
+    echo "  █████   ███████ ███████ █████   ██ ██  ██    ██    ██ ███████ ██      ███████"
+    echo "  ██           ██      ██ ██      ██  ██ ██    ██    ██ ██   ██ ██           ██"
+    echo "  ███████ ███████ ███████ ███████ ██   ████    ██    ██ ██   ██ ███████ ███████"
+    echo -e "${NC}"
+    echo -e "${BLUE}Installing essential tools for macOS development setup${NC}"
+    echo ""
+    
+    set_computer_name
+    install_homebrew
+    install_dev_tools
+    install_jetbrains_font
+    install_node_volta
+    install_js_tools
+    install_additional_tools
+    generate_ssh_key
+    
+    echo ""
+    echo -e "${GREEN}🎉 Essential tools installation completed!${NC}"
+    echo ""
+    echo -e "${YELLOW}Next steps:${NC}"
+    echo "  1. Add your SSH key to GitHub"
+    echo "  2. Restart your terminal or run: source ~/.zshrc"
+    echo "  3. Continue with the rest of the setup process"
 }
 
-main
+main "$@"
