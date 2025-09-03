@@ -10,11 +10,6 @@ set_computer_name() {
   echo "Computer name changed to ${name}"
 }
 
-install_rosetta() {
-  echo "Install rosetta"
-  softwareupdate --install-rosetta
-}
-
 install_homebrew() {
   echo "Install Homebrew"
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
