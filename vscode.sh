@@ -9,19 +9,14 @@ install_vscode_extensions() {
   code --install-extension EditorConfig.EditorConfig
   code --install-extension esbenp.prettier-vscode
   code --install-extension formulahendry.auto-rename-tag
-  code --install-extension GitHub.vscode-pull-request-github
   code --install-extension Supermaven.supermaven
   code --install-extension jasonnutter.search-node-modules
-  code --install-extension KnisterPeter.vscode-commitizen
   code --install-extension leizongmin.node-module-intellisense
   code --install-extension mhutchie.git-graph
-  code --install-extension ms-azuretools.vscode-docker
-  code --install-extension ms-vscode-remote.remote-containers
   code --install-extension ms-vscode.atom-keybindings
   code --install-extension naumovs.color-highlight
   code --install-extension patbenatar.advanced-new-file
   code --install-extension PKief.material-icon-theme
-  code --install-extension ritwickdey.LiveServer
   code --install-extension sleistner.vscode-fileutils
   code --install-extension VisualStudioExptTeam.vscodeintellicode
   code --install-extension vscodevim.vim
@@ -33,7 +28,7 @@ install_vscode_extensions() {
   code --install-extension silvenon.mdx
   code --install-extension mattpocock.ts-error-translator
   code --install-extension Gruntfuggly.todo-tree
-  code --install-extension ms-playwright.playwright
+  code --install-extension sst-dev.opencode
   code --install-extension tal7aouy.theme
   code --install-extension chakra-ui.panda-css-vscode
   code --install-extension YoavBls.pretty-ts-errors
