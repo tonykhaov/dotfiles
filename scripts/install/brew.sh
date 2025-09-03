@@ -21,33 +21,22 @@ install_homebrew_cask_formulaes() {
   brew install 1password
   brew install --cask android-studio
   brew install alt-tab
-  brew install amethyst
   brew install anki
   brew install bartender
   brew install calibre
-  brew install colima
   brew install discord
-  brew install --cask docker
   brew install dropzone
   brew install figma
   brew install google-chrome
-  brew install iina
-  brew install imageoptim
-  brew install --cask kap
+  brew install cap
   brew install logitech-options
-  brew install pulumi
-  brew install qbittorrent
   brew install monitorcontrol
   brew install notion
-  brew install --cask raycast
+  brew install raycast
   brew install soundsource
   brew install spotify
   brew install visual-studio-code
-}
-
-setup_docker() {
-  echo "Setup Docker"
-  colima start
+  brew install orbstack
 }
 
 install_fonts() {
@@ -66,12 +55,28 @@ install_fzf() {
   $(brew --prefix)/opt/fzf/install --all --no-bash --no-fish
 }
 
+open_gui_applications() {
+  echo "Opening GUI applications that need initial setup..."
+  
+  # Open OrbStack if it was installed
+  if brew list --cask orbstack &>/dev/null; then
+    echo "Opening OrbStack..."
+    open -a OrbStack
+  fi
+  
+  # Open other apps that need setup
+  if brew list --cask raycast &>/dev/null; then
+    echo "Opening Raycast..."
+    open -a Raycast
+  fi
+}
+
 main() {
   install_additional_homebrew_formulaes
   load_third_party_cask_drivers
   install_homebrew_cask_formulaes
-  setup_docker
   install_fzf
+  open_gui_applications
 }
 
 main
