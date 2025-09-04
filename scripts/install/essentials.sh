@@ -76,16 +76,6 @@ install_dev_tools() {
     echo -e "${GREEN}✓ Development tools installed${NC}"
 }
 
-# Install JetBrains Mono font
-install_jetbrains_font() {
-    echo -e "${BLUE}Installing JetBrains Mono font...${NC}"
-    
-    brew tap homebrew/cask-fonts
-    brew install --cask font-jetbrains-mono
-    
-    echo -e "${GREEN}✓ JetBrains Mono font installed${NC}"
-}
-
 # Install Node.js via Volta
 install_node_volta() {
     if command_exists volta; then
@@ -115,8 +105,7 @@ install_js_tools() {
     brew install deno
     
     echo "Installing Bun..."
-    brew tap oven-sh/bun
-    brew install bun
+    brew install oven-sh/bun/bun
     
     # Install package managers
     echo "Installing Yarn and pnpm..."
@@ -128,10 +117,6 @@ install_js_tools() {
 # Install additional development tools
 install_additional_tools() {
     echo -e "${BLUE}Installing additional development tools...${NC}"
-    
-    # Neovim dependencies
-    echo "Installing Neovim dependencies..."
-    brew install neovim fzf ripgrep lazygit
     
     # Terminal
     echo "Installing Kitty terminal..."
@@ -197,7 +182,6 @@ main() {
     set_computer_name
     install_homebrew
     install_dev_tools
-    install_jetbrains_font
     install_node_volta
     install_js_tools
     install_additional_tools

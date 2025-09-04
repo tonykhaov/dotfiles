@@ -70,6 +70,7 @@ install_fonts() {
     local fonts=(
         "font-ubuntu"
         "font-poppins"
+        "font-jetbrains-mono"
         "font-open-sans"
         "font-roboto"
         "font-inter"
