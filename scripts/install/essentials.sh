@@ -114,6 +114,41 @@ install_js_tools() {
     echo -e "${GREEN}✓ JavaScript tools installed${NC}"
 }
 
+# Install Ruby via rbenv
+install_ruby_rbenv() {
+    if command_exists rbenv; then
+        echo -e "${YELLOW}rbenv already installed${NC}"
+    else
+        echo -e "${BLUE}Installing rbenv (Ruby version manager)...${NC}"
+        brew install rbenv
+        
+        # Add rbenv to shell
+        echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zprofile
+        echo 'eval "$(rbenv init -)"' >> ~/.zprofile
+        eval "$(rbenv init -)"
+        export PATH="$HOME/.rbenv/bin:$PATH"
+    fi
+    
+    echo -e "${BLUE}Installing latest Ruby version...${NC}"
+    
+    # Get the latest stable Ruby version (filters out pre-release versions)
+    local latest_ruby=$(rbenv install --list | grep -E "^\s*[0-9]+\.[0-9]+\.[0-9]+$" | tail -1 | xargs)
+    
+    if [[ -z "$latest_ruby" ]]; then
+        echo -e "${RED}Could not determine latest Ruby version${NC}"
+        return 1
+    fi
+    
+    echo "Installing Ruby $latest_ruby..."
+    rbenv install "$latest_ruby"
+    rbenv global "$latest_ruby"
+    
+    # Rehash to make new Ruby available
+    rbenv rehash
+    
+    echo -e "${GREEN}✓ Ruby installed via rbenv: $(ruby -v)${NC}"
+}
+
 # Install additional development tools
 install_additional_tools() {
     echo -e "${BLUE}Installing additional development tools...${NC}"
@@ -184,6 +219,7 @@ main() {
     install_dev_tools
     install_node_volta
     install_js_tools
+    install_ruby_rbenv
     install_additional_tools
     generate_ssh_key
     
