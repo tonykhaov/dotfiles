@@ -78,18 +78,6 @@ alias mergepdf="gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pd
 alias splitpdf="convert -density 150" # input.pdf output.jpg // increase density if this is too blur
 # to convert an image to pdf, use `convert input1.jpgg input2.jpg output.pdf`
 
-alias backup="rsync --exclude='node_modules' --exclude='.next' --exclude='.DS_Store' -avzP"
-backup_hdd() {
-  # Delete old backup
-  rm -rf /Volumes/Tony/Old_Backup
-  # Save last backup
-  mv /Volumes/Tony/Backup /Volumes/Tony/Old_Backup
-  # Create new backup
-  mkdir -p /Volumes/Tony/Backup
-  backup ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/. /Volumes/Tony/Backup
-  backup ~/Documents/Coding/dotfiles 
-}
-
 update() {
   brew update
   brew upgrade
@@ -104,12 +92,6 @@ source $ZSH/oh-my-zsh.sh
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# Add AWS completion
-complete -C aws_completer aws
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
