@@ -37,7 +37,6 @@ install_gui_applications() {
     
     local gui_apps=(
         "1password"
-        "android-studio"
         "alt-tab"
         "anki"
         "betterdisplay"
@@ -53,6 +52,8 @@ install_gui_applications() {
         "soundsource"
         "spotify"
         "visual-studio-code"
+        "android-studio"
+        "obs"
     )
     
     for app in "${gui_apps[@]}"; do
@@ -100,6 +101,22 @@ open_setup_applications() {
     local apps_to_open=(
         "OrbStack"
         "Raycast"
+        "Notion"
+        "Google Chrome"
+        "Spotify"
+        "Dropzone 4"
+        "1Password"
+        "Figma"
+        "Visual Studio Code"
+        "Android Studio"
+        "Calibre"
+        "Anki"
+        "BetterDisplay"
+        "Cap"
+        "Discord"
+        "SoundSource"
+        "AltTab"
+        "OBS"
     )
     
     for app in "${apps_to_open[@]}"; do
