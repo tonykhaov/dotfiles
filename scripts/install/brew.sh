@@ -116,16 +116,25 @@ open_setup_applications() {
     echo -e "${GREEN}✓ Applications opened for setup${NC}"
 }
 
+# Ensure Homebrew is available in PATH
+ensure_brew() {
+    if ! command -v brew >/dev/null 2>&1; then
+        echo -e "${BLUE}Setting up Homebrew PATH...${NC}"
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+    fi
+}
+
 main() {
     echo -e "${YELLOW}🍺 Installing Homebrew packages and applications${NC}"
     echo ""
-    
+
+    ensure_brew
     install_cli_tools
     install_gui_applications
     install_fonts
     setup_fzf
     open_setup_applications
-    
+
     echo ""
     echo -e "${GREEN}🎉 All Homebrew packages installed successfully!${NC}"
 }
