@@ -20,7 +20,7 @@ print_step() {
 run_script() {
     local script="$1"
     local description="$2"
-    
+
     if [[ -f "$script" ]]; then
         echo -e "${YELLOW}Running: $description${NC}"
         chmod +x "$script"
@@ -32,50 +32,102 @@ run_script() {
     fi
 }
 
+# Interactive selection
+select_steps() {
+    local steps=("essentials" "git" "brew" "ohmyzsh" "symlinks" "vscode" "chrome" "macos" "mas")
+    local descriptions=("Essential tools (Homebrew, Git, Node, etc.)" "Setting up git with your name and email" "Homebrew applications" "Oh My Zsh and shell configuration" "Creating symlinks for dotfiles" "VS Code extensions and settings" "Chrome extensions" "macOS system preferences" "Mac App Store applications")
+
+    echo -e "${YELLOW}Select which scripts to run:${NC}"
+    for i in "${!steps[@]}"; do
+        echo "$((i+1)). ${descriptions[i]}"
+    done
+    echo "a. Run all"
+    echo ""
+
+    read -p "Enter numbers separated by space (or 'a' for all): " choice
+
+    if [[ "$choice" == "a" || "$choice" == "all" ]]; then
+        steps_to_run=("${steps[@]}")
+    else
+        IFS=' ' read -ra nums <<< "$choice"
+        for num in "${nums[@]}"; do
+            if [[ $num =~ ^[0-9]+$ ]] && (( num >= 1 && num <= ${#steps[@]} )); then
+                steps_to_run+=("${steps[$((num-1))]}")
+            fi
+        done
+    fi
+
+    if [[ ${#steps_to_run[@]} -eq 0 ]]; then
+        echo -e "${YELLOW}No valid selections. Running all by default.${NC}"
+        steps_to_run=("${steps[@]}")
+    fi
+}
+
 # Main installation flow
 main() {
     echo -e "${GREEN}"
     echo "  ████████   ████████ ████████ ████████ ████ ████   ████████  ████████"
-    echo " ██      ██ ██    ██    ██    ██       ██   ██  ██ ██        ██"      
+    echo " ██      ██ ██    ██    ██    ██       ██   ██  ██ ██        ██"
     echo " ██      ██ ██    ██    ██    ████     ██   ██  ██ ████      ████"
     echo " ██      ██ ██    ██    ██    ██       ██   ██  ██ ██             ██"
     echo "  ████████   ████████    ██    ██       ████ ██  ██  ████████ ████████"
     echo -e "${NC}"
     echo -e "${BLUE}Tony's macOS Setup & Dotfiles Configuration${NC}"
     echo ""
-    
+
+    # Interactive selection
+    select_steps
+
     # Step 1: Essential installations
-    print_step "Installing Essential Tools"
-    run_script "$DOTFILES_DIR/scripts/install/essentials.sh" "Essential tools (Homebrew, Git, Node, etc.)"
-    
+    if [[ " ${steps_to_run[*]} " == *" essentials "* ]]; then
+        print_step "Installing Essential Tools"
+        run_script "$DOTFILES_DIR/scripts/install/essentials.sh" "Essential tools (Homebrew, Git, Node, etc.)"
+    fi
+
     # Step 2: Configure git with user input
-    print_step "Configuring Git"
-    run_script "$DOTFILES_DIR/scripts/config/git-setup.sh" "Setting up git with your name and email"
+    if [[ " ${steps_to_run[*]} " == *" git "* ]]; then
+        print_step "Configuring Git"
+        run_script "$DOTFILES_DIR/scripts/config/git-setup.sh" "Setting up git with your name and email"
+    fi
 
     # Step 3: Install applications
-    print_step "Installing Applications"
-    run_script "$DOTFILES_DIR/scripts/install/brew.sh" "Homebrew applications"
-    
+    if [[ " ${steps_to_run[*]} " == *" brew "* ]]; then
+        print_step "Installing Applications"
+        run_script "$DOTFILES_DIR/scripts/install/brew.sh" "Homebrew applications"
+    fi
+
     # Step 4: Install oh-my-zsh and configure shell
-    print_step "Installing Oh My Zsh"
-    run_script "$DOTFILES_DIR/scripts/config/oh-my-zsh.sh" "Oh My Zsh and shell configuration"
+    if [[ " ${steps_to_run[*]} " == *" ohmyzsh "* ]]; then
+        print_step "Installing Oh My Zsh"
+        run_script "$DOTFILES_DIR/scripts/config/oh-my-zsh.sh" "Oh My Zsh and shell configuration"
+    fi
 
     # Step 5: Create symlinks for dotfiles
-    print_step "Setting Up Configuration Files"
-    run_script "$DOTFILES_DIR/scripts/config/symlinks.sh" "Creating symlinks for dotfiles"
+    if [[ " ${steps_to_run[*]} " == *" symlinks "* ]]; then
+        print_step "Setting Up Configuration Files"
+        run_script "$DOTFILES_DIR/scripts/config/symlinks.sh" "Creating symlinks for dotfiles"
+    fi
 
     # Step 6: Configure applications
-    print_step "Configuring Applications"
-    run_script "$DOTFILES_DIR/scripts/config/vscode.sh" "VS Code extensions and settings"
-    run_script "$DOTFILES_DIR/scripts/config/chrome-extensions.sh" "Chrome extensions"
+    if [[ " ${steps_to_run[*]} " == *" vscode "* ]]; then
+        print_step "Configuring VS Code"
+        run_script "$DOTFILES_DIR/scripts/config/vscode.sh" "VS Code extensions and settings"
+    fi
+    if [[ " ${steps_to_run[*]} " == *" chrome "* ]]; then
+        run_script "$DOTFILES_DIR/scripts/config/chrome-extensions.sh" "Chrome extensions"
+    fi
 
     # Step 7: System configuration (run last)
-    print_step "Configuring macOS System Settings"
-    run_script "$DOTFILES_DIR/scripts/config/macos.sh" "macOS system preferences"
+    if [[ " ${steps_to_run[*]} " == *" macos "* ]]; then
+        print_step "Configuring macOS System Settings"
+        run_script "$DOTFILES_DIR/scripts/config/macos.sh" "macOS system preferences"
+    fi
 
     # Step 8: Installing Mac App Store apps
-    print_step "Installing Mac App Store Applications"
-    run_script "$DOTFILES_DIR/scripts/install/mas.sh" "Mac App Store applications"
+    if [[ " ${steps_to_run[*]} " == *" mas "* ]]; then
+        print_step "Installing Mac App Store Applications"
+        run_script "$DOTFILES_DIR/scripts/install/mas.sh" "Mac App Store applications"
+    fi
 
     # Final message
     echo ""
