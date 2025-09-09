@@ -73,7 +73,6 @@ alias nteh="nr test:e2e:headed"
 
 alias ncu="npx npm-check-updates"
 
-alias ytmp4="youtube-dl -f mp4"
 alias mergepdf="gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf"
 alias splitpdf="convert -density 150" # input.pdf output.jpg // increase density if this is too blur
 # to convert an image to pdf, use `convert input1.jpgg input2.jpg output.pdf`
