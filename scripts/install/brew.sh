@@ -98,32 +98,19 @@ setup_fzf() {
 open_setup_applications() {
     echo -e "${BLUE}Opening applications that need initial setup...${NC}"
     
-    local apps_to_open=(
-        "OrbStack"
-        "Raycast"
-        "Notion"
-        "Google Chrome"
-        "Spotify"
-        "Dropzone 4"
-        "1Password"
-        "Figma"
-        "Visual Studio Code"
-        "Android Studio"
-        "Calibre"
-        "Anki"
-        "BetterDisplay"
-        "Cap"
-        "Discord"
-        "SoundSource"
-        "AltTab"
-        "OBS"
-    )
+    local apps_to_open=($(brew list --cask))
     
     for app in "${apps_to_open[@]}"; do
-        if brew list --cask "${app,,}" &>/dev/null; then
-            echo "Opening $app..."
-            open -a "$app"
+        if [[ $app == font-* ]]; then
+            continue
         fi
+        
+        app_name=${app//-/ }
+        if [[ $app == dropzone ]]; then
+            app_name="dropzone 4"
+        fi
+        echo "Opening $app_name..."
+        open -a "$app_name"
     done
     
     echo -e "${GREEN}✓ Applications opened for setup${NC}"
