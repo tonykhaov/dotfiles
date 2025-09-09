@@ -17,7 +17,7 @@ install_cli_tools() {
         "gs"
         "jq"
         "imagemagick"
-        "youtube-dl"
+        "yt-dlp"
         "trash"
         "git-delta"
         "fzf"

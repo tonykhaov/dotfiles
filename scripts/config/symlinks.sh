@@ -47,9 +47,6 @@ link_config "$CONFIG_DIR/vim/.vimrc" "$HOME/.vimrc"
 # Kitty config
 link_config "$CONFIG_DIR/kitty" "$HOME/.config/kitty"
 
-# YouTube-dl config
-link_config "$CONFIG_DIR/youtube-dl" "$HOME/.config/youtube-dl"
-
 # Stock resources
 link_config "$DOTFILES_DIR/resources/stock" "$HOME/Documents/Stock"
 
