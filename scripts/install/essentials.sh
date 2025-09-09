@@ -83,13 +83,16 @@ install_node_volta() {
     else
         echo -e "${BLUE}Installing Volta (Node.js manager)...${NC}"
         curl https://get.volta.sh | bash
-        source "$HOME/.zshrc" 2>/dev/null || true
+        export PATH="$HOME/.volta/bin:$PATH"
     fi
     
     echo -e "${BLUE}Installing Node.js...${NC}"
-    volta install node
-    
-    echo -e "${GREEN}✓ Node.js installed via Volta: $(node -v)${NC}"
+    if volta install node; then
+        echo -e "${GREEN}✓ Node.js installed via Volta: $(node -v)${NC}"
+    else
+        echo -e "${RED}Failed to install Node.js${NC}"
+        return 1
+    fi
 }
 
 # Install JavaScript runtimes and tools
