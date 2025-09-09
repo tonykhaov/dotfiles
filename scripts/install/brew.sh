@@ -109,6 +109,10 @@ open_setup_applications() {
         if [[ $app == dropzone ]]; then
             app_name="dropzone 4"
         fi
+        if [[ $app == alt-tab ]]; then
+            app_name="alttab"
+        fi
+
         echo "Opening $app_name..."
         open -a "$app_name"
     done
