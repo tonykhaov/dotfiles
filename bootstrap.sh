@@ -48,35 +48,40 @@ main() {
     print_step "Installing Essential Tools"
     run_script "$DOTFILES_DIR/scripts/install/essentials.sh" "Essential tools (Homebrew, Git, Node, etc.)"
     
-    # Step 2: Install applications
-    print_step "Installing Applications"
-    run_script "$DOTFILES_DIR/scripts/install/mas.sh" "Mac App Store applications"
-    run_script "$DOTFILES_DIR/scripts/install/brew.sh" "Homebrew applications"
-    
-    # Step 3: Configure git with user input
+    # Step 2: Configure git with user input
     print_step "Configuring Git"
     run_script "$DOTFILES_DIR/scripts/config/git-setup.sh" "Setting up git with your name and email"
+
+    # Step 3: Install applications
+    print_step "Installing Applications"
+    run_script "$DOTFILES_DIR/scripts/install/brew.sh" "Homebrew applications"
     
-    # Step 4: Create symlinks for dotfiles
+    # Step 4: Install oh-my-zsh and configure shell
+    print_step "Installing Oh My Zsh"
+    run_script "$DOTFILES_DIR/scripts/config/oh-my-zsh.sh" "Oh My Zsh and shell configuration"
+
+    # Step 5: Create symlinks for dotfiles
     print_step "Setting Up Configuration Files"
     run_script "$DOTFILES_DIR/scripts/config/symlinks.sh" "Creating symlinks for dotfiles"
-    
-    # Step 5: Configure applications
+
+    # Step 6: Configure applications
     print_step "Configuring Applications"
     run_script "$DOTFILES_DIR/scripts/config/vscode.sh" "VS Code extensions and settings"
     run_script "$DOTFILES_DIR/scripts/config/chrome-extensions.sh" "Chrome extensions"
-    
-    # Step 6: System configuration (run last)
+
+    # Step 7: System configuration (run last)
     print_step "Configuring macOS System Settings"
     run_script "$DOTFILES_DIR/scripts/config/macos.sh" "macOS system preferences"
-    run_script "$DOTFILES_DIR/scripts/config/oh-my-zsh.sh" "Oh My Zsh and shell configuration"
-    
+
+    # Step 8: Installing Mac App Store apps
+    print_step "Installing Mac App Store Applications"
+    run_script "$DOTFILES_DIR/scripts/install/mas.sh" "Mac App Store applications"
+
     # Final message
     echo ""
     echo -e "${GREEN}🎉 Setup completed successfully!${NC}"
     echo ""
     echo -e "${YELLOW}Manual steps remaining (see docs/manual-setup.md):${NC}"
-    echo "  • Terminal: Import Dracula theme and set font"
     echo "  • System Preferences: Keyboard, Trackpad, Finder settings"
     echo "  • 1Password: Remove shortcuts"
     echo "  • Import browser bookmarks"
