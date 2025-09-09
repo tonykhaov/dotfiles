@@ -34,8 +34,8 @@ run_script() {
 
 # Interactive selection
 select_steps() {
-    local steps=("essentials" "git" "brew" "ohmyzsh" "symlinks" "vscode" "chrome" "macos" "mas")
-    local descriptions=("Essential tools (Homebrew, Git, Node, etc.)" "Setting up git with your name and email" "Homebrew applications" "Oh My Zsh and shell configuration" "Creating symlinks for dotfiles" "VS Code extensions and settings" "Chrome extensions" "macOS system preferences" "Mac App Store applications")
+    local steps=("essentials" "git" "brew" "ohmyzsh" "vscode" "chrome" "macos" "mas" "symlinks")
+    local descriptions=("Essential tools (Homebrew, Git, Node, etc.)" "Setting up git with your name and email" "Homebrew applications" "Oh My Zsh and shell configuration" "VS Code extensions and settings" "Chrome extensions" "macOS system preferences" "Mac App Store applications" "Creating symlinks for dotfiles")
 
     echo -e "${YELLOW}Select which scripts to run:${NC}"
     for i in "${!steps[@]}"; do
@@ -102,13 +102,7 @@ main() {
         run_script "$DOTFILES_DIR/scripts/config/oh-my-zsh.sh" "Oh My Zsh and shell configuration"
     fi
 
-    # Step 5: Create symlinks for dotfiles
-    if [[ " ${steps_to_run[*]} " == *" symlinks "* ]]; then
-        print_step "Setting Up Configuration Files"
-        run_script "$DOTFILES_DIR/scripts/config/symlinks.sh" "Creating symlinks for dotfiles"
-    fi
-
-    # Step 6: Configure applications
+    # Step 5: Configure applications
     if [[ " ${steps_to_run[*]} " == *" vscode "* ]]; then
         print_step "Configuring VS Code"
         run_script "$DOTFILES_DIR/scripts/config/vscode.sh" "VS Code extensions and settings"
@@ -117,16 +111,22 @@ main() {
         run_script "$DOTFILES_DIR/scripts/config/chrome-extensions.sh" "Chrome extensions"
     fi
 
-    # Step 7: System configuration (run last)
+    # Step 6: System configuration
     if [[ " ${steps_to_run[*]} " == *" macos "* ]]; then
         print_step "Configuring macOS System Settings"
         run_script "$DOTFILES_DIR/scripts/config/macos.sh" "macOS system preferences"
     fi
 
-    # Step 8: Installing Mac App Store apps
+    # Step 7: Installing Mac App Store apps
     if [[ " ${steps_to_run[*]} " == *" mas "* ]]; then
         print_step "Installing Mac App Store Applications"
         run_script "$DOTFILES_DIR/scripts/install/mas.sh" "Mac App Store applications"
+    fi
+
+    # Step 8: Create symlinks for dotfiles (run last)
+    if [[ " ${steps_to_run[*]} " == *" symlinks "* ]]; then
+        print_step "Setting Up Configuration Files"
+        run_script "$DOTFILES_DIR/scripts/config/symlinks.sh" "Creating symlinks for dotfiles"
     fi
 
     # Final message
