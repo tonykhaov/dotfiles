@@ -99,3 +99,6 @@ export OpenMP_ROOT=$(brew --prefix)/opt/libomp
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [ "$PWD" = "$HOME" ]; then
+    cd ./Downloads
+fi
