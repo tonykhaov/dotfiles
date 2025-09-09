@@ -34,7 +34,6 @@ dotfiles/
 │   ├── vim/.vimrc           # Vim configuration
 │   ├── kitty/               # Kitty terminal config
 │   ├── vscode/              # VS Code settings, keybindings, snippets
-│   └── youtube-dl/          # YouTube-dl configuration
 ├── scripts/                  # Installation & setup scripts
 │   ├── install/             # Initial setup (brew, apps, fonts)
 │   ├── config/              # Configuration scripts (symlinks, vscode, etc.)
@@ -74,36 +73,9 @@ dotfiles/
 
 - Keyboard Shortcuts > Remove Fill Login or Show 1Password shortcut
 
-7. Import browser bookmarks
-
-- chrome://bookmarks/ > Import bookmarks .html file from the hard drive
-
-8. Imports OneTab urls
-
-- chrome-extension://chphlpgkkbolifaimnlloiipkdnihall/import-export.html > copy the urls from Apple Notes
-
-9. Install Anki add-ons
-
-- Advanced Browser: **874215009**
-- Fastbarwith nightmode support **46611790**
-- Large and Colorful Buttons **1829090218**
-- Review Heatmap: [download link](https://github.com/glutanimate/review-heatmap/releases)
-
-10. Things 3
-
-- Disabled Quick Entry shortcut
-
-11. Important files
-
-- Transfer them from your hard drive to `~/Documents`
-
 12. Chrome
 
 - Set downloads location to `/private/tmp`
-
-13. Raycast
-
-- cmd + space > Import Settings & Data > hit enter > select the .rayconfig file
 
 ---
 
