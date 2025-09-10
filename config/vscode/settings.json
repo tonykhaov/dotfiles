@@ -133,5 +133,6 @@
   "totalTypeScript.hideBasicTips": true,
   "workbench.colorTheme": "Theme Mix",
   "workbench.startupEditor": "none",
-  "scm.showHistoryGraph": false
+  "scm.showHistoryGraph": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden"
 }
