@@ -54,6 +54,7 @@ install_gui_applications() {
         "visual-studio-code"
         "android-studio"
         "obs"
+        "nikitabobko/tap/aerospace"
     )
     
     for app in "${gui_apps[@]}"; do
