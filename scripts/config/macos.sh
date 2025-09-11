@@ -623,6 +623,10 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 # Disable continuous spell checking
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
 
+# Move window on drag when holdign ctrl + cmd
+defaults write -g NSWindowShouldDragOnGesture -bool true
+
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
