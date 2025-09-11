@@ -50,5 +50,8 @@ link_config "$CONFIG_DIR/kitty" "$HOME/.config/kitty"
 # Stock resources
 link_config "$DOTFILES_DIR/resources/stock" "$HOME/Documents/Stock"
 
+# AeroSpace config
+link_config "$CONFIG_DIR/aerospace/.aerospace.toml" "$HOME/.aerospace.toml"
+
 echo ""
 echo -e "${GREEN}🎉 All symlinks created successfully!${NC}"

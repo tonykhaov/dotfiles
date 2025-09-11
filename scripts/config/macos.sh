@@ -626,6 +626,8 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 # Move window on drag when holdign ctrl + cmd
 defaults write -g NSWindowShouldDragOnGesture -bool true
 
+# Disable state manager
+defaults write com.apple.WindowManager GloballyEnabled -bool false
 
 ###############################################################################
 # Kill affected applications                                                  #
