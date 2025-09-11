@@ -102,18 +102,20 @@ install_js_tools() {
     # Install ni (package manager helper)
     echo "Installing ni..."
     npm install -g @antfu/ni
-    
-    # Install alternative runtimes
+
+    # Install additional JavaScript tools with Volta
+    echo "Installing Yarn..."
+    volta install yarn
+
+    echo "Installing pnpm..."
+    volta install pnpm
+
     echo "Installing Deno..."
-    brew install deno
-    
+    volta install deno
+
     echo "Installing Bun..."
-    brew install oven-sh/bun/bun
-    
-    # Install package managers
-    echo "Installing Yarn and pnpm..."
-    brew install yarn pnpm
-    
+    volta install bun
+
     echo -e "${GREEN}✓ JavaScript tools installed${NC}"
 }
 
