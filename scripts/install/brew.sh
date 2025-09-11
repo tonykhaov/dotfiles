@@ -54,6 +54,7 @@ install_gui_applications() {
         "visual-studio-code"
         "android-studio"
         "obs"
+        "felixkratz/formulae/borders"
         "nikitabobko/tap/aerospace"
     )
     
