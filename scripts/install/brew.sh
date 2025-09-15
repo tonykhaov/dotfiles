@@ -54,7 +54,6 @@ install_gui_applications() {
         "visual-studio-code"
         "android-studio"
         "obs"
-        "felixkratz/formulae/borders"
         "nikitabobko/tap/aerospace"
     )
     
@@ -62,6 +61,9 @@ install_gui_applications() {
         echo "Installing $app..."
         brew install --cask "$app"
     done
+
+    brew tap FelixKratz/formulae
+    brew install borders
     
     echo -e "${GREEN}✓ GUI applications installed${NC}"
 }
