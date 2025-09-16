@@ -629,6 +629,19 @@ defaults write -g NSWindowShouldDragOnGesture -bool true
 # Disable state manager
 defaults write com.apple.WindowManager GloballyEnabled -bool false
 
+# Enable Group windows by application (For AeroSpace)
+defaults write com.apple.dock expose-group-apps -bool true
+
+# Disable symbolic hotkeys
+# disable ctrl + space shortcut
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 60 '<dict><key>enabled</key><false/></dict>'
+# Disable save-to-file variants
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 28 "{enabled = 1; }"
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 30 "{enabled = 1; }"
+# Enable copy-to-clipboard variants
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 29 "{enabled = 0; }"
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 31 "{enabled = 0; }"
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
