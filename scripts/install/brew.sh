@@ -21,6 +21,7 @@ install_cli_tools() {
         "trash"
         "git-delta"
         "fzf"
+        "zulu@17"
     )
     
     for tool in "${cli_tools[@]}"; do
@@ -124,6 +125,10 @@ open_setup_applications() {
     echo -e "${GREEN}✓ Applications opened for setup${NC}"
 }
 
+open_zulu_folder() {
+    open /opt/homebrew/Caskroom/zulu@17/
+}
+
 # Ensure Homebrew is available in PATH
 ensure_brew() {
     if ! command -v brew >/dev/null 2>&1; then
@@ -142,6 +147,7 @@ main() {
     install_fonts
     setup_fzf
     open_setup_applications
+    open_zulu_folder
 
     echo ""
     echo -e "${GREEN}🎉 All Homebrew packages installed successfully!${NC}"
